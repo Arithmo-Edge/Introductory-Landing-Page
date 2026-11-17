@@ -49,11 +49,11 @@
 </head>
 <body class="cyber-grid-bg selection:bg-cyan-400/30 selection:text-cyan-100">
 
-  <!-- Shared Sticky Glassmorphism Navbar -->
-  <header class="sticky top-0 z-50 glass-nav">
+  <!-- Shared Fixed Glassmorphism Navbar -->
+  <header class="fixed top-0 left-0 right-0 w-full z-[1000] glass-nav">
     <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
       <div class="min-w-0">
-        <a href="index.html" class="inline-block font-display text-xl sm:text-2xl font-bold tracking-tight brand-gradient cyber-text-glow whitespace-nowrap">Arithmo Edge</a>
+        <a href="index.html" class="nav-brand-link whitespace-nowrap"><img src="favicon.jpg" alt="Arithmo Edge Logo" class="nav-brand-logo" /><span class="font-display text-xl sm:text-2xl font-bold tracking-tight brand-gradient cyber-text-glow">Arithmo Edge</span></a>
         <p class="nav-tagline hidden md:block max-w-md lg:max-w-xl leading-snug text-xs text-slate-400 mt-0.5">The World's First Real-Time ELO-Rated Competitive Mathematics &amp; Olympiad Mega-Ecosystem</p>
       </div>
       <div class="flex items-center gap-3 shrink-0">
@@ -70,8 +70,8 @@
   </header>
 
   <!-- Right-Side Slide-In Overlay Navigation Drawer (01-12) -->
-  <div id="nav-drawer-backdrop" class="fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
-  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-50 h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto" style="transform: translateX(100%); visibility: hidden;">
+  <div id="nav-drawer-backdrop" class="fixed inset-0 z-[1050] bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
+  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-[1060] h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto" style="transform: translateX(100%); visibility: hidden;">
     <div>
       <div class="flex items-center justify-between pb-4 border-b border-slate-800/80">
         <div><span class="font-display text-lg font-bold brand-gradient">Arithmo Edge</span><p class="text-xs text-slate-400">Powered by Olympiad Edge · 12-Page Showcase</p></div>
@@ -226,10 +226,10 @@
     <!-- Section 5: Interactive Private 5x4 Golden Vault (Schema v1.2) Inspector -->
     <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
       <div class="mb-8 gsap-reveal">
-        <div class="text-xs font-mono-tabular text-amber-300 mb-2">05 · Arithmo-Edge-Golden-Vault · Read-Only PAT + Cloudflare Worker Proxy</div>
+        <div class="text-xs font-mono-tabular text-amber-300 mb-2">05 · Arithmo-Edge-Golden-Vault · Read-Only PAT + Cloudflare Worker Proxy &middot; JSON-Converter</div>
         <h2 class="section-title-fluid font-display font-bold text-white">Private 5&times;4 Golden Vault (Schema v1.2) Inspector</h2>
         <p class="text-sm sm:text-base text-slate-400 prose-measure mt-2">
-          Co-authored by Rayaan Tasnim &amp; Jalees Habib: 5 Arenas &times; 4 Segments &times; 10 Problems per set, ingested solely by <span class="text-white font-semibold">Arithmo GoldenVault Miner AI</span> and suppressed automatically during active rated contests.
+          Co-authored by Rayaan Tasnim &amp; Jalees Habib using <a href="https://github.com/Arithmo-Edge/JSON-Converter" target="_blank" rel="noopener noreferrer" class="font-mono-tabular text-cyan-300 hover:underline">github.com/Arithmo-Edge/JSON-Converter</a>: 5 Arenas &times; 4 Segments &times; 10 Problems per set, ingested solely by <span class="text-white font-semibold">Arithmo GoldenVault Miner AI</span> and suppressed automatically during active rated contests.
         </p>
       </div>
       <div class="glass-panel rounded-2xl p-6 sm:p-8 gsap-reveal">
@@ -241,15 +241,26 @@
           <button type="button" data-vault-arena="mixed" class="px-4 py-2 rounded-xl border border-slate-700 bg-slate-950/70 text-xs font-semibold text-slate-300">Mixed Olympiad</button>
         </div>
         <div class="space-y-3">
-          <div class="text-xs font-mono-tabular text-amber-300">Vault Object Path: <span id="vault-json-path" class="text-white">Arithmo-Edge-Golden-Vault/Number_Theory/Segment_4_Apex/set_01.json</span></div>
+          <div class="text-xs font-mono-tabular text-amber-300">Vault Object Path: <span id="vault-json-path" class="text-white">Arithmo-Edge-Golden-Vault/Number_Theory/Segment_4_Apex/set_001.json</span></div>
           <pre id="vault-json-sample" class="rounded-xl bg-slate-950/90 border border-slate-800 p-4 text-xs font-mono-tabular text-cyan-300 overflow-x-auto">{
-  "schema": "v1.2",
-  "arena": "Number_Theory",
+  "schema_version": "1.2",
+  "ecosystem": "Arithmo-Edge",
+  "mode": "Expert",
   "segment": "Segment_4_Apex",
-  "problemsPerSet": 10,
-  "unratedPracticeTags": ["#Modular-Arithmetic", "#LTE", "#Order-Theory"],
-  "hiddenDuringRated": true,
-  "ingestion": "Arithmo GoldenVault Miner AI -> Read-Only GitHub PAT -> Cloudflare Worker Proxy"
+  "set_id": "001",
+  "hub": "Number Theory",
+  "tags_visibility": "unrated_practice_only",
+  "hidden_during_live_contest": true,
+  "problem_count": 10,
+  "problems": [
+    {
+      "q_index": 1,
+      "statement_plain": "Find all primes p such that p^2 + 2^p is prime.",
+      "statement_latex": "Find all primes $p$ such that $p^2 + 2^p$ is prime.",
+      "tags": ["Modular Arithmetic", "Parity", "LTE"],
+      "answer": "p = 3"
+    }
+  ]
 }</pre>
         </div>
       </div>

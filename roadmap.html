@@ -41,11 +41,11 @@
 </head>
 <body class="cyber-grid-bg selection:bg-cyan-400/30 selection:text-cyan-100">
 
-  <!-- Shared Sticky Glassmorphism Navbar -->
-  <header class="sticky top-0 z-50 glass-nav">
+  <!-- Shared Fixed Glassmorphism Navbar -->
+  <header class="fixed top-0 left-0 right-0 w-full z-[1000] glass-nav">
     <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
       <div class="min-w-0">
-        <a href="index.html" class="inline-block font-display text-xl sm:text-2xl font-bold tracking-tight brand-gradient cyber-text-glow whitespace-nowrap">Arithmo Edge</a>
+        <a href="index.html" class="nav-brand-link whitespace-nowrap"><img src="favicon.jpg" alt="Arithmo Edge Logo" class="nav-brand-logo" /><span class="font-display text-xl sm:text-2xl font-bold tracking-tight brand-gradient cyber-text-glow">Arithmo Edge</span></a>
         <p class="nav-tagline hidden md:block max-w-md lg:max-w-xl leading-snug text-xs text-slate-400 mt-0.5">The World's First Real-Time ELO-Rated Competitive Mathematics &amp; Olympiad Mega-Ecosystem</p>
       </div>
       <div class="flex items-center gap-3 shrink-0">
@@ -62,8 +62,8 @@
   </header>
 
   <!-- Right-Side Slide-In Overlay Navigation Drawer (01-12) -->
-  <div id="nav-drawer-backdrop" class="fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
-  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-50 h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto" style="transform: translateX(100%); visibility: hidden;">
+  <div id="nav-drawer-backdrop" class="fixed inset-0 z-[1050] bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
+  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-[1060] h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto" style="transform: translateX(100%); visibility: hidden;">
     <div>
       <div class="flex items-center justify-between pb-4 border-b border-slate-800/80">
         <div><span class="font-display text-lg font-bold brand-gradient">Arithmo Edge</span><p class="text-xs text-slate-400">Powered by Olympiad Edge · 12-Page Showcase</p></div>
@@ -158,10 +158,26 @@
         <h2 class="section-title-fluid font-display font-bold text-white">V10.0–V10.3 Flagship Architectural Milestones</h2>
       </div>
       <div class="ae-bento-grid grid md:grid-cols-2 lg:grid-cols-4 gap-4 gsap-reveal">
-        <div class="spotlight-card rounded-2xl p-5 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">V10.0</div><h3 class="font-display font-bold text-white">Dual-Storage Zero-PII Lake</h3><p class="text-xs text-slate-300">Launched automated 24-hour Hot Firebase to Cold JSONL distillation and Read-Shield client caching.</p></div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2"><div class="text-xs font-mono-tabular text-violet-300">V10.1</div><h3 class="font-display font-bold text-white">5&times;4 Golden Vault Schema v1.2</h3><p class="text-xs text-slate-300">Standardized set_XX.json schema across all 20 Co-Founder segments behind Cloudflare Worker PAT proxies.</p></div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2"><div class="text-xs font-mono-tabular text-emerald-300">V10.2</div><h3 class="font-display font-bold text-white">QPRT-4 &amp; Soft-Pinch</h3><p class="text-xs text-slate-300">Delivered AES-256-GCM encrypted Soft-Pinch coaching and 11-Flag Blackhole progression with 4-step appeals.</p></div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2"><div class="text-xs font-mono-tabular text-amber-300">V10.3</div><h3 class="font-display font-bold text-white">Arithmo-Edge Org Consolidation</h3><p class="text-xs text-slate-300">Migrated all 14 live portals cleanly under github.com/Arithmo-Edge &amp; arithmo-edge.github.io ahead of Dec 31, 2026.</p></div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-cyan-400/35">
+          <div class="text-xs font-mono-tabular text-cyan-300">V10.0 · Context-Injected AI &amp; Enterprise</div>
+          <h3 class="font-display font-bold text-white">Standalone AI Portals &amp; Metering</h3>
+          <p class="text-xs text-slate-300">Launch of standalone <span class="text-white font-semibold">Arithmo Personal AI</span> (Subsite #8), <span class="text-white font-semibold">Arithmo Guild AI</span> (Subsite #9), <span class="text-white font-semibold">Academy Enterprise</span> tier, and Dynamic Semantic Token Metering with In-Chat Dual-Model Selector.</p>
+        </div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-amber-400/35">
+          <div class="text-xs font-mono-tabular text-amber-300">V10.1 · Top 128 Annual World Cup (&#128081;)</div>
+          <h3 class="font-display font-bold text-white">6-Round Progressive Bracket</h3>
+          <p class="text-xs text-slate-300">Invites the world's Top 128 contenders into a 6-round Progressive Half-Elimination Bracket (<span class="font-mono-tabular text-amber-300">128 &rarr; 64 &rarr; 32 &rarr; 16 &rarr; 8 &rarr; 4 &rarr; Champion</span>) awarding permanent rotating Golden Crowns (&#128081;).</p>
+        </div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-emerald-400/35">
+          <div class="text-xs font-mono-tabular text-emerald-300">V10.2 · Offline-First Installable PWA</div>
+          <h3 class="font-display font-bold text-white">14-Portal PWA &amp; T-15m Alerts</h3>
+          <p class="text-xs text-slate-300">Transforms all 14 portals into installable Progressive Web Apps (<span class="font-mono-tabular text-emerald-300">Service Workers + IndexedDB</span>) with offline practice caching and <span class="font-mono-tabular">T-15 minute</span> contest push notifications.</p>
+        </div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-violet-400/35">
+          <div class="text-xs font-mono-tabular text-violet-300">V10.3 · AI Smart Mistake Deck</div>
+          <h3 class="font-display font-bold text-white">7-Day Spaced Repetition Engine</h3>
+          <p class="text-xs text-slate-300">Automated <span class="font-mono-tabular text-violet-300">7-day</span> spaced-repetition flashcard engine synthesized directly from each competitor's contest misses and weak Olympiad tags.</p>
+        </div>
       </div>
     </section>
 
@@ -169,18 +185,18 @@
     <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
       <div class="ae-deep-grid grid lg:grid-cols-12 gap-8 items-center gsap-reveal">
         <div class="lg:col-span-6 space-y-4">
-          <div class="text-xs font-mono-tabular text-cyan-300">03 · arithmo-edge.github.io/arithmo-database/</div>
-          <h2 class="section-title-fluid font-display font-bold text-white">Arithmo Database (V11.0+ Open Mathematical Index)</h2>
+          <div class="text-xs font-mono-tabular text-cyan-300">03 · Subsite #13 &middot; arithmo-edge.github.io/arithmo-database/</div>
+          <h2 class="section-title-fluid font-display font-bold text-white">Arithmo Database (14th Portal · Post Subsites #1–#12)</h2>
           <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
-            Scheduled for V11.0+, <span class="text-white font-semibold">Arithmo Database</span> indexes thousands of past daily/Sunday Mega problems, canonical LaTeX proofs, Find-the-Flaw counterexamples, and Python/SymPy certificates—giving educators and Olympiad researchers an instant semantic search index across topics and ELO difficulty brackets.
+            Launching as the 14th federated portal right after Subsites #1&ndash;#12, <span class="text-white font-semibold">Arithmo Database</span> houses <span class="text-white font-semibold">all past Arithmo-Edge contests</span> categorized across the 5 Core Arenas PLUS world-renowned international &amp; national Olympiad archives (<span class="font-mono-tabular text-cyan-300">IMO, Putnam, RMM, BMO, BdMO</span>), paired with <span class="text-white font-semibold">AI-Generated Step-by-Step Editorials</span> for every database and unrated problemset item.
           </p>
         </div>
         <div class="lg:col-span-6 glass-panel rounded-2xl p-6 space-y-3 border-cyan-400/30">
-          <div class="text-xs font-mono-tabular text-cyan-300">Structured Corpus Deliverables</div>
+          <div class="text-xs font-mono-tabular text-cyan-300">Structured Corpus &amp; Editorial Deliverables</div>
           <ul class="text-xs sm:text-sm text-slate-300 space-y-2">
-            <li>&bull; Standardized topic tags matching the Zero-Fragmentation 5-Arena tree</li>
-            <li>&bull; Verified alternative proofs authored by 2000+ Sentinels &amp; Arbiters</li>
-            <li>&bull; Exportable curriculum bundles for Academy Mentors &amp; national camps</li>
+            <li>&bull; Complete past Arithmo-Edge contests categorized cleanly by the 5 Core Arenas</li>
+            <li>&bull; Historical <span class="text-white font-semibold">IMO, Putnam, RMM, BMO, and BdMO</span> Olympiad problem archives</li>
+            <li>&bull; <span class="text-white font-semibold">AI-Generated Step-by-Step Editorials</span> on every database &amp; unrated problemset item</li>
           </ul>
         </div>
       </div>
@@ -190,18 +206,18 @@
     <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
       <div class="mb-8 gsap-reveal">
         <div class="text-xs font-mono-tabular text-cyan-300 mb-2">04 · Disciplined Execution Horizon</div>
-        <h2 class="section-title-fluid font-display font-bold text-white">Bootstrapped Year-1 vs. 20-Year Enterprise Horizon</h2>
+        <h2 class="section-title-fluid font-display font-bold text-white">Year-1 Bootstrapped Targets vs. 20-Year Holding Horizon</h2>
       </div>
       <div class="ae-deep-grid grid md:grid-cols-2 gap-6 gsap-reveal">
         <div class="spotlight-card rounded-2xl p-6 sm:p-8 space-y-3 border-emerald-400/35">
-          <div class="text-xs font-mono-tabular text-emerald-300">Year 1 · Zero-Burn GitHub Pages + Firebase Spark/Blaze</div>
+          <div class="text-xs font-mono-tabular text-emerald-300">Year 1 · ~$160–$680/mo Net Profit</div>
           <h3 class="font-display text-xl font-bold text-white">Bootstrapped Global Launch</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">Near-zero fixed burn via 14 GitHub Pages hosts, Read-Shield local caching, client BigInt offload, sustainable Plus/Pro/Singularity AI compute margins, and early Academy school onboarding.</p>
+          <p class="text-sm text-slate-300 leading-relaxed">Disciplined zero-burn foundation generating <span class="font-mono-tabular text-emerald-300 font-semibold">~$160–$680/mo</span> net profit via 14 GitHub Pages hosts, Firebase Spark/Blaze Read-Shield caching, client BigInt offload, sustainable Plus/Pro/Singularity margins, and early Academy onboarding.</p>
         </div>
         <div class="spotlight-card rounded-2xl p-6 sm:p-8 space-y-3 border-violet-400/35">
-          <div class="text-xs font-mono-tabular text-violet-300">Years 5–20 · Olympiad Edge Holding Group</div>
-          <h3 class="font-display text-xl font-bold text-white">Global Mathematical Infrastructure</h3>
-          <p class="text-sm text-slate-300 leading-relaxed">Transitions from competitive Olympiad arenas into university admissions assessments, formal theorem-proving datasets, and 8 autonomous vertical subsidiaries under Olympiad Edge.</p>
+          <div class="text-xs font-mono-tabular text-violet-300">20-Year Holding Horizon · $1.5B–$3.0B Valuation</div>
+          <h3 class="font-display text-xl font-bold text-white">Olympiad Edge Holding Group</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">Scales cleanly to <span class="font-mono-tabular text-violet-300 font-semibold">$140M–$300M/yr</span> revenue and <span class="font-mono-tabular text-emerald-300 font-semibold">$100M–$225M/yr</span> net profit at <span class="font-mono-tabular text-white font-semibold">~75% margin</span> (<span class="font-mono-tabular text-amber-300 font-semibold">$1.5B–$3.0B</span> holding valuation) across 8 autonomous spin-off verticals.</p>
         </div>
       </div>
     </section>
@@ -209,18 +225,18 @@
     <!-- Section 5: The 8 Multi-Million Dollar Spin-Off Companies -->
     <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
       <div class="mb-8 gsap-reveal">
-        <div class="text-xs font-mono-tabular text-cyan-300 mb-2">05 · Olympiad Edge Alphabet-Style Ecosystem</div>
+        <div class="text-xs font-mono-tabular text-cyan-300 mb-2">05 · Olympiad Edge 8 Canonical Spin-Off Verticals</div>
         <h2 class="section-title-fluid font-display font-bold text-white">The 8 Multi-Million Dollar Spin-Off Companies</h2>
       </div>
       <div class="ae-bento-grid grid sm:grid-cols-2 lg:grid-cols-4 gap-4 gsap-reveal">
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-cyan-400/30"><div class="text-xs font-mono-tabular text-cyan-300">Spin-Off 01</div><h3 class="font-display font-bold text-white">Arithmo Labs</h3><p class="text-xs text-slate-300">Hybrid neuro-symbolic Olympiad AI API &amp; SymPy formal reasoning infrastructure.</p></div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-violet-400/30"><div class="text-xs font-mono-tabular text-violet-300">Spin-Off 02</div><h3 class="font-display font-bold text-white">Olympiad Cloud</h3><p class="text-xs text-slate-300">Turnkey SaaS contest &amp; proctoring engine for national IMOs, STEM fairs, and universities.</p></div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-emerald-400/30"><div class="text-xs font-mono-tabular text-emerald-300">Spin-Off 03</div><h3 class="font-display font-bold text-white">QPRT Security</h3><p class="text-xs text-slate-300">MBTS behavioral telemetry &amp; cryptographic online examination resilience software.</p></div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-amber-400/30"><div class="text-xs font-mono-tabular text-amber-300">Spin-Off 04</div><h3 class="font-display font-bold text-white">Academy Guilds</h3><p class="text-xs text-slate-300">B2B global school analytics, Batch Radar curriculum ERP, and teacher credentialing.</p></div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-rose-400/30"><div class="text-xs font-mono-tabular text-rose-300">Spin-Off 05</div><h3 class="font-display font-bold text-white">Forge Press</h3><p class="text-xs text-slate-300">Original peer-reviewed Olympiad monographs, problem sets, and digital LaTeX publishing.</p></div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-cyan-400/30"><div class="text-xs font-mono-tabular text-cyan-300">Spin-Off 06</div><h3 class="font-display font-bold text-white">Veritas Benchmarks</h3><p class="text-xs text-slate-300">Private uncontaminated Golden Vault &amp; AI reasoning evaluation benchmarks for frontier labs.</p></div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-violet-400/30"><div class="text-xs font-mono-tabular text-violet-300">Spin-Off 07</div><h3 class="font-display font-bold text-white">Edge Talent Network</h3><p class="text-xs text-slate-300">Merit-verified quantitative recruiting bridge connecting Top 128 ELO contenders to research labs.</p></div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-emerald-400/30"><div class="text-xs font-mono-tabular text-emerald-300">Spin-Off 08</div><h3 class="font-display font-bold text-white">Olympiad Media</h3><p class="text-xs text-slate-300">Live World Cup broadcasts, interactive Virtual Gym replays, and documentary STEM storytelling.</p></div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-cyan-400/30"><div class="text-xs font-mono-tabular text-cyan-300">Spin-Off 01</div><h3 class="font-display font-bold text-white">AI Reasoning Data &amp; Foundation Model Lab</h3><p class="text-xs text-slate-300">Zero-PII Chain-of-Thought &amp; negative RLHF theorem-proving dataset licensing for frontier models.</p></div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-violet-400/30"><div class="text-xs font-mono-tabular text-violet-300">Spin-Off 02</div><h3 class="font-display font-bold text-white">Zero-Cheat Exam Proctoring SaaS</h3><p class="text-xs text-slate-300">Module 7 standalone B2B browser proctoring API with Adaptive Gaze Guard &amp; 3-Axis Audio Trap.</p></div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-emerald-400/30"><div class="text-xs font-mono-tabular text-emerald-300">Spin-Off 03</div><h3 class="font-display font-bold text-white">Global Quant &amp; Tech Talent Recruitment Network</h3><p class="text-xs text-slate-300">Direct meritocratic hiring bridge earning $20k&ndash;$50k per verified high-ELO engineering or quant placement.</p></div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-amber-400/30"><div class="text-xs font-mono-tabular text-amber-300">Spin-Off 04</div><h3 class="font-display font-bold text-white">Automated Formal Math &amp; Code Verification Engine</h3><p class="text-xs text-slate-300">AxiomCheck + SymPy deterministic theorem and algorithm verification auditor for R&amp;D labs.</p></div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-rose-400/30"><div class="text-xs font-mono-tabular text-rose-300">Spin-Off 05</div><h3 class="font-display font-bold text-white">Global Institutional LMS &amp; Accredited Digital University</h3><p class="text-xs text-slate-300">Academy Arena infrastructure paired with QR-verified ELO transcripts &amp; institutional Batch Radar.</p></div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-cyan-400/30"><div class="text-xs font-mono-tabular text-cyan-300">Spin-Off 06</div><h3 class="font-display font-bold text-white">Competitive Math E-Sports &amp; Live Broadcasting</h3><p class="text-xs text-slate-300">High-stakes 1v1 Bullet Blitz duels &amp; Top 128 Annual World Cup live broadcasts and sponsorships.</p></div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-violet-400/30"><div class="text-xs font-mono-tabular text-violet-300">Spin-Off 07</div><h3 class="font-display font-bold text-white">Decentralized Research &amp; Academic Publishing Network</h3><p class="text-xs text-slate-300">Arithmo Socials + Blog-to-Lab peer-reviewed mathematical pre-prints &amp; Guidebook monographs.</p></div>
+        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-emerald-400/30"><div class="text-xs font-mono-tabular text-emerald-300">Spin-Off 08</div><h3 class="font-display font-bold text-white">Cognitive Analytics &amp; Neuro-Learning Health-Tech API</h3><p class="text-xs text-slate-300">V10.3 Smart Mistake Deck spaced-repetition engine &amp; cognitive endurance telemetry API.</p></div>
       </div>
     </section>
 

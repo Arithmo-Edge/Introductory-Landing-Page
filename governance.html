@@ -41,11 +41,11 @@
 </head>
 <body class="cyber-grid-bg selection:bg-cyan-400/30 selection:text-cyan-100">
 
-  <!-- Shared Sticky Glassmorphism Navbar -->
-  <header class="sticky top-0 z-50 glass-nav">
+  <!-- Shared Fixed Glassmorphism Navbar -->
+  <header class="fixed top-0 left-0 right-0 w-full z-[1000] glass-nav">
     <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
       <div class="min-w-0">
-        <a href="index.html" class="inline-block font-display text-xl sm:text-2xl font-bold tracking-tight brand-gradient cyber-text-glow whitespace-nowrap">Arithmo Edge</a>
+        <a href="index.html" class="nav-brand-link whitespace-nowrap"><img src="favicon.jpg" alt="Arithmo Edge Logo" class="nav-brand-logo" /><span class="font-display text-xl sm:text-2xl font-bold tracking-tight brand-gradient cyber-text-glow">Arithmo Edge</span></a>
         <p class="nav-tagline hidden md:block max-w-md lg:max-w-xl leading-snug text-xs text-slate-400 mt-0.5">The World's First Real-Time ELO-Rated Competitive Mathematics &amp; Olympiad Mega-Ecosystem</p>
       </div>
       <div class="flex items-center gap-3 shrink-0">
@@ -62,8 +62,8 @@
   </header>
 
   <!-- Right-Side Slide-In Overlay Navigation Drawer (01-12) -->
-  <div id="nav-drawer-backdrop" class="fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
-  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-50 h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto" style="transform: translateX(100%); visibility: hidden;">
+  <div id="nav-drawer-backdrop" class="fixed inset-0 z-[1050] bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
+  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-[1060] h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto" style="transform: translateX(100%); visibility: hidden;">
     <div>
       <div class="flex items-center justify-between pb-4 border-b border-slate-800/80">
         <div><span class="font-display text-lg font-bold brand-gradient">Arithmo Edge</span><p class="text-xs text-slate-400">Powered by Olympiad Edge · 12-Page Showcase</p></div>
@@ -156,28 +156,31 @@
       <div class="mb-8 gsap-reveal">
         <div class="text-xs font-mono-tabular text-cyan-300 mb-2">03 · Never Sold · Strictly Earned</div>
         <h2 class="section-title-fluid font-display font-bold text-white">Interactive 5-Tier Monotonic HQ Ladder</h2>
+        <p class="text-sm sm:text-base text-slate-400 prose-measure mt-2">
+          <span class="text-white font-semibold">HQ Competitor Privilege:</span> HQ members can compete as regular rated contestants in public matches (except in specific rounds they authored, audited, or test-solved), while unlocking progressive free tiers from <span class="text-cyan-300 font-semibold">Plus</span> (<span class="font-mono-tabular">Core Sentinel</span>) through <span class="text-amber-300 font-semibold">100% UNLIMITED free access to ALL paid &amp; Pay-As-You-Go features + Headquarters AI</span> (<span class="font-mono-tabular">Prime Sovereign</span>).
+        </p>
       </div>
       <div class="ae-deep-grid grid lg:grid-cols-12 gap-6 gsap-reveal">
         <div class="lg:col-span-5 space-y-2.5">
           <button type="button" data-hq-tier="sentinel" class="w-full text-left spotlight-card rounded-xl p-4 border-cyan-400 bg-cyan-400/10 flex items-center justify-between">
             <span class="font-display font-bold text-white text-sm">1. Core Sentinel</span>
-            <span class="font-mono-tabular text-xs text-cyan-300">100+ HQ ELO</span>
+            <span class="font-mono-tabular text-xs text-cyan-300">100+ HQ ELO &middot; Free Plus</span>
           </button>
           <button type="button" data-hq-tier="architect" class="w-full text-left spotlight-card rounded-xl p-4 flex items-center justify-between">
             <span class="font-display font-bold text-white text-sm">2. Problem Architect</span>
-            <span class="font-mono-tabular text-xs text-violet-300">300+ HQ ELO</span>
+            <span class="font-mono-tabular text-xs text-violet-300">300+ HQ ELO &middot; Free Pro</span>
           </button>
           <button type="button" data-hq-tier="coordinator" class="w-full text-left spotlight-card rounded-xl p-4 flex items-center justify-between">
             <span class="font-display font-bold text-white text-sm">3. Round Coordinator</span>
-            <span class="font-mono-tabular text-xs text-emerald-300">500+ HQ ELO</span>
+            <span class="font-mono-tabular text-xs text-emerald-300">500+ HQ ELO &middot; Free Pro+</span>
           </button>
           <button type="button" data-hq-tier="arbiter" class="w-full text-left spotlight-card rounded-xl p-4 flex items-center justify-between">
             <span class="font-display font-bold text-white text-sm">4. Chief Arbiter</span>
-            <span class="font-mono-tabular text-xs text-amber-300">750+ HQ ELO</span>
+            <span class="font-mono-tabular text-xs text-amber-300">750+ HQ ELO &middot; Singularity + HQ AI</span>
           </button>
           <button type="button" data-hq-tier="sovereign" class="w-full text-left spotlight-card rounded-xl p-4 flex items-center justify-between">
             <span class="font-display font-bold text-white text-sm">5. Prime Sovereign (Top 3)</span>
-            <span class="font-mono-tabular text-xs text-rose-300">1000+ HQ ELO</span>
+            <span class="font-mono-tabular text-xs text-rose-300">1000+ HQ ELO &middot; All Unlimited</span>
           </button>
         </div>
 
@@ -187,8 +190,8 @@
             <h3 id="hq-inspect-title" class="font-display text-2xl sm:text-3xl font-bold text-white">Core Sentinel</h3>
           </div>
           <div class="rounded-xl border border-emerald-400/30 bg-emerald-400/10 p-4">
-            <div class="text-xs text-emerald-300 font-semibold mb-1">Earned Platform Perks</div>
-            <div id="hq-inspect-perks" class="text-sm text-white">Free Plus Subscription Perks ($2.99/mo value)</div>
+            <div class="text-xs text-emerald-300 font-semibold mb-1">Earned Platform &amp; Competitor Perks</div>
+            <div id="hq-inspect-perks" class="text-sm text-white">Free Plus Subscription Perks ($2.99/mo value) + Full Rated Public Competing (Conflict-Free Rounds Only)</div>
           </div>
           <div class="rounded-xl border border-slate-800 bg-slate-950/75 p-4">
             <div class="text-xs text-cyan-300 font-semibold mb-1">Governance &amp; War-Room Duties</div>
@@ -205,20 +208,20 @@
         <h2 class="section-title-fluid font-display font-bold text-white">HQ Induction Protocol &amp; Dual Promotion Certification</h2>
       </div>
       <div class="ae-bento-grid-3 grid md:grid-cols-3 gap-6 gsap-reveal">
-        <div class="spotlight-card rounded-2xl p-6 space-y-2">
-          <div class="text-xs font-mono-tabular text-cyan-300">Clean Track Record Required</div>
-          <h3 class="font-display font-bold text-white">Zero Active QPRT-4 Flags</h3>
-          <p class="text-xs sm:text-sm text-slate-300">Any unresolved MBTS or integrity flag bars HQ induction regardless of Arena rating or Forge score.</p>
+        <div class="spotlight-card rounded-2xl p-6 space-y-2 border-cyan-400/30">
+          <div class="text-xs font-mono-tabular text-cyan-300">Standard 3-Gate Induction</div>
+          <h3 class="font-display font-bold text-white">Core Sentinel Entry (100 HQ ELO)</h3>
+          <p class="text-xs sm:text-sm text-slate-300">Requires <span class="text-white font-semibold">(1) +200 Contribution ELO</span>, <span class="text-white font-semibold">(2) 6 latest consecutive clean rated matches (100% trust score)</span>, and <span class="text-white font-semibold">(3) an official Prime Sovereign Certificate + affirmative user consent</span> to enter as a Core Sentinel (with rare <span class="text-cyan-300 font-semibold">Direct Sovereign Induction</span> for extraordinary prodigies).</p>
         </div>
-        <div class="spotlight-card rounded-2xl p-6 space-y-2">
-          <div class="text-xs font-mono-tabular text-violet-300">Dual Promotion Certification</div>
-          <h3 class="font-display font-bold text-white">Math Depth + Policy Accuracy</h3>
-          <p class="text-xs sm:text-sm text-slate-300">Candidates pass both simulated PlagioGuard/Flaw audits and a constitutional ethics review before rising to Arbiters.</p>
+        <div class="spotlight-card rounded-2xl p-6 space-y-2 border-violet-400/30">
+          <div class="text-xs font-mono-tabular text-violet-300">Dual Promotion &amp; Chronology</div>
+          <h3 class="font-display font-bold text-white">Strict Positional Chronology</h3>
+          <p class="text-xs sm:text-sm text-slate-300">Advancing to any higher HQ tier requires <span class="text-white font-semibold">BOTH</span> reaching the target <span class="text-white font-semibold">HQ ELO bracket AND</span> manual endorsement via a <span class="text-white font-semibold">Prime Sovereign Certificate</span>. Under Strict Positional Chronology, a lower-ranked HQ member never overtakes a higher-ranked member on the HQ board even if their raw HQ ELO surpasses the senior member's score.</p>
         </div>
-        <div class="spotlight-card rounded-2xl p-6 space-y-2">
+        <div class="spotlight-card rounded-2xl p-6 space-y-2 border-amber-400/30">
           <div class="text-xs font-mono-tabular text-amber-300">Flag-Immune Sovereign Audit</div>
           <h3 class="font-display font-bold text-white">Transparent Action Logs</h3>
-          <p class="text-xs sm:text-sm text-slate-300">Prime Sovereigns operate inside cryptographic immutable ledgers audited by Founder Rayaan Tasnim and Co-Founder Jalees Habib.</p>
+          <p class="text-xs sm:text-sm text-slate-300">Prime Sovereigns operate inside cryptographic immutable ledgers audited by Founder Rayaan Tasnim and Co-Founder Jalees Habib. Regular HQ competitors retain full public contest rights in every round they did not author, audit, or test-solve.</p>
         </div>
       </div>
     </section>

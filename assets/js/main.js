@@ -891,24 +891,119 @@ function initGoldenVault() {
 
   const SAMPLES = {
     nt: {
-      path: 'Arithmo-Edge-Golden-Vault/Number_Theory/Segment_4_Apex/set_01.json',
-      json: '{\n  "schema": "v1.2",\n  "arena": "Number_Theory",\n  "segment": "Segment_4_Apex",\n  "problemsPerSet": 10,\n  "unratedPracticeTags": ["#Modular-Arithmetic", "#LTE", "#Order-Theory"],\n  "hiddenDuringRated": true,\n  "ingestion": "Arithmo GoldenVault Miner AI -> Read-Only GitHub PAT -> Cloudflare Worker Proxy"\n}',
+      path: 'Arithmo-Edge-Golden-Vault/Number_Theory/Segment_4_Apex/set_001.json',
+      json: JSON.stringify({
+        schema_version: '1.2',
+        ecosystem: 'Arithmo-Edge',
+        mode: 'Expert',
+        segment: 'Segment_4_Apex',
+        set_id: '001',
+        hub: 'Number Theory',
+        tags_visibility: 'unrated_practice_only',
+        hidden_during_live_contest: true,
+        problem_count: 10,
+        problems: [
+          {
+            q_index: 1,
+            statement_plain: 'Find all primes p such that p^2 + 2^p is prime.',
+            statement_latex: 'Find all primes $p$ such that $p^2 + 2^p$ is prime.',
+            tags: ['Modular Arithmetic', 'Parity', 'LTE'],
+            answer: 'p = 3',
+          },
+        ],
+      }, null, 2),
     },
     alg: {
-      path: 'Arithmo-Edge-Golden-Vault/Algebra/Segment_3_Master/set_02.json',
-      json: '{\n  "schema": "v1.2",\n  "arena": "Algebra",\n  "segment": "Segment_3_Master",\n  "problemsPerSet": 10,\n  "unratedPracticeTags": ["#Functional-Equations", "#Vieta-Jumping", "#Jensen"],\n  "hiddenDuringRated": true,\n  "verification": "AdversarialRedTeam AI + SymPyVeritas Passed"\n}',
+      path: 'Arithmo-Edge-Golden-Vault/Algebra/Segment_3_Master/set_002.json',
+      json: JSON.stringify({
+        schema_version: '1.2',
+        ecosystem: 'Arithmo-Edge',
+        mode: 'Expert',
+        segment: 'Segment_3_Master',
+        set_id: '002',
+        hub: 'Algebra',
+        tags_visibility: 'unrated_practice_only',
+        hidden_during_live_contest: true,
+        problem_count: 10,
+        problems: [
+          {
+            q_index: 1,
+            statement_plain: 'Find all functions f: R -> R satisfying f(x^2 + f(y)) = y + f(x)^2.',
+            statement_latex: 'Find all functions $f: \\mathbb{R} \\to \\mathbb{R}$ satisfying $f(x^2 + f(y)) = y + (f(x))^2$.',
+            tags: ['Functional Equations', 'Injectivity', 'Fixed Points'],
+            answer: 'f(x) = x',
+          },
+        ],
+      }, null, 2),
     },
     geo: {
-      path: 'Arithmo-Edge-Golden-Vault/Geometry/Segment_4_Apex/set_01.json',
-      json: '{\n  "schema": "v1.2",\n  "arena": "Geometry",\n  "segment": "Segment_4_Apex",\n  "problemsPerSet": 10,\n  "unratedPracticeTags": ["#Inversion", "#Radical-Axis", "#Projective-Harmonic"],\n  "hiddenDuringRated": true,\n  "tools": "GeoGebra Construction Verified"\n}',
+      path: 'Arithmo-Edge-Golden-Vault/Geometry/Segment_4_Apex/set_001.json',
+      json: JSON.stringify({
+        schema_version: '1.2',
+        ecosystem: 'Arithmo-Edge',
+        mode: 'Expert',
+        segment: 'Segment_4_Apex',
+        set_id: '001',
+        hub: 'Geometry',
+        tags_visibility: 'unrated_practice_only',
+        hidden_during_live_contest: true,
+        problem_count: 10,
+        problems: [
+          {
+            q_index: 1,
+            statement_plain: 'In acute triangle ABC, let H be the orthocenter and O the circumcenter. If angle AHB = 2*angle AOB, find angle ACB in degrees.',
+            statement_latex: 'In acute $\\triangle ABC$, let $H$ be the orthocenter and $O$ the circumcenter. If $\\angle AHB = 2\\angle AOB$, find $\\angle ACB$.',
+            tags: ['Orthocenter', 'Circumcircle', 'Angle Chasing'],
+            answer: '45 degrees',
+          },
+        ],
+      }, null, 2),
     },
     comb: {
-      path: 'Arithmo-Edge-Golden-Vault/Combinatorics_and_Permutation/Segment_2_Vanguard/set_03.json',
-      json: '{\n  "schema": "v1.2",\n  "arena": "Combinatorics_and_Permutation",\n  "segment": "Segment_2_Vanguard",\n  "problemsPerSet": 10,\n  "unratedPracticeTags": ["#Pigeonhole", "#Invariants", "#Graph-Coloring"],\n  "hiddenDuringRated": true,\n  "verification": "LogicMutator + TrapWeaver Verified"\n}',
+      path: 'Arithmo-Edge-Golden-Vault/Combinatorics_and_Permutation/Segment_2_Vanguard/set_003.json',
+      json: JSON.stringify({
+        schema_version: '1.2',
+        ecosystem: 'Arithmo-Edge',
+        mode: 'Expert',
+        segment: 'Segment_2_Vanguard',
+        set_id: '003',
+        hub: 'Combinatorics & Permutation',
+        tags_visibility: 'unrated_practice_only',
+        hidden_during_live_contest: true,
+        problem_count: 10,
+        problems: [
+          {
+            q_index: 1,
+            statement_plain: 'Determine the minimum number of subsets of size 3 needed from {1..7} so every pair appears in at least one subset.',
+            statement_latex: 'Find the minimum number of $3$-element subsets of $\\{1,2,\\dots,7\\}$ covering all pairs.',
+            tags: ['Fano Plane', 'Block Designs', 'Pigeonhole'],
+            answer: '7',
+          },
+        ],
+      }, null, 2),
     },
     mixed: {
-      path: 'Arithmo-Edge-Golden-Vault/Mixed_Mathematical_Olympiad/Segment_4_Apex/set_01.json',
-      json: '{\n  "schema": "v1.2",\n  "arena": "Mixed_Mathematical_Olympiad",\n  "segment": "Segment_4_Apex",\n  "problemsPerSet": 10,\n  "unratedPracticeTags": ["#IMO-Shortlist-Synthesis", "#Hybrid-Proof"],\n  "hiddenDuringRated": true,\n  "authorship": "Rayaan Tasnim & Jalees Habib"\n}',
+      path: 'Arithmo-Edge-Golden-Vault/Mixed_Mathematical_Olympiad/Segment_4_Apex/set_001.json',
+      json: JSON.stringify({
+        schema_version: '1.2',
+        ecosystem: 'Arithmo-Edge',
+        mode: 'Expert',
+        segment: 'Segment_4_Apex',
+        set_id: '001',
+        hub: 'Mixed Mathematical Olympiad',
+        tags_visibility: 'unrated_practice_only',
+        hidden_during_live_contest: true,
+        problem_count: 10,
+        problems: [
+          {
+            q_index: 1,
+            statement_plain: 'Let a, b be positive integers with (a^2 + b^2) divisible by ab + 1. Evaluate (a^2 + b^2)/(ab + 1) when gcd(a, b) = 1 and a = 2, b = 8.',
+            statement_latex: 'Let $a,b \\in \\mathbb{Z}^+$ satisfy $(ab+1) \\mid (a^2+b^2)$. Compute $\\frac{a^2+b^2}{ab+1}$ for $(a,b) = (2,8)$.',
+            tags: ['Vieta Jumping', 'Mixed Synthesis', 'Diophantine'],
+            answer: '4',
+          },
+        ],
+      }, null, 2),
     },
   };
 
@@ -934,11 +1029,11 @@ function initHqLadder() {
   if (!btns.length || !titleOut) return;
 
   const TIERS = {
-    sentinel: { title: 'Core Sentinel', elo: '100+ HQ ELO', perks: 'Free Plus Subscription Perks ($2.99/mo value)', duties: 'Entry Headquarters stewardship, problem testing verification, and live round queue triage.' },
-    architect: { title: 'Problem Architect', elo: '300+ HQ ELO', perks: 'Free Pro Subscription Perks ($5.99/mo value)', duties: 'Audits Forge submissions, enforces >75% AoPS similarity blocks, and validates SymPyVeritas checks.' },
-    coordinator: { title: 'Round Coordinator', elo: '500+ HQ ELO', perks: 'Free Pro+ Perks + Priority Coordination Tools', duties: 'Operates T-30s Pre-Match Contract Page, handles live clarifications, and authorizes 30s reserve hot-swaps.' },
-    arbiter: { title: 'Chief Arbiter', elo: '750+ HQ ELO', perks: 'Free Singularity Perks + Headquarters AI Access', duties: 'Chairs 4-Step Forensic Appeals, conducts 5-min Live Skill Audits, and queries Supreme Headquarters AI.' },
-    sovereign: { title: 'Prime Sovereign', elo: '1000+ HQ ELO (Top 3 · Flag-Immune)', perks: '100% UNLIMITED All Platform Features + Supreme Headquarters AI', duties: 'Final constitutional governance, Honorary Prime Sovereign endorsements, and root ecosystem oversight.' },
+    sentinel: { title: 'Core Sentinel', elo: '100+ HQ ELO', perks: 'Free Plus Subscription Perks ($2.99/mo value) + Rated Public Competing (Conflict-Free Rounds Only)', duties: 'Entry Headquarters stewardship, problem testing verification, and live round queue triage.' },
+    architect: { title: 'Problem Architect', elo: '300+ HQ ELO', perks: 'Free Pro Subscription Perks ($5.99/mo value) + Rated Public Competing (Conflict-Free Rounds Only)', duties: 'Audits Forge submissions, enforces >75% AoPS similarity blocks, and validates SymPyVeritas checks.' },
+    coordinator: { title: 'Round Coordinator', elo: '500+ HQ ELO', perks: 'Free Pro+ Perks + Priority Coordination Tools + Rated Public Competing (Conflict-Free Rounds Only)', duties: 'Operates T-30s Pre-Match Contract Page, handles live clarifications, and authorizes 30s reserve hot-swaps.' },
+    arbiter: { title: 'Chief Arbiter', elo: '750+ HQ ELO', perks: 'Free Singularity Subscription Perks ($12.99/mo value) + Headquarters AI Access + Rated Public Competing', duties: 'Chairs 4-Step Forensic Appeals, conducts 5-min Live Skill Audits, and queries Supreme Headquarters AI.' },
+    sovereign: { title: 'Prime Sovereign', elo: '1000+ HQ ELO (Top 3 · Flag-Immune)', perks: '100% UNLIMITED Free Access to ALL Paid & Pay-As-You-Go Features + Headquarters AI', duties: 'Final constitutional governance, Prime Sovereign Certificate endorsements, and Strict Positional Chronology oversight.' },
   };
 
   btns.forEach((btn) => {

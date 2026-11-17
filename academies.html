@@ -41,11 +41,11 @@
 </head>
 <body class="cyber-grid-bg selection:bg-cyan-400/30 selection:text-cyan-100">
 
-  <!-- Shared Sticky Glassmorphism Navbar -->
-  <header class="sticky top-0 z-50 glass-nav">
+  <!-- Shared Fixed Glassmorphism Navbar -->
+  <header class="fixed top-0 left-0 right-0 w-full z-[1000] glass-nav">
     <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
       <div class="min-w-0">
-        <a href="index.html" class="inline-block font-display text-xl sm:text-2xl font-bold tracking-tight brand-gradient cyber-text-glow whitespace-nowrap">Arithmo Edge</a>
+        <a href="index.html" class="nav-brand-link whitespace-nowrap"><img src="favicon.jpg" alt="Arithmo Edge Logo" class="nav-brand-logo" /><span class="font-display text-xl sm:text-2xl font-bold tracking-tight brand-gradient cyber-text-glow">Arithmo Edge</span></a>
         <p class="nav-tagline hidden md:block max-w-md lg:max-w-xl leading-snug text-xs text-slate-400 mt-0.5">The World's First Real-Time ELO-Rated Competitive Mathematics &amp; Olympiad Mega-Ecosystem</p>
       </div>
       <div class="flex items-center gap-3 shrink-0">
@@ -62,8 +62,8 @@
   </header>
 
   <!-- Right-Side Slide-In Overlay Navigation Drawer (01-12) -->
-  <div id="nav-drawer-backdrop" class="fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
-  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-50 h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto" style="transform: translateX(100%); visibility: hidden;">
+  <div id="nav-drawer-backdrop" class="fixed inset-0 z-[1050] bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
+  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-[1060] h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto" style="transform: translateX(100%); visibility: hidden;">
     <div>
       <div class="flex items-center justify-between pb-4 border-b border-slate-800/80">
         <div><span class="font-display text-lg font-bold brand-gradient">Arithmo Edge</span><p class="text-xs text-slate-400">Powered by Olympiad Edge · 12-Page Showcase</p></div>
