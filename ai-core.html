@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>42-Engine AI Core | Arithmo-Edge</title>
+  <meta name="description" content="Explore Arithmo-Edge's 42 specialized AI engines across Contest & Verification (16), Pedagogical & Personal (10), Institutional Guilds (6), Community (6), and Supreme Headquarters AI (4)." />
+  <meta name="author" content="Rayaan Tasnim" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Arithmo-Edge" />
+  <meta property="og:title" content="42-Engine AI Core | Arithmo-Edge" />
+  <meta property="og:description" content="Filter all 42 AI engines, test the Zero-Leak Soft-Pinch advisory simulator, and measure Semantic Token billing with Gemini Pro + Qwen-Math + Python/SymPy." />
+  <meta property="og:image" content="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="42-Engine AI Core | Arithmo-Edge" />
+  <meta name="twitter:description" content="42 deterministic & neural AI engines powering problem validation, proof grading, Soft-Pinch advisories, and semantic tokens." />
+  <meta name="twitter:image" content="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+  <link rel="icon" type="image/jpeg" href="favicon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "42-Engine AI Core — Arithmo-Edge",
+    "url": "https://arithmo-edge.github.io/arithmo-ai/",
+    "description": "42 specialized AI engines spanning Contest & Verification, Pedagogical & Personal, Institutional Guilds, Community, and Supreme Headquarters AI.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Olympiad Edge",
+      "url": "https://github.com/Arithmo-Edge",
+      "email": "rayaantasnim@gmail.com"
+    }
+  }
+  </script>
+</head>
+<body class="cyber-grid-bg selection:bg-cyan-400/30 selection:text-cyan-100">
+
+  <!-- Shared Sticky Glassmorphism Navbar -->
+  <header class="sticky top-0 z-50 glass-nav">
+    <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+      <div class="min-w-0">
+        <a href="index.html" class="inline-block font-display text-xl sm:text-2xl font-bold tracking-tight brand-gradient cyber-text-glow whitespace-nowrap">Arithmo Edge</a>
+        <p class="nav-tagline hidden md:block max-w-md lg:max-w-xl leading-snug text-xs text-slate-400 mt-0.5">The World's First Real-Time ELO-Rated Competitive Mathematics &amp; Olympiad Mega-Ecosystem</p>
+      </div>
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" aria-label="Arithmo-Edge GitHub Organization" class="btn-glass px-3.5 py-2 text-xs sm:text-sm whitespace-nowrap shrink-0">
+          <svg class="w-4 h-4 text-cyan-400" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" /></svg>
+          <span class="hidden sm:inline">GitHub</span>
+        </a>
+        <button id="nav-drawer-toggle" type="button" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="nav-drawer-panel" class="btn-glass w-11 h-11 p-0 flex items-center justify-center text-slate-100 shrink-0">
+          <svg id="nav-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          <svg id="nav-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Right-Side Slide-In Overlay Navigation Drawer (01-12) -->
+  <div id="nav-drawer-backdrop" class="fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
+  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-50 h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto">
+    <div>
+      <div class="flex items-center justify-between pb-4 border-b border-slate-800/80">
+        <div><span class="font-display text-lg font-bold brand-gradient">Arithmo Edge</span><p class="text-xs text-slate-400">Powered by Olympiad Edge · 12-Page Showcase</p></div>
+        <button id="nav-drawer-close" type="button" aria-label="Close Navigation Menu" class="btn-glass w-11 h-11 p-0 flex items-center justify-center"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></button>
+      </div>
+      <div data-countdown="drawer" class="mt-4 p-3.5 rounded-xl border border-cyan-400/25 bg-slate-900/75">
+        <div class="flex items-center justify-between text-xs text-cyan-300 mb-2"><span class="font-medium">Global Launch Target</span><span class="font-mono-tabular text-slate-400">Dec 31, 2026 · 12:00 AM</span></div>
+        <div class="grid grid-cols-4 gap-2 text-center">
+          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="days" class="font-mono-tabular text-base font-bold text-white">--</div><div class="text-[10px] text-slate-400">Days</div></div>
+          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="hours" class="font-mono-tabular text-base font-bold text-white">--</div><div class="text-[10px] text-slate-400">Hours</div></div>
+          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="minutes" class="font-mono-tabular text-base font-bold text-white">--</div><div class="text-[10px] text-slate-400">Mins</div></div>
+          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="seconds" class="font-mono-tabular text-base font-bold text-cyan-400">--</div><div class="text-[10px] text-slate-400">Secs</div></div>
+        </div>
+      </div>
+      <nav class="mt-5 grid gap-1.5">
+        <a href="index.html" data-page="index.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">01</span><span>Home Command Deck</span></a>
+        <a href="architecture.html" data-page="architecture.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">02</span><span>14-Website Federated Architecture</span></a>
+        <a href="arenas-elo.html" data-page="arenas-elo.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">03</span><span>5 Core Arenas &amp; 60 ELO Tiers</span></a>
+        <a href="contests.html" data-page="contests.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">04</span><span>Contest Engine &amp; Find the Flaw</span></a>
+        <a href="ai-core.html" data-page="ai-core.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">05</span><span>42-Engine AI Core</span></a>
+        <a href="security-qprt4.html" data-page="security-qprt4.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">06</span><span>QPRT-4 Resilience &amp; Legal Shield</span></a>
+        <a href="academies.html" data-page="academies.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">07</span><span>Arithmo Academy Arena</span></a>
+        <a href="pricing.html" data-page="pricing.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">08</span><span>Subscriptions, Store &amp; Wallet</span></a>
+        <a href="socials-forge.html" data-page="socials-forge.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">09</span><span>Socials, Forge &amp; Guidebooks</span></a>
+        <a href="governance.html" data-page="governance.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">10</span><span>Headquarters &amp; Wall of Patrons</span></a>
+        <a href="roadmap.html" data-page="roadmap.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">11</span><span>Roadmap &amp; 8 Spin-Off Companies</span></a>
+        <a href="pioneers.html" data-page="pioneers.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">12</span><span>Pioneer Contributors</span></a>
+      </nav>
+    </div>
+    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+      <span>Powered by Olympiad Edge</span>
+      <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">github.com/Arithmo-Edge</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Section 1: 42 Specialized Neural & Symbolic Engines Overview -->
+    <section class="relative overflow-hidden border-b border-slate-800/70">
+      <canvas id="constellation-canvas" class="absolute inset-0 w-full h-full pointer-events-none opacity-65"></canvas>
+      <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+          <div class="lg:col-span-7 space-y-5 flex flex-col justify-center">
+            <div class="gsap-hero text-xs text-cyan-300 font-medium">01 · arithmo-edge.github.io/arithmo-ai/ · 42 Orchestrated Engines</div>
+            <h1 class="gsap-hero hero-title-fluid font-display font-bold text-white">
+              42-Engine Hybrid Neural &amp; Symbolic AI Core
+            </h1>
+            <p class="gsap-hero text-base sm:text-lg text-slate-300 leading-relaxed prose-measure">
+              Arithmo-Edge replaces monolithic chat wrappers with <span class="text-white font-semibold">42 single-responsibility mathematical, verification, pedagogical, institutional, and governance engines</span>—fusing Gemini Pro, Qwen-Math, and deterministic Python/SymPy sandboxes behind strict role-gated Cloudflare Worker proxies.
+            </p>
+            <div class="gsap-hero ae-kpi-grid grid grid-cols-2 sm:grid-cols-5 gap-2.5 pt-2">
+              <div class="rounded-xl border border-cyan-400/30 bg-slate-950/75 p-3 text-center"><div class="font-mono-tabular text-xl font-bold text-cyan-300">16</div><div class="text-[11px] text-slate-400">Verification</div></div>
+              <div class="rounded-xl border border-violet-400/30 bg-slate-950/75 p-3 text-center"><div class="font-mono-tabular text-xl font-bold text-violet-300">10</div><div class="text-[11px] text-slate-400">Personal</div></div>
+              <div class="rounded-xl border border-emerald-400/30 bg-slate-950/75 p-3 text-center"><div class="font-mono-tabular text-xl font-bold text-emerald-300">6</div><div class="text-[11px] text-slate-400">Guild AI</div></div>
+              <div class="rounded-xl border border-amber-400/30 bg-slate-950/75 p-3 text-center"><div class="font-mono-tabular text-xl font-bold text-amber-300">6</div><div class="text-[11px] text-slate-400">Community</div></div>
+              <div class="rounded-xl border border-rose-400/30 bg-slate-950/75 p-3 text-center col-span-2 sm:col-span-1"><div class="font-mono-tabular text-xl font-bold text-rose-300">4</div><div class="text-[11px] text-slate-400">HQ Supreme</div></div>
+            </div>
+          </div>
+          <div class="lg:col-span-5 gsap-hero">
+            <div class="h-full min-h-[320px] rounded-2xl border border-slate-800 overflow-hidden relative media-frame">
+              <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Arithmo AI neural orchestration core" referrerpolicy="no-referrer" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#060913] via-[#060913]/45 to-transparent"></div>
+              <div class="absolute bottom-0 inset-x-0 p-6">
+                <div class="text-xs font-mono-tabular text-cyan-300 mb-1">16 + 10 + 6 + 6 + 4 = 42 Engines</div>
+                <div class="font-display text-lg font-bold text-white">Zero Raw Keys · Deterministic Python/SymPy Proofs</div>
+                <p class="text-xs text-slate-300 mt-1">All contest validation runs inside isolated sandboxes; Personal AI drops hard context locks the instant a live round begins.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Interactive 42-Engine Catalog Filter -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
+      <div class="flex flex-wrap items-end justify-between gap-4 mb-8 gsap-reveal">
+        <div>
+          <div class="text-xs font-mono-tabular text-cyan-300 mb-2">02 · Complete 42-Engine Directory</div>
+          <h2 class="section-title-fluid font-display font-bold text-white">Interactive 5-Domain AI Filter</h2>
+        </div>
+        <div class="flex flex-wrap gap-2 bg-slate-950/80 border border-slate-800 p-1.5 rounded-xl">
+          <button type="button" data-ai-filter="all" class="px-3.5 py-2 rounded-lg text-xs bg-cyan-400 text-slate-950 font-semibold">All 42</button>
+          <button type="button" data-ai-filter="verification" class="px-3.5 py-2 rounded-lg text-xs text-slate-300 hover:text-white">Verification (16)</button>
+          <button type="button" data-ai-filter="personal" class="px-3.5 py-2 rounded-lg text-xs text-slate-300 hover:text-white">Personal (10)</button>
+          <button type="button" data-ai-filter="guild" class="px-3.5 py-2 rounded-lg text-xs text-slate-300 hover:text-white">Guilds (6)</button>
+          <button type="button" data-ai-filter="community" class="px-3.5 py-2 rounded-lg text-xs text-slate-300 hover:text-white">Community (6)</button>
+          <button type="button" data-ai-filter="hq" class="px-3.5 py-2 rounded-lg text-xs text-slate-300 hover:text-white">HQ Supreme (4)</button>
+        </div>
+      </div>
+
+      <div class="ae-bento-grid-3 grid md:grid-cols-2 lg:grid-cols-3 gap-4 gsap-reveal">
+        <!-- Group A: 16 Contest & Verification -->
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-01 · SymPyVeritas</div><h3 class="font-display font-bold text-white">Symbolic Proof Verifier</h3><p class="text-xs text-slate-300">Executes deterministic Python/SymPy algebraic &amp; modular checks across Expert submissions and post-hack rejudges.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-02 · ProofGrader</div><h3 class="font-display font-bold text-white">Rubric Step Evaluator</h3><p class="text-xs text-slate-300">Grades Drag-and-Drop LaTeX lines on a 0–7 Olympiad scale, isolating unverified leaps and edge-case omissions.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-03 · AdversarialRedTeam AI</div><h3 class="font-display font-bold text-white">Counterexample Attacker</h3><p class="text-xs text-slate-300">Hunts boundary cases (e.g., p=2, n=0, degenerate colinearity) inside Forge drafts before round lock.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-04 · PlagioGuard</div><h3 class="font-display font-bold text-white">AoPS &amp; Corpus Similarity</h3><p class="text-xs text-slate-300">Blocks any Forge problem scoring &gt;75% semantic or structural similarity against AoPS and historical archives.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-05 · DifficultyCalibrator</div><h3 class="font-display font-bold text-white">ELO Target Estimator</h3><p class="text-xs text-slate-300">Maps expected solve times and proof depth against the 0–3000+ segmented difficulty curve.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-06 · LogicMutator</div><h3 class="font-display font-bold text-white">Problem Structure Mutator</h3><p class="text-xs text-slate-300">Generates clean parametric variants and reserve pool swaps within 30 seconds during emergency pauses.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-07 · TrapWeaver</div><h3 class="font-display font-bold text-white">Spurious-Case Auditor</h3><p class="text-xs text-slate-300">Detects accidental shortcuts, bashable moduli, or hidden symmetries that bypass intended insights.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-08 · TelemetryAnomaly (MBTS)</div><h3 class="font-display font-bold text-white">Behavioral Telemetry Engine</h3><p class="text-xs text-slate-300">Analyzes keystroke entropy, burst latency, and paste-cadence vectors for QPRT-4 integrity scoring.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-09 · HintGuard</div><h3 class="font-display font-bold text-white">Contest Lockout Enforcer</h3><p class="text-xs text-slate-300">Maintains strict zero-leak isolation so personal tutoring models never receive active contest problem state.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-10 · ELOAuditAI</div><h3 class="font-display font-bold text-white">Fair-Play Rating Auditor</h3><p class="text-xs text-slate-300">Verifies General/Expert averages, underdog protection caps, and post-hack point recalculations.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-11 · EdgeSanitizer</div><h3 class="font-display font-bold text-white">Schema &amp; KaTeX Linter</h3><p class="text-xs text-slate-300">Sanitizes DOM payloads, KaTeX macros, and GeoGebra XML against injection before Firestore commit.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-12 · FlawDetector</div><h3 class="font-display font-bold text-white">Post-Contest Hack Triage</h3><p class="text-xs text-slate-300">Routes opponent proof hacks (+35 pts) and global statement flaws (+75 pts) to ChronoVault rejudge.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-13 · GeoProofVerifier</div><h3 class="font-display font-bold text-white">Euclidean Coordinate Checker</h3><p class="text-xs text-slate-300">Cross-checks synthetic geometry proofs numerically using randomized rational &amp; complex coordinates.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-14 · ContestBalancer</div><h3 class="font-display font-bold text-white">5-Problem Curve Scheduler</h3><p class="text-xs text-slate-300">Ensures balanced topic coverage across Sunday Mega and Daily Mon–Sat brackets without tag fragmentation.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-15 · SockpuppetHunter</div><h3 class="font-display font-bold text-white">4-Signal Alt Neutralizer</h3><p class="text-xs text-slate-300">Correlates behavioral cadence, device hash, ISP ASN, and solve fingerprinting to quarantine alt accounts.</p></div>
+        <div data-ai-group="verification" class="spotlight-card rounded-2xl p-5 border-cyan-400/25 space-y-2"><div class="text-xs font-mono-tabular text-cyan-300">A-16 · ChronoAudit</div><h3 class="font-display font-bold text-white">Dual-Lock Timestamp Witness</h3><p class="text-xs text-slate-300">Validates server-signed SHA-256 submission timestamps during QPRT-4 ChronoVault outages.</p></div>
+
+        <!-- Group B: 10 Pedagogical & Personal -->
+        <div data-ai-group="personal" class="spotlight-card rounded-2xl p-5 border-violet-400/25 space-y-2"><div class="text-xs font-mono-tabular text-violet-300">B-01 · SocraticMentor</div><h3 class="font-display font-bold text-white">Guided Discovery Tutor</h3><p class="text-xs text-slate-300">Offers progressive lemma nudges rather than full spoilers during post-contest upsolving.</p></div>
+        <div data-ai-group="personal" class="spotlight-card rounded-2xl p-5 border-violet-400/25 space-y-2"><div class="text-xs font-mono-tabular text-violet-300">B-02 · ProofExplainer</div><h3 class="font-display font-bold text-white">Stepwise Proof Breakdown</h3><p class="text-xs text-slate-300">Translates dense Olympiad solutions into intuitive motivation, lemma dependency, and edge-case notes.</p></div>
+        <div data-ai-group="personal" class="spotlight-card rounded-2xl p-5 border-violet-400/25 space-y-2"><div class="text-xs font-mono-tabular text-violet-300">B-03 · DrillForge</div><h3 class="font-display font-bold text-white">Targeted Weakness Drills</h3><p class="text-xs text-slate-300">Generates unrated practice sets targeting sub-arena gaps (#LTE, #Inversion, #Vieta-Jumping).</p></div>
+        <div data-ai-group="personal" class="spotlight-card rounded-2xl p-5 border-violet-400/25 space-y-2"><div class="text-xs font-mono-tabular text-violet-300">B-04 · ErrorAutopsy</div><h3 class="font-display font-bold text-white">Submission Failure Forensics</h3><p class="text-xs text-slate-300">Pinpoints the exact line where a contest proof broke down and logs an interactive fix checklist.</p></div>
+        <div data-ai-group="personal" class="spotlight-card rounded-2xl p-5 border-violet-400/25 space-y-2"><div class="text-xs font-mono-tabular text-violet-300">B-05 · FlashMath</div><h3 class="font-display font-bold text-white">Theorem Retention Cards</h3><p class="text-xs text-slate-300">Spaced-repetition theorem recalls calibrated to each user's current segment across all 5 arenas.</p></div>
+        <div data-ai-group="personal" class="spotlight-card rounded-2xl p-5 border-violet-400/25 space-y-2"><div class="text-xs font-mono-tabular text-violet-300">B-06 · ConceptMapper</div><h3 class="font-display font-bold text-white">Prerequisites Graph Navigator</h3><p class="text-xs text-slate-300">Charts prerequisite lemmas linking 1400 Operators to 2400+ Archon-level problem classes.</p></div>
+        <div data-ai-group="personal" class="spotlight-card rounded-2xl p-5 border-violet-400/25 space-y-2"><div class="text-xs font-mono-tabular text-violet-300">B-07 · RoadmapPlanner</div><h3 class="font-display font-bold text-white">Multi-Month Training Schedule</h3><p class="text-xs text-slate-300">Builds weekly Mon–Sat + Sunday Mega preparation calendars synced with Virtual Gym runs.</p></div>
+        <div data-ai-group="personal" class="spotlight-card rounded-2xl p-5 border-violet-400/25 space-y-2"><div class="text-xs font-mono-tabular text-violet-300">B-08 · ELOForecaster</div><h3 class="font-display font-bold text-white">Rating Trajectory Simulator</h3><p class="text-xs text-slate-300">Projects expected General/Expert rank delta across upcoming Division I–III performance targets.</p></div>
+        <div data-ai-group="personal" class="spotlight-card rounded-2xl p-5 border-violet-400/25 space-y-2"><div class="text-xs font-mono-tabular text-violet-300">B-09 · SoftPinchAdvisor</div><h3 class="font-display font-bold text-white">AES-256-GCM Habit Coach</h3><p class="text-xs text-slate-300">Decrypts non-punitive encrypted behavior signals to issue subtle pre-contest workspace nudges.</p></div>
+        <div data-ai-group="personal" class="spotlight-card rounded-2xl p-5 border-violet-400/25 space-y-2"><div class="text-xs font-mono-tabular text-violet-300">B-10 · LaTeXAssist</div><h3 class="font-display font-bold text-white">Natural-to-LaTeX Converter</h3><p class="text-xs text-slate-300">Converts hand-sketched mathematical notation and plain English steps into clean KaTeX blocks.</p></div>
+
+        <!-- Group C: 6 Institutional Guilds -->
+        <div data-ai-group="guild" class="spotlight-card rounded-2xl p-5 border-emerald-400/25 space-y-2"><div class="text-xs font-mono-tabular text-emerald-300">C-01 · SyllabusArchitect</div><h3 class="font-display font-bold text-white">Academy Track Generator</h3><p class="text-xs text-slate-300">Compiles custom cohort syllabi mapped onto verified public problems and Golden Vault unrated drills.</p></div>
+        <div data-ai-group="guild" class="spotlight-card rounded-2xl p-5 border-emerald-400/25 space-y-2"><div class="text-xs font-mono-tabular text-emerald-300">C-02 · BatchRadar</div><h3 class="font-display font-bold text-white">Cohort Weakness Matrix</h3><p class="text-xs text-slate-300">Identifies systemic student conceptual bottlenecks across 100 to 2,000+ enrolled academy rosters.</p></div>
+        <div data-ai-group="guild" class="spotlight-card rounded-2xl p-5 border-emerald-400/25 space-y-2"><div class="text-xs font-mono-tabular text-emerald-300">C-03 · MentorCopilot</div><h3 class="font-display font-bold text-white">1–15 Mentor Grading Aid</h3><p class="text-xs text-slate-300">Assists 1–15 Academy Mentors with draft feedback rubrics inside institutional Edu Labs.</p></div>
+        <div data-ai-group="guild" class="spotlight-card rounded-2xl p-5 border-emerald-400/25 space-y-2"><div class="text-xs font-mono-tabular text-emerald-300">C-04 · ClashBalancer</div><h3 class="font-display font-bold text-white">Inter-Academy Matchmaker</h3><p class="text-xs text-slate-300">Balances seed lineups for Inter-Academy Clashes so school squads compete on equitable weighted ELO.</p></div>
+        <div data-ai-group="guild" class="spotlight-card rounded-2xl p-5 border-emerald-400/25 space-y-2"><div class="text-xs font-mono-tabular text-emerald-300">C-05 · GuildAnalytics</div><h3 class="font-display font-bold text-white">Academy Standings Engine</h3><p class="text-xs text-slate-300">Computes Academy Score (Top 50% Roster Avg) and Academy Prestige (Sum of Top 15 Members) transparently.</p></div>
+        <div data-ai-group="guild" class="spotlight-card rounded-2xl p-5 border-emerald-400/25 space-y-2"><div class="text-xs font-mono-tabular text-emerald-300">C-06 · KYBComplianceAI</div><h3 class="font-display font-bold text-white">Anti-Reselling Guard</h3><p class="text-xs text-slate-300">Monitors multi-device churn, IP dispersion, and billing anomalies across Academy Enterprise workspaces.</p></div>
+
+        <!-- Group D: 6 Community & Content -->
+        <div data-ai-group="community" class="spotlight-card rounded-2xl p-5 border-amber-400/25 space-y-2"><div class="text-xs font-mono-tabular text-amber-300">D-01 · BlogCurator</div><h3 class="font-display font-bold text-white">Blog-to-Lab Promoters</h3><p class="text-xs text-slate-300">Evaluates community KaTeX articles for mathematical originality, awarding +5 Contribution ELO when curated.</p></div>
+        <div data-ai-group="community" class="spotlight-card rounded-2xl p-5 border-amber-400/25 space-y-2"><div class="text-xs font-mono-tabular text-amber-300">D-02 · ForumSentinel</div><h3 class="font-display font-bold text-white">2000+ Expert Q&amp;A Steward</h3><p class="text-xs text-slate-300">Maintains signal-to-noise on Expert Q&amp;A threads and suppresses spam or off-topic replies.</p></div>
+        <div data-ai-group="community" class="spotlight-card rounded-2xl p-5 border-amber-400/25 space-y-2"><div class="text-xs font-mono-tabular text-amber-300">D-03 · ThreadSummarizer</div><h3 class="font-display font-bold text-white">Proof Synthesis Digests</h3><p class="text-xs text-slate-300">Condenses multi-page community solution discussions into verified canonical proof outlines.</p></div>
+        <div data-ai-group="community" class="spotlight-card rounded-2xl p-5 border-amber-400/25 space-y-2"><div class="text-xs font-mono-tabular text-amber-300">D-04 · PatronSpotlightAI</div><h3 class="font-display font-bold text-white">Honorary Attribution Steward</h3><p class="text-xs text-slate-300">Audits Wall of Patrons entries to guarantee 0% competitive ELO advantage while celebrating open patrons.</p></div>
+        <div data-ai-group="community" class="spotlight-card rounded-2xl p-5 border-amber-400/25 space-y-2"><div class="text-xs font-mono-tabular text-amber-300">D-05 · ForgeScout</div><h3 class="font-display font-bold text-white">5-Pillar Pre-Screener</h3><p class="text-xs text-slate-300">Checks original Forge problems from 1500+ ELO / 6-match authors before Problem Architect escalation.</p></div>
+        <div data-ai-group="community" class="spotlight-card rounded-2xl p-5 border-amber-400/25 space-y-2"><div class="text-xs font-mono-tabular text-amber-300">D-06 · GuidebookWeaver</div><h3 class="font-display font-bold text-white">Dual Guidebook Indexer</h3><p class="text-xs text-slate-300">Compiles Community &amp; Institutional Guidebooks and triggers +2 Contribution ELO on verified community tips.</p></div>
+
+        <!-- Group E: 4 Supreme Headquarters AI -->
+        <div data-ai-group="hq" class="spotlight-card rounded-2xl p-5 border-rose-400/35 space-y-2"><div class="text-xs font-mono-tabular text-rose-300">E-01 · Arithmo GoldenVault Miner AI</div><h3 class="font-display font-bold text-white">Private JSON Ingestion Pipeline</h3><p class="text-xs text-slate-300">Connects to the Co-Founders' Private 5×4 Golden Vault via Read-Only GitHub PAT &amp; Cloudflare Worker Proxy to generate Schema v1.2 sets.</p></div>
+        <div data-ai-group="hq" class="spotlight-card rounded-2xl p-5 border-rose-400/35 space-y-2"><div class="text-xs font-mono-tabular text-rose-300">E-02 · Headquarters AI (Supreme)</div><h3 class="font-display font-bold text-white">Chief Arbiter &amp; Sovereign Command</h3><p class="text-xs text-slate-300">Deeply trained across all internal codebases, schemas, and ELO ledgers; strictly reserved for 750+ Chief Arbiters &amp; 1000+ Prime Sovereigns.</p></div>
+        <div data-ai-group="hq" class="spotlight-card rounded-2xl p-5 border-rose-400/35 space-y-2"><div class="text-xs font-mono-tabular text-rose-300">E-03 · DataLakeDistiller</div><h3 class="font-display font-bold text-white">24h Zero-PII Lake Aggregator</h3><p class="text-xs text-slate-300">Purges PII and distills daily Firebase metrics into encrypted JSONL shards inside the Cold Data Lake.</p></div>
+        <div data-ai-group="hq" class="spotlight-card rounded-2xl p-5 border-rose-400/35 space-y-2"><div class="text-xs font-mono-tabular text-rose-300">E-04 · LegalShieldSentinel</div><h3 class="font-display font-bold text-white">COPPA / GDPR-K &amp; DSI Arbiter</h3><p class="text-xs text-slate-300">Audits appeal evidence packets, underage data minimization flags, and DSA/Bangladesh Cyber Security documentation.</p></div>
+      </div>
+    </section>
+
+    <!-- Section 3: Hybrid Neural + Deterministic Pipeline -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
+      <div class="ae-deep-grid grid lg:grid-cols-12 gap-8 items-center gsap-reveal">
+        <div class="lg:col-span-6 rounded-2xl overflow-hidden border border-slate-800 media-frame h-80 relative">
+          <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Dual Gemini Pro Qwen-Math and SymPy verification sandbox" referrerpolicy="no-referrer" />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#060913]/90 via-transparent to-transparent"></div>
+          <div class="absolute bottom-4 left-4 right-4 text-xs font-mono-tabular text-cyan-300">
+            Stage 1: Gemini Pro Synthesis &rarr; Stage 2: Qwen-Math Audit &rarr; Stage 3: Python / SymPy Execution
+          </div>
+        </div>
+        <div class="lg:col-span-6 space-y-4">
+          <div class="text-xs font-mono-tabular text-cyan-300">03 · Zero-Hallucination Math Pipeline</div>
+          <h2 class="section-title-fluid font-display font-bold text-white">Gemini Pro + Qwen-Math + Python/SymPy Sandbox</h2>
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+            Language models alone hallucinate subtle algebraic identities and modular exceptions. In Arithmo-Edge, neural reasoning never settles a mathematical verdict solo: <span class="text-white font-semibold">Gemini Pro</span> parses proof intuition, <span class="text-white font-semibold">Qwen-Math</span> cross-verifies competition theorems, and deterministic <span class="font-mono-tabular text-cyan-300">Python / SymPy</span> executes exact symbolic &amp; integer verification before returning a verdict.
+          </p>
+          <div class="grid sm:grid-cols-2 gap-3 pt-2">
+            <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-4">
+              <div class="text-xs font-mono-tabular text-cyan-300">Client Zero-Call Offload</div>
+              <div class="text-sm font-semibold text-white mt-1">Miller-Rabin &amp; Brent-Pollard's Rho</div>
+              <p class="text-xs text-slate-400 mt-1">Basic modular primes &amp; factorizations execute at zero server token cost via client BigInt.</p>
+            </div>
+            <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-4">
+              <div class="text-xs font-mono-tabular text-violet-300">Server-Side Proxy Security</div>
+              <div class="text-sm font-semibold text-white mt-1">Cloudflare Worker Secret Vault</div>
+              <p class="text-xs text-slate-400 mt-1">All AI credentials live outside static GitHub Pages repositories behind edge Workers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Interactive Zero-Leak "Soft-Pinch" Warning Simulator -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
+      <div class="mb-8 gsap-reveal">
+        <div class="text-xs font-mono-tabular text-cyan-300 mb-2">04 · Zero-Leak Cross-Domain Synergy</div>
+        <h2 class="section-title-fluid font-display font-bold text-white">Interactive "Soft-Pinch" Warning Simulator</h2>
+        <p class="text-sm sm:text-base text-slate-400 prose-measure mt-2">
+          How does Personal AI coach integrity habits without shaming students or exposing internal anti-cheat logic? Encrypted AES-256-GCM telemetry signals emit non-punitive, gentle Socratic nudges ("Soft-Pinch"). Select a signal below to inspect the live payload and advisory copy.
+        </p>
+      </div>
+
+      <div class="ae-deep-grid grid lg:grid-cols-12 gap-6 gsap-reveal">
+        <div class="lg:col-span-5 space-y-3">
+          <button type="button" data-pinch-signal="gaze" class="w-full text-left spotlight-card rounded-2xl p-5 border-cyan-400 bg-cyan-400/10">
+            <div class="text-xs font-mono-tabular text-cyan-300">SP-409 · Module 7 Gaze Drift</div>
+            <div class="font-display font-bold text-white mt-1">4.8s Off-Canvas Gaze Shift</div>
+            <p class="text-xs text-slate-400 mt-1">Triggers advisory workspace alignment prompt without deducting ELO or issuing a hard flag.</p>
+          </button>
+          <button type="button" data-pinch-signal="paste" class="w-full text-left spotlight-card rounded-2xl p-5">
+            <div class="text-xs font-mono-tabular text-violet-300">SP-412 · LaTeX Entropy Spike</div>
+            <div class="font-display font-bold text-white mt-1">Large External Paste Burst</div>
+            <p class="text-xs text-slate-400 mt-1">Advises composing steps organically inside Drag-and-Drop LaTeX for full ProofGrader clarity.</p>
+          </button>
+          <button type="button" data-pinch-signal="audio" class="w-full text-left spotlight-card rounded-2xl p-5">
+            <div class="text-xs font-mono-tabular text-emerald-300">SP-418 · 3-Axis Audio Trap</div>
+            <div class="font-display font-bold text-white mt-1">Multi-Voice Acoustic Detection</div>
+            <p class="text-xs text-slate-400 mt-1">Prompts quiet workspace verification ahead of Sunday Mega mandatory Module 7 enforcement.</p>
+          </button>
+        </div>
+        <div class="lg:col-span-7 glass-panel rounded-2xl p-6 sm:p-8 flex flex-col justify-between gap-5">
+          <div>
+            <div class="text-xs font-mono-tabular text-slate-400 uppercase mb-2">Encrypted Wire Envelope (Zero Anti-Cheat Leak)</div>
+            <pre id="soft-pinch-json" class="rounded-xl bg-slate-950/90 border border-slate-800 p-4 text-xs font-mono-tabular text-cyan-300 overflow-x-auto whitespace-pre-wrap">{"signal_id":"SP-409","cipher":"AES-256-GCM","source":"Module7_GazeGuard","duration_s":4.8,"flag_level":"ADVISORY_SOFT_PINCH"}</pre>
+          </div>
+          <div class="rounded-xl border border-violet-400/35 bg-violet-400/10 p-5">
+            <div class="text-xs font-mono-tabular text-violet-300 mb-1.5">Personal AI Soft-Pinch Output</div>
+            <p id="soft-pinch-msg" class="text-sm text-white leading-relaxed">Arithmo Personal AI Advisory: "Notice: Focus drifted off-canvas for 4.8s during your last practice trial. Keep scratchpad work centered to ensure smooth Sunday Mega verification."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Interactive Semantic Token Economy Meter -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
+      <div class="mb-8 gsap-reveal">
+        <div class="text-xs font-mono-tabular text-cyan-300 mb-2">05 · Fair Semantic Token Economics</div>
+        <h2 class="section-title-fluid font-display font-bold text-white">Interactive Semantic Token Meter</h2>
+        <p class="text-sm sm:text-base text-slate-400 prose-measure mt-2">
+          Arithmo-Edge never charges students arbitrary character fees for saying "hello" or clarifying a proof step. Test how Semantic Token deduction works across 4 prompt modes:
+        </p>
+      </div>
+      <div class="glass-panel rounded-2xl p-6 sm:p-8 gsap-reveal">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+          <button type="button" data-token-scenario="greeting" class="text-left rounded-xl border border-slate-700 bg-slate-950/70 p-4 hover:border-cyan-400/60 transition-colors">
+            <div class="text-xs font-mono-tabular text-emerald-400">Zero-Rated</div>
+            <div class="font-display font-bold text-white mt-1">Greeting / Thanks</div>
+          </button>
+          <button type="button" data-token-scenario="duplicate" class="text-left rounded-xl border border-cyan-400 bg-cyan-400/10 p-4 transition-colors">
+            <div class="text-xs font-mono-tabular text-cyan-300">Standard Clarification</div>
+            <div class="font-display font-bold text-white mt-1">Duplicate / Follow-Up</div>
+          </button>
+          <button type="button" data-token-scenario="multi" class="text-left rounded-xl border border-slate-700 bg-slate-950/70 p-4 hover:border-cyan-400/60 transition-colors">
+            <div class="text-xs font-mono-tabular text-violet-300">Bundled Request</div>
+            <div class="font-display font-bold text-white mt-1">Multi-Query (-N)</div>
+          </button>
+          <button type="button" data-token-scenario="premium" class="text-left rounded-xl border border-slate-700 bg-slate-950/70 p-4 hover:border-cyan-400/60 transition-colors">
+            <div class="text-xs font-mono-tabular text-amber-300">Deep Verification</div>
+            <div class="font-display font-bold text-white mt-1">Premium 2x Hybrid</div>
+          </button>
+        </div>
+        <div class="grid md:grid-cols-12 gap-6 items-center">
+          <div class="md:col-span-4 rounded-xl border border-slate-800 bg-slate-950/80 p-5 space-y-3">
+            <label for="token-multi-n" class="block text-xs font-mono-tabular text-slate-400">Multi-Query Sub-Problems (N = 2..8)</label>
+            <input id="token-multi-n" type="range" min="2" max="8" value="3" class="w-full accent-cyan-400" />
+            <div class="text-xs text-slate-400">Adjusts <span class="text-white font-semibold">-N</span> scaling dynamically when Multi-Query mode is active.</div>
+          </div>
+          <div class="md:col-span-8 rounded-xl border border-cyan-400/30 bg-slate-950/75 p-5 space-y-2">
+            <div class="text-xs text-slate-400 uppercase tracking-wider">Computed Deduction</div>
+            <div id="token-meter-cost" class="font-mono-tabular text-2xl sm:text-3xl font-bold text-cyan-300">-1 Token</div>
+            <p id="token-meter-explain" class="text-sm text-slate-300 leading-relaxed">Duplicate or repeated clarification of the same problem deducts a fixed -1 token.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Strict Contest Lockout & No Raw Keys In Static Repos -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
+      <div class="ae-bento-grid grid md:grid-cols-2 gap-6 gsap-reveal">
+        <div class="spotlight-card rounded-2xl p-6 sm:p-8 space-y-3 border-rose-400/30">
+          <div class="text-xs font-mono-tabular text-rose-300">06 · Contest Lockout Enforcer</div>
+          <h3 class="font-display text-xl font-bold text-white">Real-Time Session Isolation</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            The millisecond a participant clicks <span class="text-white font-semibold">Lock-In</span> at T-30s on any Daily or Sunday Mega contest, HintGuard severs access to all 10 Personal AI tutors on the edge and flags any suspicious API calls targeting problem hashes.
+          </p>
+        </div>
+        <div class="spotlight-card rounded-2xl p-6 sm:p-8 space-y-3 border-emerald-400/30">
+          <div class="text-xs font-mono-tabular text-emerald-300">06 · Zero-Secret Client Architecture</div>
+          <h3 class="font-display text-xl font-bold text-white">No API Keys in GitHub Pages</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Because all 14 public portals are hosted on GitHub Pages, zero OpenAI, Gemini, or Qwen keys ever touch frontend bundles. Requests sign a Firebase JWT verified by Cloudflare Workers prior to model dispatch.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: GoldenVault Miner AI & Chief Arbiter / Sovereign Access -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="glass-panel rounded-2xl overflow-hidden grid lg:grid-cols-12 gsap-reveal">
+        <div class="lg:col-span-5 media-frame min-h-[260px] relative">
+          <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Headquarters AI and Private GoldenVault Miner pipeline" referrerpolicy="no-referrer" />
+        </div>
+        <div class="lg:col-span-7 p-6 sm:p-10 space-y-4">
+          <div class="text-xs font-mono-tabular text-amber-300">07 · Supreme Headquarters Access</div>
+          <h2 class="section-title-fluid font-display font-bold text-white">Arithmo GoldenVault Miner AI &amp; Headquarters AI</h2>
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+            Two internal Supreme engines sit above the public tier: <span class="text-white font-semibold">Arithmo GoldenVault Miner AI</span> ingests the Co-Founders' private 5×4 JSON vaults via Read-Only GitHub PAT + Cloudflare Worker Proxy under <span class="font-mono-tabular text-amber-300">Schema v1.2</span>, while <span class="text-white font-semibold">Headquarters AI</span> acts as root diagnostic authority exclusively for <span class="text-cyan-300">750+ Chief Arbiters</span> and <span class="text-amber-300">1000+ Prime Sovereigns</span>.
+          </p>
+          <div class="flex flex-wrap gap-3 pt-2">
+            <a href="governance.html" class="btn-cyber px-5 py-3 text-sm">Inspect Headquarters Hierarchy</a>
+            <a href="pioneers.html" class="btn-glass px-5 py-3 text-sm">Inspect Schema v1.2 Vault</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Exact Shared Footer -->
+  <footer class="border-t border-slate-800/80 bg-[#050811]/95 backdrop-blur-xl">
+    <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-12 gap-8 pb-10">
+        <div class="md:col-span-4 space-y-3">
+          <div class="font-display text-xl font-bold brand-gradient">Arithmo Edge</div>
+          <p class="text-sm text-slate-400 leading-relaxed">The World's First Real-Time ELO-Rated Competitive Mathematics &amp; Olympiad Mega-Ecosystem, Powered by Olympiad Edge.</p>
+          <div class="text-xs text-slate-400 space-y-1 pt-2">
+            <div>GitHub: <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">https://github.com/Arithmo-Edge</a></div>
+            <div>Official Email: <a href="mailto:rayaantasnim@gmail.com" class="text-cyan-400 hover:underline">rayaantasnim@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="md:col-span-5">
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-300 mb-3">12-Page Showcase Matrix</h3>
+          <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-slate-400">
+            <a href="index.html" class="hover:text-cyan-300">01. Home Command Deck</a>
+            <a href="architecture.html" class="hover:text-cyan-300">02. 14-Site Ecosystem</a>
+            <a href="arenas-elo.html" class="hover:text-cyan-300">03. 5 Arenas &amp; 60 ELO</a>
+            <a href="contests.html" class="hover:text-cyan-300">04. Contests &amp; Flaw Audit</a>
+            <a href="ai-core.html" class="hover:text-cyan-300">05. 42-Engine AI Core</a>
+            <a href="security-qprt4.html" class="hover:text-cyan-300">06. QPRT-4 &amp; Legal Shield</a>
+            <a href="academies.html" class="hover:text-cyan-300">07. Academy Arena</a>
+            <a href="pricing.html" class="hover:text-cyan-300">08. Plans &amp; Wallet</a>
+            <a href="socials-forge.html" class="hover:text-cyan-300">09. Socials &amp; Forge</a>
+            <a href="governance.html" class="hover:text-cyan-300">10. Headquarters &amp; Patrons</a>
+            <a href="roadmap.html" class="hover:text-cyan-300">11. Roadmap &amp; Spin-Offs</a>
+            <a href="pioneers.html" class="hover:text-cyan-300">12. Pioneer Contributors</a>
+          </div>
+        </div>
+        <div class="md:col-span-3 space-y-3">
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-300 mb-3">Connect &amp; Community</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">GitHub</a>
+            <a href="mailto:rayaantasnim@gmail.com" class="btn-glass px-3 py-2 text-xs">Email</a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">X / Twitter</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">LinkedIn</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">YouTube</a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">Discord</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-xs text-slate-400 leading-relaxed space-y-1">
+        <hr>
+        <center>
+        Authorized by Rayaan Tasnim <br>
+        © All Rights Reserved <br>
+        © Arithmo-Edge <br>
+        Powered by Olympiad Edge
+        </center>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

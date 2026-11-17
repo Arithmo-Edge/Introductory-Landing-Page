@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contest Engine &amp; Find the Flaw | Arithmo-Edge</title>
+  <meta name="description" content="7-Day Zero-Rest Calendar, Sunday Mega Arena, T-30s Pre-Match Contract, General vs Expert 3-column UI, Proof-Based Grading, Find the Flaw, LaTeX/GeoGebra, Virtual Gym &amp; World Cup." />
+  <meta name="author" content="Rayaan Tasnim" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Arithmo-Edge" />
+  <meta property="og:title" content="Contest Engine &amp; Find the Flaw | Arithmo-Edge" />
+  <meta property="og:description" content="Simulate General Velocity Flow, Expert 3-Column Dashboard, and post-contest Find the Flaw proof auditing." />
+  <meta property="og:image" content="https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contest Engine &amp; Find the Flaw | Arithmo-Edge" />
+  <meta name="twitter:description" content="7-Day Zero-Rest Calendar, Proof-Based Grading, Find the Flaw, Virtual Gym, and Top 128 Annual World Cup." />
+  <meta name="twitter:image" content="https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+  <link rel="icon" type="image/jpeg" href="favicon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Contest Engine & Find the Flaw — Arithmo-Edge",
+    "description": "7-Day Zero-Rest Olympiad contest calendar, T-30s Pre-Match Contract, General vs Expert modes, Proof-Based Grading, Find the Flaw, and Top 128 World Cup.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Olympiad Edge",
+      "url": "https://github.com/Arithmo-Edge",
+      "email": "rayaantasnim@gmail.com"
+    }
+  }
+  </script>
+</head>
+<body class="cyber-grid-bg selection:bg-cyan-400/30 selection:text-cyan-100">
+
+  <!-- Shared Sticky Glassmorphism Navbar -->
+  <header class="sticky top-0 z-50 glass-nav">
+    <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+      <div class="min-w-0">
+        <a href="index.html" class="inline-block font-display text-xl sm:text-2xl font-bold tracking-tight brand-gradient cyber-text-glow whitespace-nowrap">Arithmo Edge</a>
+        <p class="nav-tagline hidden md:block max-w-md lg:max-w-xl leading-snug text-xs text-slate-400 mt-0.5">The World's First Real-Time ELO-Rated Competitive Mathematics &amp; Olympiad Mega-Ecosystem</p>
+      </div>
+      <div class="flex items-center gap-3 shrink-0">
+        <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" aria-label="Arithmo-Edge GitHub Organization" class="btn-glass px-3.5 py-2 text-xs sm:text-sm whitespace-nowrap shrink-0">
+          <svg class="w-4 h-4 text-cyan-400" viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" /></svg>
+          <span class="hidden sm:inline">GitHub</span>
+        </a>
+        <button id="nav-drawer-toggle" type="button" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="nav-drawer-panel" class="btn-glass w-11 h-11 p-0 flex items-center justify-center text-slate-100 shrink-0">
+          <svg id="nav-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
+          <svg id="nav-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Right-Side Slide-In Overlay Navigation Drawer (01-12) -->
+  <div id="nav-drawer-backdrop" class="fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
+  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-50 h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto">
+    <div>
+      <div class="flex items-center justify-between pb-4 border-b border-slate-800/80">
+        <div><span class="font-display text-lg font-bold brand-gradient">Arithmo Edge</span><p class="text-xs text-slate-400">Powered by Olympiad Edge · 12-Page Showcase</p></div>
+        <button id="nav-drawer-close" type="button" aria-label="Close Navigation Menu" class="btn-glass w-11 h-11 p-0 flex items-center justify-center"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg></button>
+      </div>
+      <div data-countdown="drawer" class="mt-4 p-3.5 rounded-xl border border-cyan-400/25 bg-slate-900/75">
+        <div class="flex items-center justify-between text-xs text-cyan-300 mb-2"><span class="font-medium">Global Launch Target</span><span class="font-mono-tabular text-slate-400">Dec 31, 2026 · 12:00 AM</span></div>
+        <div class="grid grid-cols-4 gap-2 text-center">
+          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="days" class="font-mono-tabular text-base font-bold text-white">--</div><div class="text-[10px] text-slate-400">Days</div></div>
+          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="hours" class="font-mono-tabular text-base font-bold text-white">--</div><div class="text-[10px] text-slate-400">Hours</div></div>
+          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="minutes" class="font-mono-tabular text-base font-bold text-white">--</div><div class="text-[10px] text-slate-400">Mins</div></div>
+          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="seconds" class="font-mono-tabular text-base font-bold text-cyan-400">--</div><div class="text-[10px] text-slate-400">Secs</div></div>
+        </div>
+      </div>
+      <nav class="mt-5 grid gap-1.5">
+        <a href="index.html" data-page="index.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">01</span><span>Home Command Deck</span></a>
+        <a href="architecture.html" data-page="architecture.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">02</span><span>14-Website Federated Architecture</span></a>
+        <a href="arenas-elo.html" data-page="arenas-elo.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">03</span><span>5 Core Arenas &amp; 60 ELO Tiers</span></a>
+        <a href="contests.html" data-page="contests.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">04</span><span>Contest Engine &amp; Find the Flaw</span></a>
+        <a href="ai-core.html" data-page="ai-core.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">05</span><span>42-Engine AI Core</span></a>
+        <a href="security-qprt4.html" data-page="security-qprt4.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">06</span><span>QPRT-4 Resilience &amp; Legal Shield</span></a>
+        <a href="academies.html" data-page="academies.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">07</span><span>Arithmo Academy Arena</span></a>
+        <a href="pricing.html" data-page="pricing.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">08</span><span>Subscriptions, Store &amp; Wallet</span></a>
+        <a href="socials-forge.html" data-page="socials-forge.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">09</span><span>Socials, Forge &amp; Guidebooks</span></a>
+        <a href="governance.html" data-page="governance.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">10</span><span>Headquarters &amp; Wall of Patrons</span></a>
+        <a href="roadmap.html" data-page="roadmap.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">11</span><span>Roadmap &amp; 8 Spin-Off Companies</span></a>
+        <a href="pioneers.html" data-page="pioneers.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">12</span><span>Pioneer Contributors</span></a>
+      </nav>
+    </div>
+    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+      <span>Powered by Olympiad Edge</span>
+      <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">github.com/Arithmo-Edge</a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- Hero + Section 1: 7-Day Zero-Rest Rotational Calendar -->
+    <section class="relative overflow-hidden border-b border-slate-800/70">
+      <canvas id="constellation-canvas" class="absolute inset-0 w-full h-full pointer-events-none opacity-65"></canvas>
+      <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20 relative z-10">
+        <div class="grid lg:grid-cols-12 gap-8 items-stretch mb-12">
+          <div class="lg:col-span-7 space-y-5 flex flex-col justify-center">
+            <div class="gsap-hero text-xs text-amber-300 font-medium">01 · Subsite #6 · https://arithmo-edge.github.io/contests/</div>
+            <h1 class="gsap-hero hero-title-fluid font-display font-bold text-white">Contest Engine, Proof Grading &amp; Find the Flaw</h1>
+            <p class="gsap-hero text-base sm:text-lg text-slate-300 leading-relaxed prose-measure">
+              Powered by a <span class="text-white font-semibold">7-Day Zero-Rest Rotational Calendar</span> culminating in the Sunday Mega Arena Contest—combining General Velocity Flow, 3-Column Expert Proof Workspaces, 2000+ ELO Peer Review, and post-contest proof auditing.
+            </p>
+          </div>
+          <div class="lg:col-span-5 gsap-hero">
+            <div class="h-full min-h-[260px] rounded-2xl border border-slate-800 overflow-hidden relative media-frame">
+              <img src="https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Competitive mathematical Olympiad contest hall" referrerpolicy="no-referrer" />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#060913] via-[#060913]/45 to-transparent"></div>
+              <div class="absolute bottom-0 inset-x-0 p-6">
+                <div class="text-xs text-amber-300 font-mono-tabular">Sunday Mega Arena · NO Rest Day</div>
+                <p class="text-sm text-slate-200 mt-1">Core HQ authored · Default Expert Mode only · 100 min · 10 Qs · max 2 subs/Q · 2h Find the Flaw + 1h MBTS = T+3h finalization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ae-bento-grid grid sm:grid-cols-2 lg:grid-cols-4 gap-4 gsap-reveal">
+          <div class="spotlight-card rounded-xl p-5 space-y-1.5"><div class="font-mono-tabular text-xs text-[#00F0FF]">Monday</div><h2 class="font-display text-base font-bold text-white">Number Theory</h2><p class="text-xs text-slate-300">17:00 UTC Expert (0+ ELO) · 20:00 UTC General</p></div>
+          <div class="spotlight-card rounded-xl p-5 space-y-1.5"><div class="font-mono-tabular text-xs text-[#8B5CF6]">Tuesday</div><h2 class="font-display text-base font-bold text-white">Algebra</h2><p class="text-xs text-slate-300">17:00 UTC Expert (0+ ELO) · 20:00 UTC General</p></div>
+          <div class="spotlight-card rounded-xl p-5 space-y-1.5"><div class="font-mono-tabular text-xs text-[#F59E0B]">Wednesday</div><h2 class="font-display text-base font-bold text-white">Geometry</h2><p class="text-xs text-slate-300">17:00 UTC Expert (0+ ELO) · 20:00 UTC General</p></div>
+          <div class="spotlight-card rounded-xl p-5 space-y-1.5"><div class="font-mono-tabular text-xs text-[#10B981]">Thursday</div><h2 class="font-display text-base font-bold text-white">Combinatorics &amp; Permutation</h2><p class="text-xs text-slate-300">17:00 UTC Expert (0+ ELO) · 20:00 UTC General</p></div>
+          <div class="spotlight-card rounded-xl p-5 space-y-1.5"><div class="font-mono-tabular text-xs text-[#F43F5E]">Friday</div><h2 class="font-display text-base font-bold text-white">Mixed Mathematical Olympiad</h2><p class="text-xs text-slate-300">17:00 UTC Expert (0+ ELO) · 20:00 UTC General</p></div>
+          <div class="spotlight-card rounded-xl p-5 space-y-1.5 sm:col-span-2"><div class="font-mono-tabular text-xs text-cyan-300">Saturday · Special Theme Episodes</div><h2 class="font-display text-base font-bold text-white">Rotating Olympiad Editions</h2><p class="text-xs text-slate-300">IMO Simulation · Number Theory Contest · Arithmo Special · Olympiad Challenge · Math Query</p></div>
+          <div class="spotlight-card rounded-xl p-5 space-y-1.5 border-rose-500/40 bg-rose-500/5"><div class="font-mono-tabular text-xs text-rose-400">Sunday · NO Rest Day</div><h2 class="font-display text-base font-bold text-white">Sunday Mega Arena Contest</h2><p class="text-xs text-slate-300">Core HQ Authored · Expert Only · Mandatory Module 7 · T+3h Finalization</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Multi-Stage Registration & T-30s Pre-Match Contract Page -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
+      <div class="mb-8 gsap-reveal">
+        <p class="text-xs text-cyan-300 font-medium">02 · Multi-Stage Registration &amp; T-30s Pre-Match Contract</p>
+        <h2 class="section-title-fluid font-display font-bold text-white">Deterministic Round Admission &amp; Authorship Transparency</h2>
+      </div>
+      <div class="ae-bento-grid ae-bento-grid-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 gsap-reveal">
+        <div class="spotlight-card rounded-2xl p-6 space-y-2">
+          <div class="font-mono-tabular text-xs text-cyan-300">Stage 1 · Pre-Registration &amp; Mode Select</div>
+          <h3 class="font-display text-lg font-bold text-white">4-Segment Contract Binding</h3>
+          <p class="text-sm text-slate-300">Competitors register with a `@handle` (Rated) or enter as Unrated Guests (0 ELO), selecting General Velocity Flow or Expert 4-Segment Proof tracks.</p>
+        </div>
+        <div class="spotlight-card rounded-2xl p-6 space-y-2">
+          <div class="font-mono-tabular text-xs text-amber-300">Stage 2 · T-30s Contract Lock</div>
+          <h3 class="font-display text-lg font-bold text-white">Names &amp; @handles Attribution</h3>
+          <p class="text-sm text-slate-300">Opens 30 seconds before launch displaying round rules + ONLY Names &amp; `@handles` of Problemsetters, Auditors, and Testers.</p>
+        </div>
+        <div class="spotlight-card rounded-2xl p-6 space-y-2">
+          <div class="font-mono-tabular text-xs text-emerald-300">Stage 3 · T-0 Live Launch</div>
+          <h3 class="font-display text-lg font-bold text-white">Personal AI Hard-Lock Engaged</h3>
+          <p class="text-sm text-slate-300">Subsite #8 hard-locks automatically; IndexedDB offline vault and QPRT-4 ChronoVault checkpoints activate across all tabs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: General Mode Velocity Flow vs Expert 3-Column Dashboard Switcher -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
+      <div class="glass-panel rounded-2xl p-6 sm:p-8 border border-slate-800 space-y-6 gsap-reveal">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <p class="text-xs text-cyan-300 font-medium">03 · Interactive Dual-Mode Interface Switcher</p>
+            <h2 class="section-title-fluid font-display font-bold text-white">General Velocity Flow vs. Expert 3-Column Dashboard</h2>
+          </div>
+          <div class="flex flex-wrap gap-1.5 p-1 rounded-xl bg-slate-950/80 border border-slate-800">
+            <button type="button" data-contest-tab="general" class="px-3.5 py-2 rounded-lg bg-cyan-400 text-slate-950 font-semibold text-xs whitespace-nowrap">General Velocity Flow</button>
+            <button type="button" data-contest-tab="expert" class="px-3.5 py-2 rounded-lg text-slate-300 hover:text-white text-xs whitespace-nowrap">Expert 3-Column Dashboard</button>
+            <button type="button" data-contest-tab="contract" class="px-3.5 py-2 rounded-lg text-slate-300 hover:text-white text-xs whitespace-nowrap">T-30s Pre-Match Contract</button>
+          </div>
+        </div>
+
+        <div data-contest-panel="general" class="grid lg:grid-cols-12 gap-8 items-start">
+          <div class="lg:col-span-6 space-y-4">
+            <h3 class="font-display text-xl font-bold text-white">General Velocity Flow + Overtime Loop + Zen Focus Mode</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">
+              Single-problem sequential interface engineered for rapid arithmetic and Olympiad computation. Missed items enter the <span class="text-white font-medium">Second-Chance Overtime Loop</span>, paired with a native <span class="text-white font-medium">Mobile Touch Numpad</span> and distraction-free <span class="text-white font-medium">Zen Focus Mode</span>.
+            </p>
+            <div class="p-4 rounded-xl bg-slate-950/75 border border-slate-800 text-xs text-slate-300 space-y-2">
+              <div class="text-cyan-300 font-semibold">Sample Problem (Enter 2026 on the Touch Numpad):</div>
+              <p>Find the smallest positive integer $n &gt; 2025$ such that $\gcd(n, 2026) = 2026$.</p>
+            </div>
+          </div>
+          <div class="lg:col-span-6">
+            <div class="p-5 rounded-2xl bg-slate-950/90 border border-slate-800 max-w-sm mx-auto space-y-4">
+              <div class="flex items-center justify-between text-xs text-slate-400"><span>Mobile Touch Numpad</span><span>Zen Focus Ready</span></div>
+              <div id="general-numpad-display" class="font-mono-tabular text-2xl font-bold text-right px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-cyan-300">0</div>
+              <div class="grid grid-cols-3 gap-2">
+                <button type="button" data-numpad-key="1" class="btn-glass py-3 font-mono-tabular text-base">1</button>
+                <button type="button" data-numpad-key="2" class="btn-glass py-3 font-mono-tabular text-base">2</button>
+                <button type="button" data-numpad-key="3" class="btn-glass py-3 font-mono-tabular text-base">3</button>
+                <button type="button" data-numpad-key="4" class="btn-glass py-3 font-mono-tabular text-base">4</button>
+                <button type="button" data-numpad-key="5" class="btn-glass py-3 font-mono-tabular text-base">5</button>
+                <button type="button" data-numpad-key="6" class="btn-glass py-3 font-mono-tabular text-base">6</button>
+                <button type="button" data-numpad-key="7" class="btn-glass py-3 font-mono-tabular text-base">7</button>
+                <button type="button" data-numpad-key="8" class="btn-glass py-3 font-mono-tabular text-base">8</button>
+                <button type="button" data-numpad-key="9" class="btn-glass py-3 font-mono-tabular text-base">9</button>
+                <button type="button" data-numpad-key="CLR" class="btn-glass py-3 text-xs text-rose-300">CLR</button>
+                <button type="button" data-numpad-key="0" class="btn-glass py-3 font-mono-tabular text-base">0</button>
+                <button type="button" data-numpad-key="DEL" class="btn-glass py-3 text-xs text-amber-300">DEL</button>
+              </div>
+              <button type="button" data-numpad-key="SUBMIT" class="btn-cyber w-full py-2.5 text-sm">Submit General Answer</button>
+              <div id="general-numpad-status" class="text-xs text-slate-400 text-center">Ready for integer input</div>
+            </div>
+          </div>
+        </div>
+
+        <div data-contest-panel="expert" class="hidden space-y-6">
+          <div class="grid lg:grid-cols-3 gap-4">
+            <div class="p-5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-3">
+              <div class="text-xs font-mono-tabular text-cyan-400">Column 1 · Problem List &amp; Live Clarifications</div>
+              <h4 class="font-display font-bold text-white">4-Segment Contract Navigation</h4>
+              <ul class="text-xs text-slate-300 space-y-2">
+                <li class="flex justify-between"><span>Segment 1 · Foundational</span><span class="font-mono-tabular text-emerald-400">Max 2 Subs</span></li>
+                <li class="flex justify-between"><span>Segment 2 · Intermediate</span><span class="font-mono-tabular text-emerald-400">Max 2 Subs</span></li>
+                <li class="flex justify-between"><span>Segment 3 · Advanced Proof</span><span class="font-mono-tabular text-amber-300">Peer Review</span></li>
+                <li class="flex justify-between"><span>Segment 4 · Grandmaster</span><span class="font-mono-tabular text-rose-300">Proof-Based</span></li>
+              </ul>
+            </div>
+            <div class="p-5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-3">
+              <div class="text-xs font-mono-tabular text-violet-400">Column 2 · Statement &amp; GeoGebra Tool</div>
+              <h4 class="font-display font-bold text-white">Zero-Fragmentation Statement View</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">Topic tags remain hidden. Geometry problems embed an interactive GeoGebra-style Geometry canvas.</p>
+            </div>
+            <div class="p-5 rounded-xl bg-slate-950/80 border border-slate-800 space-y-3">
+              <div class="text-xs font-mono-tabular text-amber-400">Column 3 · Drag-and-Drop LaTeX Editor</div>
+              <h4 class="font-display font-bold text-white">Proof-Based Grading + Peer Review</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">Compose structured proofs using Drag-and-Drop LaTeX blocks with max 2 submissions per problem.</p>
+            </div>
+          </div>
+        </div>
+
+        <div data-contest-panel="contract" class="hidden">
+          <div class="p-6 rounded-xl bg-slate-950/85 border border-cyan-400/30 space-y-4 max-w-3xl">
+            <div class="flex items-center justify-between text-xs text-cyan-300"><span>T-30s Pre-Match Contract Page</span><span class="font-mono-tabular">Opens 30s Before Lock</span></div>
+            <h3 class="font-display text-xl font-bold text-white">Verified Authorship Attribution</h3>
+            <p class="text-sm text-slate-300 leading-relaxed">Displays ONLY Names &amp; `@handles` of Problemsetters, Auditors, and Testers alongside round segment rules.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Proof-Based Grading with 2000+ ELO Peer Review -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
+      <div class="grid lg:grid-cols-12 gap-8 items-center gsap-reveal">
+        <div class="lg:col-span-6 space-y-4">
+          <p class="text-xs text-emerald-300 font-medium">04 · Proof-Based Grading + 2000+ ELO Peer Review</p>
+          <h2 class="section-title-fluid font-display font-bold text-white">Hybrid ProofGrader AI &amp; Sentinel Peer Adjudication</h2>
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed">
+            In Expert Segments 1 and 2, proof submissions are verified jointly by <span class="text-white font-semibold">ProofGrader AI</span> (symbolic step verification) and <span class="text-white font-semibold">2000+ ELO Grandmaster Peer Review</span>—ensuring partial credit, subtle induction bases, and edge-case rigor are graded to authentic IMO standards.
+          </p>
+        </div>
+        <div class="lg:col-span-6 grid sm:grid-cols-2 gap-4">
+          <div class="spotlight-card rounded-xl p-5 space-y-2">
+            <div class="text-xs font-mono-tabular text-cyan-300">Max 2 Submissions/Q</div>
+            <h3 class="font-display text-base font-bold text-white">Anti-Guessing Discipline</h3>
+            <p class="text-xs text-slate-400">Capping submissions at 2 per Expert problem forces rigorous local verification before committing a proof.</p>
+          </div>
+          <div class="spotlight-card rounded-xl p-5 space-y-2">
+            <div class="text-xs font-mono-tabular text-emerald-300">2000+ ELO Sentinels</div>
+            <h3 class="font-display text-base font-bold text-white">Blind Peer Calibration</h3>
+            <p class="text-xs text-slate-400">Qualified 2000+ ELO reviewers audit anonymized Segment 1–2 proofs and earn Contribution ELO for calibrated rubrics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Interactive Find the Flaw Proof-Audit Demo -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
+      <div class="spotlight-card rounded-2xl p-6 sm:p-8 space-y-6 gsap-reveal">
+        <div class="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="text-xs text-rose-300 font-medium mb-1">05 · Post-Contest Hacking (6h Daily / 2h Sunday Mega)</p>
+            <h2 class="section-title-fluid font-display font-bold text-white">Interactive <span class="text-cyan-300">Find the Flaw</span> Proof-Audit Demo</h2>
+          </div>
+          <span class="font-mono-tabular text-xs text-slate-400">Guests without @handle can participate too</span>
+        </div>
+
+        <div class="p-5 rounded-xl bg-slate-950/85 border border-slate-800 space-y-2">
+          <div class="text-xs text-slate-400">Target Proof Snippet Under Audit (Expert Segment 3 · Number Theory)</div>
+          <p class="font-mono-tabular text-sm text-slate-200 leading-relaxed">
+            "Let $p$ be a prime dividing $a^2 - b^2$. Assuming $a - b \neq 0$, we divide both sides by $(a - b)$ in $\mathbb{Z}_p$ to deduce $p \mid (a + b)$, and claim $p$ must be odd for all primes $p$."
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-4">
+          <button type="button" data-flaw-option="valid-gap" class="text-left p-4 rounded-xl border border-slate-800 bg-slate-900/60 hover:border-cyan-400/50 transition-all">
+            <div class="text-xs font-mono-tabular text-emerald-400">Opponent Hack (+5 to +50 pts)</div>
+            <div class="font-semibold text-white text-sm mt-1">Expose Division by Zero Case (a = b mod p)</div>
+            <div class="text-xs text-slate-400 mt-1">Audit opponent submission for unhandled $a \equiv b \pmod p$ branch.</div>
+          </button>
+          <button type="button" data-flaw-option="problem-flaw" class="text-left p-4 rounded-xl border border-slate-800 bg-slate-900/60 hover:border-cyan-400/50 transition-all">
+            <div class="text-xs font-mono-tabular text-cyan-400">Official Problem Flaw (+25 to +100 pts)</div>
+            <div class="font-semibold text-white text-sm mt-1">Submit Counterexample p = 2</div>
+            <div class="text-xs text-slate-400 mt-1">Triggers 2-min SymPy Global Rejudge across the entire contest standing.</div>
+          </button>
+          <button type="button" data-flaw-option="invalid-hack" class="text-left p-4 rounded-xl border border-slate-800 bg-slate-900/60 hover:border-rose-400/50 transition-all">
+            <div class="text-xs font-mono-tabular text-rose-400">False Claim (-10 pts Penalty)</div>
+            <div class="font-semibold text-white text-sm mt-1">Challenge Valid Prime Factorization</div>
+            <div class="text-xs text-slate-400 mt-1">Test unsuccessful hack penalty enforcement.</div>
+          </button>
+        </div>
+
+        <div id="flaw-audit-result" class="p-4 rounded-xl bg-slate-950/90 border border-slate-800 text-sm text-slate-300">
+          Select an audit action above to simulate the <span class="text-white font-medium">Find the Flaw</span> resolution engine.
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: In-Browser Drag-and-Drop LaTeX & GeoGebra-Style Geometry Tools -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
+      <div class="mb-8 gsap-reveal">
+        <p class="text-xs text-amber-300 font-medium">06 · Native Browser Proof Authoring Tools</p>
+        <h2 class="section-title-fluid font-display font-bold text-white">Drag-and-Drop LaTeX Editor &amp; GeoGebra-Style Geometry Studio</h2>
+      </div>
+      <div class="ae-deep-grid grid lg:grid-cols-2 gap-6 gsap-reveal">
+        <div class="spotlight-card rounded-2xl p-6 sm:p-8 space-y-3">
+          <div class="text-xs font-mono-tabular text-cyan-300">Drag-and-Drop LaTeX Builder</div>
+          <h3 class="font-display text-xl font-bold text-white">Zero-Syntax-Friction Proof Composition</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Allows beginners and Grandmasters alike to drag mathematical templates—modular congruences, induction frames, Cauchy-Schwarz bounds, and summation blocks—directly into live KaTeX proof buffers backed by IndexedDB auto-save.
+          </p>
+        </div>
+        <div class="spotlight-card rounded-2xl p-6 sm:p-8 space-y-3">
+          <div class="text-xs font-mono-tabular text-amber-300">GeoGebra-Style Geometry Tool</div>
+          <h3 class="font-display text-xl font-bold text-white">Synthetic Diagram &amp; Inversion Sandbox</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Built directly into Expert Column 2 for Wednesday Geometry and Sunday Mega rounds: construct nine-point circles, radical axes, homothety centers, and inversions with coordinate snap and exportable proof figures.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Virtual Gym Ghost Leaderboards & Top 128 Annual World Cup -->
+    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="mb-8 gsap-reveal">
+        <p class="text-xs text-cyan-300 font-medium">07 · Virtual Gym &amp; Global Championship</p>
+        <h2 class="section-title-fluid font-display font-bold text-white">Virtual Gym Ghost Leaderboards &amp; Top 128 Annual World Cup (👑)</h2>
+      </div>
+      <div class="ae-deep-grid grid lg:grid-cols-2 gap-6 gsap-reveal">
+        <div class="spotlight-card rounded-2xl p-6 sm:p-8 space-y-3">
+          <div class="text-xs font-mono-tabular text-violet-300">Virtual Gym (#/Virtual)</div>
+          <h3 class="font-display text-xl font-bold text-white">Ghost Leaderboard Simulation</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            Replay any historical contest under identical 100-minute constraints. Your run interleaves live onto the historical scoreboard with a <span class="font-mono-tabular text-violet-300">#/Virtual</span> ghost badge and projects your simulated ELO delta without altering official historical standings.
+          </p>
+        </div>
+        <div class="spotlight-card rounded-2xl p-6 sm:p-8 space-y-3 border-amber-400/35">
+          <div class="text-xs font-mono-tabular text-amber-300">Top 128 Annual World Cup (👑)</div>
+          <h3 class="font-display text-xl font-bold text-white">6-Round Progressive Half-Elimination</h3>
+          <p class="text-sm text-slate-300 leading-relaxed">
+            The top 128 All-Rounder &amp; Mixed Olympiad contenders compete across 6 Progressive Half-Elimination brackets (`128 &rarr; 64 &rarr; 32 &rarr; 16 &rarr; 8 &rarr; 4 &rarr; Champion`) under mandatory Module 7 proctoring, awarding permanent <span class="text-amber-300 font-semibold">👑 Golden Crowns</span>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Exact Shared Footer -->
+  <footer class="border-t border-slate-800/80 bg-[#050811]/95 backdrop-blur-xl">
+    <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="grid md:grid-cols-12 gap-8 pb-10">
+        <div class="md:col-span-4 space-y-3">
+          <div class="font-display text-xl font-bold brand-gradient">Arithmo Edge</div>
+          <p class="text-sm text-slate-400 leading-relaxed">The World's First Real-Time ELO-Rated Competitive Mathematics &amp; Olympiad Mega-Ecosystem, Powered by Olympiad Edge.</p>
+          <div class="text-xs text-slate-400 space-y-1 pt-2">
+            <div>GitHub: <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">https://github.com/Arithmo-Edge</a></div>
+            <div>Official Email: <a href="mailto:rayaantasnim@gmail.com" class="text-cyan-400 hover:underline">rayaantasnim@gmail.com</a></div>
+          </div>
+        </div>
+        <div class="md:col-span-5">
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-300 mb-3">12-Page Showcase Matrix</h3>
+          <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-slate-400">
+            <a href="index.html" class="hover:text-cyan-300">01. Home Command Deck</a>
+            <a href="architecture.html" class="hover:text-cyan-300">02. 14-Site Ecosystem</a>
+            <a href="arenas-elo.html" class="hover:text-cyan-300">03. 5 Arenas &amp; 60 ELO</a>
+            <a href="contests.html" class="hover:text-cyan-300">04. Contests &amp; Flaw Audit</a>
+            <a href="ai-core.html" class="hover:text-cyan-300">05. 42-Engine AI Core</a>
+            <a href="security-qprt4.html" class="hover:text-cyan-300">06. QPRT-4 &amp; Legal Shield</a>
+            <a href="academies.html" class="hover:text-cyan-300">07. Academy Arena</a>
+            <a href="pricing.html" class="hover:text-cyan-300">08. Plans &amp; Wallet</a>
+            <a href="socials-forge.html" class="hover:text-cyan-300">09. Socials &amp; Forge</a>
+            <a href="governance.html" class="hover:text-cyan-300">10. Headquarters &amp; Patrons</a>
+            <a href="roadmap.html" class="hover:text-cyan-300">11. Roadmap &amp; Spin-Offs</a>
+            <a href="pioneers.html" class="hover:text-cyan-300">12. Pioneer Contributors</a>
+          </div>
+        </div>
+        <div class="md:col-span-3 space-y-3">
+          <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-300">Connect &amp; Community</h3>
+          <div class="flex flex-wrap gap-2.5">
+            <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">GitHub</a>
+            <a href="mailto:rayaantasnim@gmail.com" class="btn-glass px-3 py-2 text-xs">Email</a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">X / Twitter</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">LinkedIn</a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">YouTube</a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">Discord</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-xs text-slate-400 leading-relaxed space-y-1">
+        <hr>
+        <center>
+        Authorized by Rayaan Tasnim <br>
+        © All Rights Reserved <br>
+        © Arithmo-Edge <br>
+        Powered by Olympiad Edge
+        </center>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>
