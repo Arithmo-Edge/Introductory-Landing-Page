@@ -1,5 +1,5 @@
-@import "tailwindcss";
-
+/* Arithmo-Edge Custom Design System & 7-Tier Responsive Breakpoints
+   Designed for static GitHub Pages & Vite builds alongside Tailwind CDN */
 :root {
   --bg-void: #060913;
   --bg-obsidian: #0B0F19;
@@ -94,6 +94,31 @@ h1, h2, h3, h4, .font-display {
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border-left: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+/* Guarantee Slide-In Drawer Starts Strictly Fixed & Off-Screen */
+#nav-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#nav-drawer-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  width: 100%;
+  max-width: 28rem;
+  height: 100vh;
+  height: 100dvh;
+  transform: translateX(100%);
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /* Spotlight & Holographic Border Cards */

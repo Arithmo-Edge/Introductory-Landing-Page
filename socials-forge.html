@@ -19,7 +19,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -60,7 +63,7 @@
 
   <!-- Right-Side Slide-In Overlay Navigation Drawer (01-12) -->
   <div id="nav-drawer-backdrop" class="fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
-  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-50 h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto">
+  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-50 h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto" style="transform: translateX(100%); visibility: hidden;">
     <div>
       <div class="flex items-center justify-between pb-4 border-b border-slate-800/80">
         <div><span class="font-display text-lg font-bold brand-gradient">Arithmo Edge</span><p class="text-xs text-slate-400">Powered by Olympiad Edge · 12-Page Showcase</p></div>
@@ -290,8 +293,6 @@
     </div>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-  <script type="module" src="./assets/js/main.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
 </body>
 </html>

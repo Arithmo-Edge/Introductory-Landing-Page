@@ -156,6 +156,9 @@ function initDrawer() {
   if (!toggleBtn || !panel || !backdrop) return;
   let isOpen = false;
 
+  panel.style.visibility = 'hidden';
+  panel.style.pointerEvents = 'none';
+
   if (window.gsap) {
     window.gsap.set(panel, { x: '100%' });
     window.gsap.set(backdrop, { autoAlpha: 0 });
@@ -178,6 +181,8 @@ function initDrawer() {
     isOpen = true;
     document.body.style.overflow = 'hidden';
     backdrop.classList.remove('pointer-events-none');
+    panel.style.visibility = 'visible';
+    panel.style.pointerEvents = 'auto';
     setMenuIcons(true);
 
     if (window.gsap && !prefersReducedMotion()) {
@@ -202,11 +207,23 @@ function initDrawer() {
 
     if (window.gsap && !prefersReducedMotion()) {
       window.gsap.to(backdrop, { autoAlpha: 0, duration: 0.24, ease: 'power2.in' });
-      window.gsap.to(panel, { x: '100%', duration: 0.34, ease: 'power3.in' });
+      window.gsap.to(panel, {
+        x: '100%',
+        duration: 0.34,
+        ease: 'power3.in',
+        onComplete: () => {
+          if (!isOpen) {
+            panel.style.visibility = 'hidden';
+            panel.style.pointerEvents = 'none';
+          }
+        },
+      });
     } else {
       backdrop.style.opacity = '0';
       backdrop.style.visibility = 'hidden';
       panel.style.transform = 'translateX(100%)';
+      panel.style.visibility = 'hidden';
+      panel.style.pointerEvents = 'none';
     }
   }
 

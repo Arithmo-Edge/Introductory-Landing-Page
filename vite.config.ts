@@ -34,10 +34,12 @@ export default defineConfig(() => {
         closeBundle(error?: Error): void {
           if (error) return;
           const distDir = path.resolve(__dirname, 'dist');
-          const faviconSrc = path.resolve(__dirname, 'favicon.jpg');
-          const faviconDest = path.resolve(distDir, 'favicon.jpg');
-          if (fs.existsSync(distDir) && fs.existsSync(faviconSrc)) {
-            fs.copyFileSync(faviconSrc, faviconDest);
+          for (const file of ['favicon.jpg', '.nojekyll']) {
+            const src = path.resolve(__dirname, file);
+            const dest = path.resolve(distDir, file);
+            if (fs.existsSync(distDir) && fs.existsSync(src)) {
+              fs.copyFileSync(src, dest);
+            }
           }
         },
       },
