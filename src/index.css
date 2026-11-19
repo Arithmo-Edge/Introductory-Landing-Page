@@ -103,7 +103,7 @@
 
 /* Fluid Typographic Scale using clamp() */
 .hero-title-fluid {
-  font-size: clamp(1.85rem, 1.35rem + 2.5vw, 3.65rem);
+  font-size: 2rem;
   line-height: 1.07;
   letter-spacing: -0.032em;
 }
