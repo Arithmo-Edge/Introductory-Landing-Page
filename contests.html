@@ -68,193 +68,428 @@
       rel="stylesheet"
     />
 
-    <script type="application/ld+json">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@context": "https://schema.org",
-        "@graph": [
+        "@type": "Organization",
+        "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization",
+        "name": "Arithmo-Edge",
+        "alternateName": "Olympiad Edge",
+        "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
+        "logo": "https://arithmo-edge.github.io/Introductory-Landing-Page/favicon.jpg",
+        "email": "rayaantasnim@gmail.com",
+        "areaServed": "Worldwide",
+        "founder": [
           {
-            "@type": "Organization",
-            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization",
-            "name": "Arithmo-Edge",
-            "alternateName": "Olympiad Edge",
-            "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
-            "logo": "https://arithmo-edge.github.io/Introductory-Landing-Page/favicon.jpg",
+            "@type": "Person",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html#rayaan-tasnim",
+            "name": "Rayaan Tasnim",
+            "jobTitle": "Founder & Chief System Architect",
             "email": "rayaantasnim@gmail.com",
-            "areaServed": "Worldwide",
-            "founder": [
-              {
-                "@type": "Person",
-                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html#rayaan-tasnim",
-                "name": "Rayaan Tasnim",
-                "jobTitle": "Founder & Chief System Architect",
-                "email": "rayaantasnim@gmail.com",
-                "sameAs": [
-                  "https://github.com",
-                  "https://github.com/Arithmo-Edge"
-                ]
-              },
-              {
-                "@type": "Person",
-                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html#jalees-habib",
-                "name": "Jalees Habib",
-                "jobTitle": "Co-Founder & Chief Mathematical Engineer",
-                "sameAs": [
-                  "https://www.youtube.com/@jaleeshabib",
-                  "https://www.chess.com/member/jaiees"
-                ]
-              }
-            ],
             "sameAs": [
               "https://github.com",
-              "https://github.com/Arithmo-Edge",
+              "https://github.com/Arithmo-Edge"
+            ]
+          },
+          {
+            "@type": "Person",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html#jalees-habib",
+            "name": "Jalees Habib",
+            "jobTitle": "Co-Founder & Chief Mathematical Engineer",
+            "sameAs": [
               "https://www.youtube.com/@jaleeshabib",
-              "https://www.chess.com/member/jaiees",
-              "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+              "https://www.chess.com/member/jaiees"
             ]
+          }
+        ],
+        "sameAs": [
+          "https://github.com",
+          "https://github.com/Arithmo-Edge",
+          "https://www.youtube.com/@jaleeshabib",
+          "https://www.chess.com/member/jaiees",
+          "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#website",
+        "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
+        "name": "Arithmo-Edge",
+        "alternateName": "Olympiad Edge",
+        "description": "The World's First Real-Time ELO-Rated Competitive Mathematics & Olympiad Mega-Ecosystem, Powered by Olympiad Edge.",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://arithmo-edge.github.io/Introductory-Landing-Page/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#webpage",
+        "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html",
+        "name": "7-Day Olympiad Contest Engine and Audits | Arithmo-Edge",
+        "description": "Master the 7-Day Zero-Rest Calendar, Sunday Mega Arena, T-30s Pre-Match Contract, Olympiad Proof Grading, Find the Flaw audits, Virtual Gym, and World Cup.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#website"
+        },
+        "about": {
+          "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+        },
+        "publisher": {
+          "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop",
+          "width": 1200,
+          "height": 630
+        },
+        "mainEntity": {
+          "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#contest-engine"
+        },
+        "breadcrumb": {
+          "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#breadcrumb"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://arithmo-edge.github.io/Introductory-Landing-Page/"
           },
           {
-            "@type": "WebSite",
-            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#website",
-            "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
-            "name": "Arithmo-Edge",
-            "alternateName": "Olympiad Edge",
-            "description": "The World's First Real-Time ELO-Rated Competitive Mathematics & Olympiad Mega-Ecosystem, Powered by Olympiad Edge.",
-            "inLanguage": "en-US",
-            "publisher": {
-              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
-            },
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": {
-                "@type": "EntryPoint",
-                "urlTemplate": "https://arithmo-edge.github.io/Introductory-Landing-Page/?q={search_term_string}"
-              },
-              "query-input": "required name=search_term_string"
-            }
-          },
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contest Engine & Find the Flaw",
+            "item": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html"
+          }
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#contest-engine",
+        "name": "Arithmo-Edge Contest Engine, Proof Grading & Find the Flaw (Subsite #6)",
+        "applicationCategory": "EducationalApplication",
+        "applicationSubCategory": "Competitive Mathematics & Olympiad Contest Platform",
+        "operatingSystem": "Web",
+        "browserRequirements": "Requires HTML5, JavaScript, KaTeX, and IndexedDB-enabled modern browser",
+        "url": "https://arithmo-edge.github.io/contests/",
+        "image": "https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop",
+        "provider": {
+          "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://arithmo-edge.github.io/contests/"
+        },
+        "description": "Competitive mathematics contest engine on Subsite #6 (https://arithmo-edge.github.io/contests/) featuring a 7-Day Zero-Rest Rotational Calendar across all 5 arenas, Saturday Special Theme Episodes, and Sunday Mega Arena Contests (Core HQ authored, default Expert Mode only, 100 min, 10 Qs, max 2 subs/Q, mandatory Module 7, 2h Find the Flaw + 1h MBTS = T+3h finalization). Includes 3-stage registration & T-30s Pre-Match Contract, Dual-Mode Interface (General Velocity Flow vs. Expert 3-Column Dashboard with 4-Segment Contract), hybrid ProofGrader AI + 2000+ ELO peer review, post-contest Find the Flaw hacking windows (6h Daily / 2h Sunday Mega), native Drag-and-Drop LaTeX Editor and GeoGebra-Style Geometry Tool, Virtual Gym (#/Virtual) ghost leaderboards, and the Top 128 Annual World Cup 6-round progressive half-elimination tournament.",
+        "featureList": [
+          "7-Day Zero-Rest Rotational Calendar: Monday Number Theory (17:00 UTC Expert 0+ ELO / 20:00 UTC General), Tuesday Algebra (17:00 UTC Expert / 20:00 UTC General), Wednesday Geometry (17:00 UTC Expert / 20:00 UTC General), Thursday Combinatorics & Permutation (17:00 UTC Expert / 20:00 UTC General), Friday Mixed Mathematical Olympiad (17:00 UTC Expert / 20:00 UTC General), Saturday Special Theme Episodes (IMO Simulation, Number Theory Contest, Arithmo Special, Olympiad Challenge, Math Query), and Sunday Mega Arena Contest with NO rest day",
+          "Sunday Mega Arena Timeline & Rules: Core HQ authored, default Expert Mode only, 100 minutes, 10 questions, maximum 2 submissions per question, mandatory Module 7, and 2h Find the Flaw + 1h MBTS = T+3h finalization",
+          "3-Stage Registration & T-30s Pre-Match Contract: Stage 1 Pre-Registration & Mode Select (@handle for Rated or Unrated Guest at 0 ELO, General Velocity Flow or Expert 4-Segment Proof tracks); Stage 2 T-30s Contract Lock showing round rules + ONLY Names & @handles of Problemsetters, Auditors, and Testers; Stage 3 T-0 Live Launch with Subsite #8 Personal AI hard-lock, IndexedDB offline vault, and QPRT-4 ChronoVault checkpoints",
+          "General Velocity Flow Mode: Single-problem sequential workflow for rapid arithmetic and Olympiad computation with Second-Chance Overtime Loop for missed items, native Mobile Touch Numpad, and Zen Focus Mode",
+          "Expert 3-Column Dashboard & 4-Segment Contract: Column 1 Problem List & Live Clarifications across Segment 1 Foundational (Max 2 Subs), Segment 2 Intermediate (Max 2 Subs), Segment 3 Advanced Proof (Peer Review), and Segment 4 Grandmaster (Proof-Based); Column 2 Zero-Fragmentation Statement View (hidden topic tags) + interactive GeoGebra-style Geometry canvas; Column 3 Drag-and-Drop LaTeX Editor (max 2 submissions per problem)",
+          "Hybrid Proof Grading & 2000+ ELO Peer Review: Joint symbolic step verification by ProofGrader AI and blind peer review by 2000+ ELO Sentinels on Expert Segments 1-2 to enforce anti-guessing discipline (max 2 submissions/Q) and award Contribution ELO for calibrated rubrics",
+          "Post-Contest Find the Flaw Hacking (6h Daily / 2h Sunday Mega, guest participation allowed without @handle): Opponent Hack (+5 to +50 pts, e.g., exposing division by zero a = b mod p), Official Problem Flaw (+25 to +100 pts, e.g., counterexample p = 2 triggering a 2-min SymPy Global Rejudge), and False Claim (-10 pts penalty)",
+          "Native Browser Proof Authoring Tools: Drag-and-Drop LaTeX Builder with modular congruences, induction frames, Cauchy-Schwarz bounds, summation blocks, live KaTeX buffers, and IndexedDB auto-save; plus GeoGebra-Style Geometry Tool for nine-point circles, radical axes, homothety centers, and inversions with coordinate snap and exportable proof figures",
+          "Virtual Gym (#/Virtual) & Top 128 Annual World Cup: Replay historical contests under 100-minute rules with #/Virtual ghost badge and simulated ELO delta without altering official standings; Top 128 Annual World Cup runs 6 progressive half-elimination brackets (128 -> 64 -> 32 -> 16 -> 8 -> 4 -> Champion) under mandatory Module 7 proctoring for permanent Golden Crowns"
+        ],
+        "hasPart": [
           {
-            "@type": "WebPage",
-            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#webpage",
-            "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html",
-            "name": "7-Day Olympiad Contest Engine and Audits | Arithmo-Edge",
-            "description": "Master the 7-Day Zero-Rest Calendar, Sunday Mega Arena, T-30s Pre-Match Contract, Olympiad Proof Grading, Find the Flaw audits, Virtual Gym, and World Cup.",
-            "inLanguage": "en-US",
-            "isPartOf": {
-              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#website"
+            "@type": "Event",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-monday-number-theory",
+            "name": "Monday · Number Theory Arena Contest",
+            "description": "7-Day Zero-Rest Rotational Calendar weekly slot: 17:00 UTC Expert (0+ ELO) and 20:00 UTC General.",
+            "startDate": "2026-11-23T17:00:00Z",
+            "endDate": "2026-11-23T18:40:00Z",
+            "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+              "@type": "VirtualLocation",
+              "name": "Arithmo-Edge Number Theory Arena (Subsite #6)",
+              "url": "https://arithmo-edge.github.io/contests/"
             },
-            "about": {
-              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
-            },
-            "publisher": {
-              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
-            },
-            "primaryImageOfPage": {
-              "@type": "ImageObject",
-              "url": "https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop",
-              "width": 1200,
-              "height": 630
-            },
-            "mainEntity": {
-              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#contest-engine"
-            },
-            "breadcrumb": {
-              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#breadcrumb"
-            }
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#breadcrumb",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://arithmo-edge.github.io/Introductory-Landing-Page/"
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Contest Engine & Find the Flaw",
-                "item": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html"
-              }
-            ]
-          },
-          {
-            "@type": "SoftwareApplication",
-            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#contest-engine",
-            "name": "Arithmo-Edge Contest Engine, Proof Grading & Find the Flaw (Subsite #6)",
-            "applicationCategory": "EducationalApplication",
-            "operatingSystem": "Web",
-            "url": "https://arithmo-edge.github.io/contests/",
-            "provider": {
-              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
-            },
-            "description": "Competitive mathematics contest engine on Subsite #6 (https://arithmo-edge.github.io/contests/) featuring a 7-Day Zero-Rest Rotational Calendar across all 5 arenas, Saturday Special Theme Episodes, and Sunday Mega Arena Contests (Core HQ authored, default Expert Mode only, 100 min, 10 Qs, max 2 subs/Q, mandatory Module 7, 2h Find the Flaw + 1h MBTS = T+3h finalization). Includes 3-stage registration & T-30s Pre-Match Contract, Dual-Mode Interface (General Velocity Flow vs. Expert 3-Column Dashboard with 4-Segment Contract), hybrid ProofGrader AI + 2000+ ELO peer review, post-contest Find the Flaw hacking windows (6h Daily / 2h Sunday Mega), native Drag-and-Drop LaTeX Editor and GeoGebra-Style Geometry Tool, Virtual Gym (#/Virtual) ghost leaderboards, and the Top 128 Annual World Cup 6-round progressive half-elimination tournament.",
-            "featureList": [
-              "7-Day Zero-Rest Rotational Calendar: Monday Number Theory (17:00 UTC Expert 0+ ELO / 20:00 UTC General), Tuesday Algebra (17:00 UTC Expert / 20:00 UTC General), Wednesday Geometry (17:00 UTC Expert / 20:00 UTC General), Thursday Combinatorics & Permutation (17:00 UTC Expert / 20:00 UTC General), Friday Mixed Mathematical Olympiad (17:00 UTC Expert / 20:00 UTC General), Saturday Special Theme Episodes (IMO Simulation, Number Theory Contest, Arithmo Special, Olympiad Challenge, Math Query), and Sunday Mega Arena Contest with NO rest day",
-              "Sunday Mega Arena Timeline & Rules: Core HQ authored, default Expert Mode only, 100 minutes, 10 questions, maximum 2 submissions per question, mandatory Module 7, and 2h Find the Flaw + 1h MBTS = T+3h finalization",
-              "3-Stage Registration & T-30s Pre-Match Contract: Stage 1 Pre-Registration & Mode Select (@handle for Rated or Unrated Guest at 0 ELO, General Velocity Flow or Expert 4-Segment Proof tracks); Stage 2 T-30s Contract Lock showing round rules + ONLY Names & @handles of Problemsetters, Auditors, and Testers; Stage 3 T-0 Live Launch with Subsite #8 Personal AI hard-lock, IndexedDB offline vault, and QPRT-4 ChronoVault checkpoints",
-              "General Velocity Flow Mode: Single-problem sequential workflow for rapid arithmetic and Olympiad computation with Second-Chance Overtime Loop for missed items, native Mobile Touch Numpad, and Zen Focus Mode",
-              "Expert 3-Column Dashboard & 4-Segment Contract: Column 1 Problem List & Live Clarifications across Segment 1 Foundational (Max 2 Subs), Segment 2 Intermediate (Max 2 Subs), Segment 3 Advanced Proof (Peer Review), and Segment 4 Grandmaster (Proof-Based); Column 2 Zero-Fragmentation Statement View (hidden topic tags) + interactive GeoGebra-style Geometry canvas; Column 3 Drag-and-Drop LaTeX Editor (max 2 submissions per problem)",
-              "Hybrid Proof Grading & 2000+ ELO Peer Review: Joint symbolic step verification by ProofGrader AI and blind peer review by 2000+ ELO Sentinels on Expert Segments 1-2 to enforce anti-guessing discipline (max 2 submissions/Q) and award Contribution ELO for calibrated rubrics",
-              "Post-Contest Find the Flaw Hacking (6h Daily / 2h Sunday Mega, guest participation allowed without @handle): Opponent Hack (+5 to +50 pts, e.g., exposing division by zero a = b mod p), Official Problem Flaw (+25 to +100 pts, e.g., counterexample p = 2 triggering a 2-min SymPy Global Rejudge), and False Claim (-10 pts penalty)",
-              "Native Browser Proof Authoring Tools: Drag-and-Drop LaTeX Builder with modular congruences, induction frames, Cauchy-Schwarz bounds, summation blocks, live KaTeX buffers, and IndexedDB auto-save; plus GeoGebra-Style Geometry Tool for nine-point circles, radical axes, homothety centers, and inversions with coordinate snap and exportable proof figures",
-              "Virtual Gym (#/Virtual) & Top 128 Annual World Cup: Replay historical contests under 100-minute rules with #/Virtual ghost badge and simulated ELO delta without altering official standings; Top 128 Annual World Cup runs 6 progressive half-elimination brackets (128 -> 64 -> 32 -> 16 -> 8 -> 4 -> Champion) under mandatory Module 7 proctoring for permanent Golden Crowns"
+            "image": [
+              "https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
             ],
-            "hasPart": [
-              {
-                "@type": "Event",
-                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-monday-number-theory",
-                "name": "Monday · Number Theory Arena Contest",
-                "description": "7-Day Zero-Rest Rotational Calendar weekly slot: 17:00 UTC Expert (0+ ELO) and 20:00 UTC General."
-              },
-              {
-                "@type": "Event",
-                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-tuesday-algebra",
-                "name": "Tuesday · Algebra Arena Contest",
-                "description": "7-Day Zero-Rest Rotational Calendar weekly slot: 17:00 UTC Expert (0+ ELO) and 20:00 UTC General."
-              },
-              {
-                "@type": "Event",
-                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-wednesday-geometry",
-                "name": "Wednesday · Geometry Arena Contest",
-                "description": "7-Day Zero-Rest Rotational Calendar weekly slot: 17:00 UTC Expert (0+ ELO) and 20:00 UTC General, supported by the GeoGebra-style Geometry canvas."
-              },
-              {
-                "@type": "Event",
-                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-thursday-combinatorics",
-                "name": "Thursday · Combinatorics & Permutation Arena Contest",
-                "description": "7-Day Zero-Rest Rotational Calendar weekly slot: 17:00 UTC Expert (0+ ELO) and 20:00 UTC General."
-              },
-              {
-                "@type": "Event",
-                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-friday-mixed-olympiad",
-                "name": "Friday · Mixed Mathematical Olympiad Contest",
-                "description": "7-Day Zero-Rest Rotational Calendar weekly slot: 17:00 UTC Expert (0+ ELO) and 20:00 UTC General."
-              },
-              {
-                "@type": "Event",
-                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-saturday-special",
-                "name": "Saturday · Special Theme Episodes",
-                "description": "Rotating Olympiad Editions including IMO Simulation, Number Theory Contest, Arithmo Special, Olympiad Challenge, and Math Query."
-              },
-              {
-                "@type": "Event",
-                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-sunday-mega-arena",
-                "name": "Sunday Mega Arena Contest (NO Rest Day)",
-                "description": "Core HQ authored, default Expert Mode only, 100 minutes, 10 questions, max 2 submissions per question, mandatory Module 7 proctoring, and 2h Find the Flaw + 1h MBTS = T+3h finalization."
-              },
-              {
-                "@type": "Event",
-                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#event-top-128-world-cup",
-                "name": "Top 128 Annual World Cup",
-                "description": "6-Round Progressive Half-Elimination championship (128 -> 64 -> 32 -> 16 -> 8 -> 4 -> Champion) for top All-Rounder & Mixed Olympiad contenders under mandatory Module 7 proctoring, awarding permanent Golden Crowns."
-              }
-            ]
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://arithmo-edge.github.io/contests/",
+              "validFrom": "2026-11-19T00:00:00Z"
+            },
+            "organizer": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "performer": {
+              "@type": "Organization",
+              "name": "Arithmo-Edge Problemsetting & Core HQ Team",
+              "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+            }
+          },
+          {
+            "@type": "Event",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-tuesday-algebra",
+            "name": "Tuesday · Algebra Arena Contest",
+            "description": "7-Day Zero-Rest Rotational Calendar weekly slot: 17:00 UTC Expert (0+ ELO) and 20:00 UTC General.",
+            "startDate": "2026-11-24T17:00:00Z",
+            "endDate": "2026-11-24T18:40:00Z",
+            "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+              "@type": "VirtualLocation",
+              "name": "Arithmo-Edge Algebra Arena (Subsite #6)",
+              "url": "https://arithmo-edge.github.io/contests/"
+            },
+            "image": [
+              "https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://arithmo-edge.github.io/contests/",
+              "validFrom": "2026-11-19T00:00:00Z"
+            },
+            "organizer": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "performer": {
+              "@type": "Organization",
+              "name": "Arithmo-Edge Problemsetting & Core HQ Team",
+              "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+            }
+          },
+          {
+            "@type": "Event",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-wednesday-geometry",
+            "name": "Wednesday · Geometry Arena Contest",
+            "description": "7-Day Zero-Rest Rotational Calendar weekly slot: 17:00 UTC Expert (0+ ELO) and 20:00 UTC General, supported by the GeoGebra-style Geometry canvas.",
+            "startDate": "2026-11-25T17:00:00Z",
+            "endDate": "2026-11-25T18:40:00Z",
+            "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+              "@type": "VirtualLocation",
+              "name": "Arithmo-Edge Geometry Arena (Subsite #6)",
+              "url": "https://arithmo-edge.github.io/contests/"
+            },
+            "image": [
+              "https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://arithmo-edge.github.io/contests/",
+              "validFrom": "2026-11-19T00:00:00Z"
+            },
+            "organizer": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "performer": {
+              "@type": "Organization",
+              "name": "Arithmo-Edge Problemsetting & Core HQ Team",
+              "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+            }
+          },
+          {
+            "@type": "Event",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-thursday-combinatorics",
+            "name": "Thursday · Combinatorics & Permutation Arena Contest",
+            "description": "7-Day Zero-Rest Rotational Calendar weekly slot: 17:00 UTC Expert (0+ ELO) and 20:00 UTC General.",
+            "startDate": "2026-11-26T17:00:00Z",
+            "endDate": "2026-11-26T18:40:00Z",
+            "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+              "@type": "VirtualLocation",
+              "name": "Arithmo-Edge Combinatorics & Permutation Arena (Subsite #6)",
+              "url": "https://arithmo-edge.github.io/contests/"
+            },
+            "image": [
+              "https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://arithmo-edge.github.io/contests/",
+              "validFrom": "2026-11-19T00:00:00Z"
+            },
+            "organizer": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "performer": {
+              "@type": "Organization",
+              "name": "Arithmo-Edge Problemsetting & Core HQ Team",
+              "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+            }
+          },
+          {
+            "@type": "Event",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-friday-mixed-olympiad",
+            "name": "Friday · Mixed Mathematical Olympiad Contest",
+            "description": "7-Day Zero-Rest Rotational Calendar weekly slot: 17:00 UTC Expert (0+ ELO) and 20:00 UTC General.",
+            "startDate": "2026-11-27T17:00:00Z",
+            "endDate": "2026-11-27T18:40:00Z",
+            "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+              "@type": "VirtualLocation",
+              "name": "Arithmo-Edge Mixed Mathematical Olympiad Arena (Subsite #6)",
+              "url": "https://arithmo-edge.github.io/contests/"
+            },
+            "image": [
+              "https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://arithmo-edge.github.io/contests/",
+              "validFrom": "2026-11-19T00:00:00Z"
+            },
+            "organizer": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "performer": {
+              "@type": "Organization",
+              "name": "Arithmo-Edge Problemsetting & Core HQ Team",
+              "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+            }
+          },
+          {
+            "@type": "Event",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-saturday-special",
+            "name": "Saturday · Special Theme Episodes",
+            "description": "Rotating Olympiad Editions including IMO Simulation, Number Theory Contest, Arithmo Special, Olympiad Challenge, and Math Query.",
+            "startDate": "2026-11-28T17:00:00Z",
+            "endDate": "2026-11-28T18:40:00Z",
+            "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+              "@type": "VirtualLocation",
+              "name": "Arithmo-Edge Special Theme Episodes Arena (Subsite #6)",
+              "url": "https://arithmo-edge.github.io/contests/"
+            },
+            "image": [
+              "https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://arithmo-edge.github.io/contests/",
+              "validFrom": "2026-11-19T00:00:00Z"
+            },
+            "organizer": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "performer": {
+              "@type": "Organization",
+              "name": "Arithmo-Edge Problemsetting & Core HQ Team",
+              "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+            }
+          },
+          {
+            "@type": "Event",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#schedule-sunday-mega-arena",
+            "name": "Sunday Mega Arena Contest (NO Rest Day)",
+            "description": "Core HQ authored, default Expert Mode only, 100 minutes, 10 questions, max 2 submissions per question, mandatory Module 7 proctoring, and 2h Find the Flaw + 1h MBTS = T+3h finalization.",
+            "startDate": "2026-11-29T17:00:00Z",
+            "endDate": "2026-11-29T18:40:00Z",
+            "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+              "@type": "VirtualLocation",
+              "name": "Arithmo-Edge Sunday Mega Arena (Subsite #6)",
+              "url": "https://arithmo-edge.github.io/contests/"
+            },
+            "image": [
+              "https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://arithmo-edge.github.io/contests/",
+              "validFrom": "2026-11-19T00:00:00Z"
+            },
+            "organizer": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "performer": {
+              "@type": "Organization",
+              "name": "Arithmo-Edge Problemsetting & Core HQ Team",
+              "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+            }
+          },
+          {
+            "@type": "Event",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html#event-top-128-world-cup",
+            "name": "Top 128 Annual World Cup",
+            "description": "6-Round Progressive Half-Elimination championship (128 -> 64 -> 32 -> 16 -> 8 -> 4 -> Champion) for top All-Rounder & Mixed Olympiad contenders under mandatory Module 7 proctoring, awarding permanent Golden Crowns.",
+            "startDate": "2026-12-06T17:00:00Z",
+            "endDate": "2026-12-06T18:40:00Z",
+            "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "location": {
+              "@type": "VirtualLocation",
+              "name": "Arithmo-Edge Annual World Cup Championship Arena (Subsite #6)",
+              "url": "https://arithmo-edge.github.io/contests/"
+            },
+            "image": [
+              "https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "url": "https://arithmo-edge.github.io/contests/",
+              "validFrom": "2026-11-19T00:00:00Z"
+            },
+            "organizer": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "performer": {
+              "@type": "Organization",
+              "name": "Arithmo-Edge Problemsetting & Core HQ Team",
+              "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+            }
           }
         ]
       }
-    </script>
+    ]
+  }
+</script>
+
   </head>
   <body class="selection:bg-cyan-400/30 selection:text-cyan-100">
     <div id="root" data-page="contests.html"></div>
