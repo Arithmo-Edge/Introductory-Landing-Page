@@ -3,68 +3,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>1.0000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>1.0000</priority>
   </url>
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/index.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/architecture.html</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>0.8500</priority>
   </url>
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/architecture.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/arenas-elo.html</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>0.8500</priority>
   </url>
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/arenas-elo.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>0.8500</priority>
   </url>
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/contests.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/ai-core.html</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>0.8500</priority>
   </url>
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/ai-core.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/security-qprt4.html</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/security-qprt4.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/academies.html</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/academies.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/pricing.html</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/pricing.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/socials-forge.html</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/socials-forge.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/governance.html</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/governance.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/roadmap.html</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>0.8000</priority>
   </url>
   <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/roadmap.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
-  </url>
-  <url>
-       <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html</loc>
-       <lastmod>2026-11-17T18:08:31+00:00</lastmod>
-       <priority>0.8000</priority>
+    <loc>https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html</loc>
+    <lastmod>2026-11-19T00:00:00+00:00</lastmod>
+    <priority>0.8000</priority>
   </url>
 </urlset>

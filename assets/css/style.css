@@ -2,23 +2,25 @@
    Designed for static GitHub Pages & Vite builds alongside Tailwind CDN */
 :root {
   --bg-void: #060913;
-  --bg-obsidian: #0B0F19;
+  --bg-obsidian: #0b0f19;
   --bg-surface: rgba(15, 23, 42, 0.58);
   --border-hairline: rgba(148, 163, 184, 0.14);
   --border-glow: rgba(0, 240, 255, 0.35);
-  --cyan: #00F0FF;
-  --violet: #8B5CF6;
-  --amber: #F59E0B;
-  --emerald: #10B981;
-  --rose: #F43F5E;
-  --text-primary: #F8FAFC;
-  --text-muted: #94A3B8;
-  --font-display: 'Outfit', system-ui, -apple-system, sans-serif;
-  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  --cyan: #00f0ff;
+  --violet: #8b5cf6;
+  --amber: #f59e0b;
+  --emerald: #10b981;
+  --rose: #f43f5e;
+  --text-primary: #f8fafc;
+  --text-muted: #94a3b8;
+  --font-display: "Outfit", system-ui, -apple-system, sans-serif;
+  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -34,15 +36,27 @@ body {
   min-height: 100vh;
   background-color: var(--bg-void);
   background-image:
-    radial-gradient(ellipse 80% 50% at 50% -15%, rgba(0, 240, 255, 0.11), transparent 70%),
-    radial-gradient(ellipse 60% 45% at 88% 15%, rgba(139, 92, 246, 0.09), transparent 65%);
+    radial-gradient(
+      ellipse 80% 50% at 50% -15%,
+      rgba(0, 240, 255, 0.11),
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse 60% 45% at 88% 15%,
+      rgba(139, 92, 246, 0.09),
+      transparent 65%
+    );
   color: var(--text-primary);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, .font-display {
+h1,
+h2,
+h3,
+h4,
+.font-display {
   font-family: var(--font-display);
   text-wrap: balance;
 }
@@ -161,7 +175,9 @@ main {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(148, 163, 184, 0.14);
-  transition: border-color 220ms cubic-bezier(0.16, 1, 0.3, 1), transform 220ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    border-color 220ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 220ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .spotlight-card::before {
@@ -171,7 +187,7 @@ main {
   border-radius: inherit;
   background: radial-gradient(
     420px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-    rgba(0, 240, 255, 0.10),
+    rgba(0, 240, 255, 0.1),
     transparent 65%
   );
   opacity: 0;
@@ -189,7 +205,7 @@ main {
 
 /* Brand Gradient Typography */
 .brand-gradient {
-  background: linear-gradient(110deg, #FFFFFF 0%, #00F0FF 52%, #8B5CF6 100%);
+  background: linear-gradient(110deg, #ffffff 0%, #00f0ff 52%, #8b5cf6 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -205,11 +221,13 @@ main {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: linear-gradient(135deg, #00F0FF 0%, #38BDF8 100%);
+  background: linear-gradient(135deg, #00f0ff 0%, #38bdf8 100%);
   color: #060913;
   font-weight: 600;
   border-radius: 0.625rem;
-  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition:
+    transform 180ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 0 24px rgba(0, 240, 255, 0.22);
 }
 
@@ -225,10 +243,13 @@ main {
   gap: 0.5rem;
   background: rgba(15, 23, 42, 0.72);
   border: 1px solid rgba(148, 163, 184, 0.22);
-  color: #F8FAFC;
+  color: #f8fafc;
   font-weight: 500;
   border-radius: 0.625rem;
-  transition: border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
+  transition:
+    border-color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease;
 }
 
 .btn-glass:hover {
@@ -253,7 +274,7 @@ input[type="range"].cyber-range::-webkit-slider-thumb {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #00F0FF;
+  background: #00f0ff;
   border: 2px solid #060913;
   box-shadow: 0 0 12px rgba(0, 240, 255, 0.65);
   cursor: pointer;
@@ -263,7 +284,7 @@ input[type="range"].cyber-range::-webkit-slider-thumb {
 .media-frame {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #0B1120 0%, #111827 50%, #091526 100%);
+  background: linear-gradient(135deg, #0b1120 0%, #111827 50%, #091526 100%);
 }
 
 .media-frame img {
@@ -283,7 +304,7 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 select:focus-visible {
-  outline: 2px solid #00F0FF;
+  outline: 2px solid #00f0ff;
   outline-offset: 2px;
 }
 
@@ -491,7 +512,9 @@ select:focus-visible {
   html {
     scroll-behavior: auto;
   }
-  *, *::before, *::after {
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;

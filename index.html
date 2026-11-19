@@ -1,538 +1,208 @@
 <!doctype html>
 <html lang="en" class="dark">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arithmo-Edge | Competitive Mathematics &amp; Olympiad Ecosystem</title>
-  <meta name="description" content="Arithmo-Edge, powered by Olympiad Edge: real-time ELO-rated competitive mathematics across 14 GitHub Pages portals, 5 Core Arenas, QPRT-4 resilience, and 42 AI engines." />
-  <meta name="author" content="Rayaan Tasnim" />
-  <meta name="keywords" content="Arithmo-Edge, Olympiad Edge, Competitive Mathematics, ELO Rating, Rayaan Tasnim, Jalees Habib, QPRT-4, Number Theory, Algebra, Geometry, Combinatorics" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Arithmo-Edge" />
-  <meta property="og:title" content="Arithmo-Edge | Competitive Mathematics &amp; Olympiad Ecosystem" />
-  <meta property="og:description" content="Explore the 14-portal federated Olympiad network, 5 Core Arenas with 60 ELO titles, Pioneer Contributors Rayaan Tasnim &amp; Jalees Habib, and 42 AI engines." />
-  <meta property="og:image" content="https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=1600" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Arithmo-Edge | Competitive Mathematics &amp; Olympiad Ecosystem" />
-  <meta name="twitter:description" content="Real-time ELO-rated competitive mathematics across 5 Core Arenas, 14 GitHub Pages portals, and 42 AI engines." />
-  <meta name="twitter:image" content="https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=1600" />
-  <link rel="icon" type="image/jpeg" href="favicon.jpg" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Arithmo-Edge",
-    "alternateName": "Olympiad Edge",
-    "applicationCategory": "EducationalApplication",
-    "operatingSystem": "All",
-    "url": "https://arithmo-edge.github.io/Arithmo-Edge/",
-    "description": "The World's First Real-Time ELO-Rated Competitive Mathematics & Olympiad Mega-Ecosystem, Powered by Olympiad Edge.",
-    "founder": [
-      { "@type": "Person", "name": "Rayaan Tasnim", "email": "rayaantasnim@gmail.com" },
-      { "@type": "Person", "name": "Jalees Habib" }
-    ],
-    "publisher": {
-      "@type": "Organization",
-      "name": "Olympiad Edge",
-      "url": "https://github.com/Arithmo-Edge",
-      "email": "rayaantasnim@gmail.com"
-    },
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
-  }
-  </script>
-</head>
-<body class="cyber-grid-bg selection:bg-cyan-400/30 selection:text-cyan-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real-Time ELO Competitive Math Olympiad | Arithmo-Edge</title>
+    <meta
+      name="description"
+      content="Compete on Arithmo-Edge: real-time ELO competitive math across 14 GitHub Pages portals, 5 Core Arenas, 60 progression titles, QPRT-4 guards, and 42 AI engines."
+    />
+    <link
+      rel="canonical"
+      href="https://arithmo-edge.github.io/Introductory-Landing-Page/"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Rayaan Tasnim, Jalees Habib" />
+    <meta name="theme-color" content="#0A0F1C" />
+    <meta
+      name="keywords"
+      content="Arithmo-Edge, Olympiad Edge, Competitive Mathematics, ELO Rating, Rayaan Tasnim, Jalees Habib, QPRT-4, Number Theory, Algebra, Geometry, Combinatorics"
+    />
 
-  <!-- Shared Fixed Glassmorphism Navbar -->
-  <header class="fixed top-0 left-0 right-0 w-full z-[1000] glass-nav">
-    <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
-      <div class="min-w-0">
-        <a href="index.html" class="nav-brand-link whitespace-nowrap">
-          <img src="favicon.jpg" alt="Arithmo Edge Logo" class="nav-brand-logo" />
-          <span class="font-display text-xl sm:text-2xl font-bold tracking-tight brand-gradient cyber-text-glow">Arithmo Edge</span>
-        </a>
-        <p class="nav-tagline hidden md:block max-w-md lg:max-w-xl leading-snug text-xs text-slate-400 mt-0.5">
-          The World's First Real-Time ELO-Rated Competitive Mathematics &amp; Olympiad Mega-Ecosystem
-        </p>
-      </div>
-      <div class="flex items-center gap-3 shrink-0">
-        <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" aria-label="Arithmo-Edge GitHub Organization" class="btn-glass px-3.5 py-2 text-xs sm:text-sm whitespace-nowrap shrink-0">
-          <svg class="w-4 h-4 text-cyan-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
-          </svg>
-          <span class="hidden sm:inline">GitHub</span>
-        </a>
-        <button id="nav-drawer-toggle" type="button" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="nav-drawer-panel" class="btn-glass w-11 h-11 p-0 flex items-center justify-center text-slate-100 shrink-0">
-          <svg id="nav-icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
-          <svg id="nav-icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-        </button>
-      </div>
-    </div>
-  </header>
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Arithmo-Edge" />
+    <meta
+      property="og:title"
+      content="Real-Time ELO Competitive Math Olympiad | Arithmo-Edge"
+    />
+    <meta
+      property="og:description"
+      content="Compete on Arithmo-Edge: real-time ELO competitive math across 14 portals, 5 Core Arenas, 60 titles, QPRT-4 defense, and 42 AI engines."
+    />
+    <meta
+      property="og:url"
+      content="https://arithmo-edge.github.io/Introductory-Landing-Page/"
+    />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Arithmo-Edge Olympiad Edge command deck and mathematical competition ecosystem preview"
+    />
+    <meta property="og:locale" content="en_US" />
 
-  <!-- Right-Side Slide-In Overlay Navigation Drawer (01-12) -->
-  <div id="nav-drawer-backdrop" class="fixed inset-0 z-[1050] bg-slate-950/75 backdrop-blur-md pointer-events-none" style="visibility:hidden; opacity:0;"></div>
-  <aside id="nav-drawer-panel" aria-hidden="true" aria-label="Ecosystem Page Navigation" class="fixed top-0 right-0 z-[1060] h-full w-full max-w-md glass-drawer flex flex-col justify-between p-6 overflow-y-auto" style="transform: translateX(100%); visibility: hidden;">
-    <div>
-      <div class="flex items-center justify-between pb-4 border-b border-slate-800/80">
-        <div>
-          <span class="font-display text-lg font-bold brand-gradient">Arithmo Edge</span>
-          <p class="text-xs text-slate-400">Powered by Olympiad Edge · 12-Page Showcase</p>
-        </div>
-        <button id="nav-drawer-close" type="button" aria-label="Close Navigation Menu" class="btn-glass w-11 h-11 p-0 flex items-center justify-center">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-        </button>
-      </div>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Real-Time ELO Competitive Math Olympiad | Arithmo-Edge"
+    />
+    <meta
+      name="twitter:description"
+      content="Compete on Arithmo-Edge: real-time ELO competitive math across 14 portals, 5 Core Arenas, 60 titles, QPRT-4 defense, and 42 AI engines."
+    />
+    <meta
+      name="twitter:image"
+      content="https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Arithmo-Edge Olympiad Edge command deck and mathematical competition ecosystem preview"
+    />
 
-      <div data-countdown="drawer" class="mt-4 p-3.5 rounded-xl border border-cyan-400/25 bg-slate-900/75">
-        <div class="flex items-center justify-between text-xs text-cyan-300 mb-2">
-          <span class="font-medium">Global Launch Target</span>
-          <span class="font-mono-tabular text-slate-400">Dec 31, 2026 · 12:00 AM</span>
-        </div>
-        <div class="grid grid-cols-4 gap-2 text-center">
-          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="days" class="font-mono-tabular text-base font-bold text-white">--</div><div class="text-[10px] text-slate-400">Days</div></div>
-          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="hours" class="font-mono-tabular text-base font-bold text-white">--</div><div class="text-[10px] text-slate-400">Hours</div></div>
-          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="minutes" class="font-mono-tabular text-base font-bold text-white">--</div><div class="text-[10px] text-slate-400">Mins</div></div>
-          <div class="rounded-lg bg-slate-950/80 border border-slate-800 py-1.5"><div data-cd="seconds" class="font-mono-tabular text-base font-bold text-cyan-400">--</div><div class="text-[10px] text-slate-400">Secs</div></div>
-        </div>
-      </div>
+    <link rel="icon" type="image/jpeg" href="favicon.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-      <nav class="mt-5 grid gap-1.5">
-        <a href="index.html" data-page="index.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">01</span><span>Home Command Deck</span></a>
-        <a href="architecture.html" data-page="architecture.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">02</span><span>14-Website Federated Architecture</span></a>
-        <a href="arenas-elo.html" data-page="arenas-elo.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">03</span><span>5 Core Arenas &amp; 60 ELO Tiers</span></a>
-        <a href="contests.html" data-page="contests.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">04</span><span>Contest Engine &amp; Find the Flaw</span></a>
-        <a href="ai-core.html" data-page="ai-core.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">05</span><span>42-Engine AI Core</span></a>
-        <a href="security-qprt4.html" data-page="security-qprt4.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">06</span><span>QPRT-4 Resilience &amp; Legal Shield</span></a>
-        <a href="academies.html" data-page="academies.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">07</span><span>Arithmo Academy Arena</span></a>
-        <a href="pricing.html" data-page="pricing.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">08</span><span>Subscriptions, Store &amp; Wallet</span></a>
-        <a href="socials-forge.html" data-page="socials-forge.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">09</span><span>Socials, Forge &amp; Guidebooks</span></a>
-        <a href="governance.html" data-page="governance.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">10</span><span>Headquarters &amp; Wall of Patrons</span></a>
-        <a href="roadmap.html" data-page="roadmap.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">11</span><span>Roadmap &amp; 8 Spin-Off Companies</span></a>
-        <a href="pioneers.html" data-page="pioneers.html" class="drawer-link-item flex items-center gap-3 px-3.5 py-2.5 rounded-lg border border-transparent hover:border-slate-700 hover:bg-slate-900/70 text-sm text-slate-300 transition-colors"><span class="font-mono-tabular text-xs text-cyan-400">12</span><span>Pioneer Contributors</span></a>
-      </nav>
-    </div>
-    <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
-      <span>Powered by Olympiad Edge</span>
-      <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">github.com/Arithmo-Edge</a>
-    </div>
-  </aside>
-
-  <main>
-    <!-- Section 1: Constellation Hero with Live Countdown -->
-    <section class="relative overflow-hidden border-b border-slate-800/70">
-      <canvas id="constellation-canvas" class="absolute inset-0 w-full h-full pointer-events-none opacity-80"></canvas>
-      <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-14 lg:py-20 relative z-10">
-        <div class="grid lg:grid-cols-12 gap-8 items-stretch">
-          <div class="lg:col-span-7 flex flex-col justify-between gap-7">
-            <div class="space-y-5">
-              <div class="gsap-hero text-xs sm:text-sm text-cyan-300 font-medium tracking-wide">
-                Olympiad Edge Federation · 14 Free-Forever GitHub Pages Portals · 42 AI Engines
-              </div>
-              <h1 class="gsap-hero hero-title-fluid font-display font-bold tracking-tight text-white">
-                Real-Time ELO-Rated Competitive Mathematics at Global Olympiad Scale.
-              </h1>
-              <p class="gsap-hero text-base sm:text-lg text-slate-300 prose-measure leading-relaxed">
-                Arithmo-Edge unifies five specialized Olympiad arenas, 60 progression titles, proof-based grading, post-contest <span class="text-white font-medium">Find the Flaw</span> hacking, and <span class="text-white font-medium">QPRT-4</span> cryptographic resilience—synchronizing every portal via <span class="font-mono-tabular text-cyan-300">Arithmo-Core-SDK (engine.js)</span>.
-              </p>
-              <div class="gsap-hero ae-hero-cta flex flex-wrap items-center gap-3.5 pt-1">
-                <a href="arenas-elo.html" class="btn-cyber px-5 py-3 text-sm whitespace-nowrap">
-                  Explore 5 Arenas &amp; ELO Simulator
-                </a>
-                <a href="architecture.html" class="btn-glass px-5 py-3 text-sm whitespace-nowrap">
-                  Inspect 14-Site Federation
-                </a>
-              </div>
-            </div>
-
-            <!-- Live Countdown Command Deck to December 31, 2026 Midnight -->
-            <div data-countdown="hero" class="gsap-hero glass-panel rounded-2xl p-5 sm:p-6 border border-cyan-400/30 shadow-[0_0_50px_rgba(0,240,255,0.08)]">
-              <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
-                <div>
-                  <h2 class="font-display text-base sm:text-lg font-semibold text-white">Global Launch Countdown</h2>
-                  <p class="text-xs text-slate-400">Targeting December 31, 2026 at 12:00 Midnight (2027-01-01 00:00:00)</p>
-                </div>
-                <span class="font-mono-tabular text-xs text-cyan-300">T-Minus Live Telemetry</span>
-              </div>
-              <div class="ae-countdown-grid grid grid-cols-4 gap-3">
-                <div class="rounded-xl bg-slate-950/85 border border-slate-800 px-3 py-3.5 text-center">
-                  <div data-cd="days" class="font-mono-tabular text-2xl sm:text-4xl font-bold text-white">--</div>
-                  <div class="text-xs text-slate-400 mt-1">Days</div>
-                </div>
-                <div class="rounded-xl bg-slate-950/85 border border-slate-800 px-3 py-3.5 text-center">
-                  <div data-cd="hours" class="font-mono-tabular text-2xl sm:text-4xl font-bold text-white">--</div>
-                  <div class="text-xs text-slate-400 mt-1">Hours</div>
-                </div>
-                <div class="rounded-xl bg-slate-950/85 border border-slate-800 px-3 py-3.5 text-center">
-                  <div data-cd="minutes" class="font-mono-tabular text-2xl sm:text-4xl font-bold text-white">--</div>
-                  <div class="text-xs text-slate-400 mt-1">Minutes</div>
-                </div>
-                <div class="rounded-xl bg-slate-950/85 border border-cyan-400/35 px-3 py-3.5 text-center">
-                  <div data-cd="seconds" class="font-mono-tabular text-2xl sm:text-4xl font-bold text-cyan-400">--</div>
-                  <div class="text-xs text-cyan-300/80 mt-1">Seconds</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:col-span-5 gsap-hero">
-            <div class="h-full min-h-[360px] rounded-2xl border border-slate-800 overflow-hidden relative media-frame">
-              <img src="favicon.jpg" alt="Arithmo-Edge holographic geometric spectrum backdrop" referrerpolicy="no-referrer" />
-              <div class="absolute inset-0 bg-gradient-to-t from-[#060913] via-[#060913]/45 to-transparent"></div>
-              <div class="absolute bottom-0 inset-x-0 p-6 space-y-2.5">
-                <div class="text-xs text-cyan-300 font-mono-tabular">Core Portal · arithmo-edge.github.io/Arithmo-Edge/</div>
-                <h3 class="font-display text-xl font-bold text-white">Zero-Cost Edge Federation</h3>
-                <p class="text-sm text-slate-300 leading-relaxed">
-                  14 specialized GitHub Pages domains synchronized through a single Firebase Auth + Cloud Firestore backbone, Cloudflare Worker proxies, and a 24-hour Zero-PII JSONL Data Lake.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 2: Core Philosophy -->
-    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
-      <div class="grid lg:grid-cols-12 gap-8 items-center gsap-reveal">
-        <div class="lg:col-span-6 space-y-4">
-          <p class="text-xs text-cyan-300 font-medium">02 · Core Architectural Philosophy</p>
-          <h2 class="section-title-fluid font-display font-bold text-white">Replacing Static Gatekept Forums with Live ELO Proof Warfare</h2>
-          <p class="text-sm sm:text-base text-slate-300 leading-relaxed prose-measure">
-            Traditional Olympiad mathematics platforms leave learners in fragmented static PDFs, unrated forum threads, or opaque manual grading queues. Arithmo-Edge transforms Olympiad mathematics into a live, sport-grade discipline with deterministic client-side verification, strict topic-tag hiding during rated hours, and real-time ELO telemetry.
-          </p>
-          <p class="text-sm sm:text-base text-slate-300 leading-relaxed prose-measure">
-            Every architectural decision enforces <span class="text-white font-semibold">Zero Pay-to-Win</span>: subscriptions and Arithmo Wallet credits expand AI mentoring throughput and Forge capacity, while every single ELO point is earned purely through verified mathematical solutions and post-contest proof auditing.
-          </p>
-        </div>
-        <div class="lg:col-span-6 ae-bento-grid grid sm:grid-cols-2 gap-4">
-          <div class="spotlight-card rounded-2xl p-5 space-y-2">
-            <div class="text-xs font-mono-tabular text-cyan-300">Zero-Fragmentation</div>
-            <h3 class="font-display text-base font-bold text-white">No Mixed Shortcuts</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">Sub-topic tags (#Inversion, #LTE, #Vieta-Jumping) stay hidden in rated contests so solvers recognize mathematical structure organically.</p>
-          </div>
-          <div class="spotlight-card rounded-2xl p-5 space-y-2">
-            <div class="text-xs font-mono-tabular text-violet-300">Anti-LLM Synthesis</div>
-            <h3 class="font-display text-base font-bold text-white">Human Intuition First</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">AdversarialRedTeam AI blocks LLM-solvable items before publication; SymPyVeritas checks exact algebraic invariants.</p>
-          </div>
-          <div class="spotlight-card rounded-2xl p-5 space-y-2">
-            <div class="text-xs font-mono-tabular text-amber-300">Proof Auditing</div>
-            <h3 class="font-display text-base font-bold text-white">Find the Flaw</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">Post-contest peer auditing turns every solver into a referee—rewarding valid counterexamples and logical gap exposures.</p>
-          </div>
-          <div class="spotlight-card rounded-2xl p-5 space-y-2">
-            <div class="text-xs font-mono-tabular text-emerald-300">Zero-Cost Scale</div>
-            <h3 class="font-display text-base font-bold text-white">Free Forever Infrastructure</h3>
-            <p class="text-xs text-slate-400 leading-relaxed">Static micro-frontends on GitHub Pages eliminate server bottlenecks while IndexedDB + client-side algorithms handle offline resilience.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 3: Ecosystem KPI Telemetry Strip -->
-    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-14 border-b border-slate-800/60">
-      <div class="mb-6 gsap-reveal">
-        <p class="text-xs text-cyan-300 font-medium">03 · Ecosystem KPI Telemetry</p>
-        <h2 class="section-title-fluid font-display font-bold text-white">Canonical System Scale Metrics</h2>
-      </div>
-      <div class="ae-kpi-grid grid grid-cols-2 lg:grid-cols-4 gap-4 gsap-reveal">
-        <div class="spotlight-card rounded-xl p-5">
-          <div class="font-mono-tabular text-2xl sm:text-3xl font-bold text-cyan-400">14</div>
-          <div class="text-sm font-semibold text-white mt-1">Federated Websites</div>
-          <div class="text-xs text-slate-400 mt-1">1 Core Portal + 13 Subsites on arithmo-edge.github.io</div>
-        </div>
-        <div class="spotlight-card rounded-xl p-5">
-          <div class="font-mono-tabular text-2xl sm:text-3xl font-bold text-violet-400">60</div>
-          <div class="text-sm font-semibold text-white mt-1">ELO Rank Titles</div>
-          <div class="text-xs text-slate-400 mt-1">5 Core Arenas · 12 Tiers Each · (General + Expert) / 2</div>
-        </div>
-        <div class="spotlight-card rounded-xl p-5">
-          <div class="font-mono-tabular text-2xl sm:text-3xl font-bold text-amber-400">42</div>
-          <div class="text-sm font-semibold text-white mt-1">Specialized AI Engines</div>
-          <div class="text-xs text-slate-400 mt-1">Gemini + Qwen-Math + SymPy · 24 QPRT-4 + 12 Forge Agents</div>
-        </div>
-        <div class="spotlight-card rounded-xl p-5">
-          <div class="font-mono-tabular text-2xl sm:text-3xl font-bold text-emerald-400">14</div>
-          <div class="text-sm font-semibold text-white mt-1">Real-Time Leaderboards</div>
-          <div class="text-xs text-slate-400 mt-1">1 HQ + 10 Arena + 1 Academy + 1 Contributors + 1 All Rounders</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 4: Guest Access vs Custom @handle Workflow -->
-    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
-      <div class="mb-8 gsap-reveal">
-        <p class="text-xs text-cyan-300 font-medium">04 · Identity &amp; Access Workflow</p>
-        <h2 class="section-title-fluid font-display font-bold text-white">Frictionless Guest Access vs. Custom @handle Registration</h2>
-      </div>
-      <div class="ae-deep-grid grid lg:grid-cols-2 gap-8 items-stretch gsap-reveal">
-        <div class="spotlight-card rounded-2xl overflow-hidden flex flex-col">
-          <div class="h-56 media-frame">
-            <img src="https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Mathematical Olympiad proofs and open guest participation" loading="lazy" referrerpolicy="no-referrer" />
-          </div>
-          <div class="p-6 sm:p-8 flex-1 space-y-3">
-            <div class="text-xs font-mono-tabular text-cyan-300">Unrated Guest Workflow · Zero Friction</div>
-            <h3 class="font-display text-xl font-bold text-white">Instant Contest Entry Without an Account</h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              Competitors without a registered <span class="font-mono-tabular text-cyan-300">@handle</span> can freely browse all 14 public leaderboards on Subsite #7, practice past archives, and submit answers inside live contests as <span class="text-white font-semibold">Unrated (0 ELO change)</span>.
-            </p>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              Guests can also participate in post-contest <span class="text-white font-semibold">Find the Flaw</span> hacking windows and contribute anonymized problem-solving telemetry to the 24-hour Zero-PII Data Lake.
-            </p>
-          </div>
-        </div>
-
-        <div class="spotlight-card rounded-2xl overflow-hidden flex flex-col">
-          <div class="h-56 media-frame">
-            <img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Gmail SSO and custom @handle identity graph" loading="lazy" referrerpolicy="no-referrer" />
-          </div>
-          <div class="p-6 sm:p-8 flex-1 space-y-3">
-            <div class="text-xs font-mono-tabular text-violet-300">Registered @handle · Gmail SSO</div>
-            <h3 class="font-display text-xl font-bold text-white">Full Rated ELO, Wallet &amp; Institutional Identity</h3>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              Claiming a unique <span class="font-mono-tabular text-cyan-300">@handle</span> via Gmail SSO unlocks rated ELO tracking across all 10 Core Arena ELOs, <span class="text-white font-medium">1v1 Bullet Blitz</span>, closed-loop <span class="text-white font-medium">Arithmo Wallet</span> gifting, Academy Dual-Handle routing, Arithmo Forge, Socials, and Headquarters Core.
-            </p>
-            <p class="text-sm text-slate-300 leading-relaxed">
-              Handle governance includes a <span class="text-white font-medium">7-day 1-time free change</span> ($2.99 once/year thereafter) and a permanent <span class="font-mono-tabular">@handle</span> tombstone upon account deletion while anonymized Zero-PII traces remain for AI alignment.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 5: 5-Arena Preview Matrix -->
-    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
-      <div class="flex flex-wrap items-end justify-between gap-4 mb-8 gsap-reveal">
-        <div>
-          <p class="text-xs text-cyan-300 font-medium">05 · Five Core Mathematical Arenas</p>
-          <h2 class="section-title-fluid font-display font-bold text-white">Color-Coded Subsites with Dual General &amp; Expert Tracks</h2>
-        </div>
-        <a href="arenas-elo.html" class="btn-glass px-4 py-2 text-xs whitespace-nowrap">Open Interactive ELO Simulator &rarr;</a>
-      </div>
-
-      <div class="ae-bento-grid ae-bento-grid-3 grid sm:grid-cols-2 lg:grid-cols-5 gap-4 gsap-reveal">
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-t-2 border-t-[#00F0FF]">
-          <div class="font-mono-tabular text-xs text-[#00F0FF]">Subsite #1 · #00F0FF</div>
-          <h3 class="font-display text-base font-bold text-white">Number Theory</h3>
-          <p class="text-xs text-slate-400">Foundry Initiate (0–499) to Arithmetic Singularity (3000+).</p>
-          <div class="text-[11px] font-mono-tabular text-slate-500 pt-1">Monday Rated Rounds</div>
-        </div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-t-2 border-t-[#8B5CF6]">
-          <div class="font-mono-tabular text-xs text-[#8B5CF6]">Subsite #2 · #8B5CF6</div>
-          <h3 class="font-display text-base font-bold text-white">Algebra</h3>
-          <p class="text-xs text-slate-400">Variable Initiate (0–499) to Algebraic Singularity (3000+).</p>
-          <div class="text-[11px] font-mono-tabular text-slate-500 pt-1">Tuesday Rated Rounds</div>
-        </div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-t-2 border-t-[#F59E0B]">
-          <div class="font-mono-tabular text-xs text-[#F59E0B]">Subsite #3 · #F59E0B</div>
-          <h3 class="font-display text-base font-bold text-white">Geometry</h3>
-          <p class="text-xs text-slate-400">Euclidean Initiate (0–499) to Geometric Singularity (3000+).</p>
-          <div class="text-[11px] font-mono-tabular text-slate-500 pt-1">Wednesday Rated Rounds</div>
-        </div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-t-2 border-t-[#10B981]">
-          <div class="font-mono-tabular text-xs text-[#10B981]">Subsite #4 · #10B981</div>
-          <h3 class="font-display text-base font-bold text-white">Combinatorics</h3>
-          <p class="text-xs text-slate-400">Counting Initiate (0–499) to Combinatorial Singularity (3000+).</p>
-          <div class="text-[11px] font-mono-tabular text-slate-500 pt-1">Thursday Rated Rounds</div>
-        </div>
-        <div class="spotlight-card rounded-2xl p-5 space-y-2 border-t-2 border-t-[#F43F5E]">
-          <div class="font-mono-tabular text-xs text-[#F43F5E]">Subsite #5 · #F43F5E</div>
-          <h3 class="font-display text-base font-bold text-white">Mixed Olympiad</h3>
-          <p class="text-xs text-slate-400">Olympiad Initiate (0–499) to Omni-Olympiad Singularity (3000+).</p>
-          <div class="text-[11px] font-mono-tabular text-slate-500 pt-1">Friday + Sunday Mega Anchor</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 6: Pioneer Contributors Spotlight -->
-    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16 border-b border-slate-800/60">
-      <div class="flex flex-wrap items-end justify-between gap-4 mb-8 gsap-reveal">
-        <div>
-          <p class="text-xs text-amber-300 font-medium">06 · Founding Leadership &amp; Custodianship</p>
-          <h2 class="section-title-fluid font-display font-bold text-white">Pioneer Contributors Spotlight</h2>
-        </div>
-        <a href="pioneers.html" class="btn-cyber px-4 py-2 text-xs whitespace-nowrap">Read Full Pioneer Dossier &rarr;</a>
-      </div>
-
-      <div class="ae-deep-grid grid lg:grid-cols-2 gap-6 gsap-reveal">
-        <div class="spotlight-card rounded-2xl p-6 sm:p-8 space-y-4 border-cyan-400/30">
-          <div class="flex items-center justify-between gap-2">
-            <span class="font-mono-tabular text-xs text-cyan-300">Co-Founder #1 · Reserved Title: Core System Architect</span>
-            <span class="font-mono-tabular text-xs text-slate-400">60% Equity · 24-Mo Vesting</span>
-          </div>
-          <h3 class="font-display text-2xl font-bold text-white">Rayaan Tasnim</h3>
-          <p class="text-xs font-medium text-cyan-200">Founder &amp; Chief System Architect</p>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Architect of the 14-portal federated network (`1 Core + 13 Subsites`), `Arithmo-Core-SDK (engine.js)`, `QPRT-4` Quad-Phase Resilience Theory, browser-native `Module 7` proctoring, the 42-engine AI orchestration pipeline, and zero-cost GitHub Pages + Firebase + Cloudflare Worker + 24h Zero-PII JSONL Data Lake infrastructure.
-          </p>
-        </div>
-
-        <div class="spotlight-card rounded-2xl p-6 sm:p-8 space-y-4 border-violet-400/30">
-          <div class="flex items-center justify-between gap-2">
-            <span class="font-mono-tabular text-xs text-violet-300">Co-Founder #2 · Reserved Title: Chief Mathematical Architect</span>
-            <span class="font-mono-tabular text-xs text-slate-400">40% Equity · 24-Mo Vesting</span>
-          </div>
-          <h3 class="font-display text-2xl font-bold text-white">Jalees Habib</h3>
-          <p class="text-xs font-medium text-violet-200">Co-Founder &amp; Chief Mathematical Engineer</p>
-          <p class="text-sm text-slate-300 leading-relaxed">
-            Lead architect of Olympiad problem synthesis across all 5 core arenas, the Zero-Fragmentation Olympiad Tag policy, Proof-Based Grading + Grandmaster Peer Review (`Expert Segments 1 &amp; 2`), post-contest `Find the Flaw` logical audit standards, and the `5×4` Private Golden Vault co-authored with Rayaan Tasnim.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section 7: 10-Portal Exploration Grid (+ Page 12 Pioneers) -->
-    <section class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="flex flex-wrap items-end justify-between gap-4 mb-8 gsap-reveal">
-        <div>
-          <p class="text-xs text-cyan-300 font-medium">07 · Complete Ecosystem Exploration Grid</p>
-          <h2 class="section-title-fluid font-display font-bold text-white">Navigate All Specialized Modules</h2>
-        </div>
-        <span class="text-xs text-slate-400">Pages 02–12 · Click any module to explore full specifications</span>
-      </div>
-
-      <div class="ae-bento-grid ae-bento-grid-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <a href="architecture.html" class="spotlight-card rounded-2xl overflow-hidden flex flex-col gsap-reveal group">
-          <div class="h-44 media-frame"><img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Federated multi-portal architecture" loading="lazy" referrerpolicy="no-referrer" /></div>
-          <div class="p-6 flex-1 flex flex-col justify-between gap-3">
-            <div><div class="text-xs text-cyan-400 font-mono-tabular mb-1">02 · Architecture</div><h3 class="font-display text-lg font-bold text-white group-hover:text-cyan-300">14-Website Federated Map</h3><p class="text-sm text-slate-400 mt-1.5">1 Core Portal + 13 Subsites, engine.js SDK, Miller-Rabin/Rho math engine, and Read-Shield caching.</p></div>
-            <span class="text-xs text-cyan-300 font-medium">Inspect 14 Portals &rarr;</span>
-          </div>
-        </a>
-
-        <a href="arenas-elo.html" class="spotlight-card rounded-2xl overflow-hidden flex flex-col gsap-reveal group">
-          <div class="h-44 media-frame"><img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="5 Core Arenas and 60 ELO tiers" loading="lazy" referrerpolicy="no-referrer" /></div>
-          <div class="p-6 flex-1 flex flex-col justify-between gap-3">
-            <div><div class="text-xs text-violet-400 font-mono-tabular mb-1">03 · Arenas &amp; ELO</div><h3 class="font-display text-lg font-bold text-white group-hover:text-violet-300">5 Core Arenas &amp; 60 Tiers</h3><p class="text-sm text-slate-400 mt-1.5">10 Core Arena ELOs, (General+Expert)/2 simulator, Zero-Fragmentation tags, and 1v1 Bullet Blitz.</p></div>
-            <span class="text-xs text-violet-300 font-medium">Launch ELO Simulator &rarr;</span>
-          </div>
-        </a>
-
-        <a href="contests.html" class="spotlight-card rounded-2xl overflow-hidden flex flex-col gsap-reveal group">
-          <div class="h-44 media-frame"><img src="https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Contest engine and Find the Flaw" loading="lazy" referrerpolicy="no-referrer" /></div>
-          <div class="p-6 flex-1 flex flex-col justify-between gap-3">
-            <div><div class="text-xs text-amber-400 font-mono-tabular mb-1">04 · Contests</div><h3 class="font-display text-lg font-bold text-white group-hover:text-amber-300">Contest Engine &amp; Find the Flaw</h3><p class="text-sm text-slate-400 mt-1.5">7-Day Calendar, Sunday Mega, T-30s contract, LaTeX + GeoGebra tools, and Top 128 World Cup.</p></div>
-            <span class="text-xs text-amber-300 font-medium">Simulate Contest Modes &rarr;</span>
-          </div>
-        </a>
-
-        <a href="ai-core.html" class="spotlight-card rounded-2xl overflow-hidden flex flex-col gsap-reveal group">
-          <div class="h-44 media-frame"><img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="42-Engine AI Core" loading="lazy" referrerpolicy="no-referrer" /></div>
-          <div class="p-6 flex-1 flex flex-col justify-between gap-3">
-            <div><div class="text-xs text-emerald-400 font-mono-tabular mb-1">05 · AI Core</div><h3 class="font-display text-lg font-bold text-white group-hover:text-emerald-300">42-Engine AI Core</h3><p class="text-sm text-slate-400 mt-1.5">Gemini + Qwen-Math + SymPy, 24 Guardians, 12 Forge Agents, Soft-Pinch simulator, and Token Meter.</p></div>
-            <span class="text-xs text-emerald-300 font-medium">Explore 42 AI Engines &rarr;</span>
-          </div>
-        </a>
-
-        <a href="security-qprt4.html" class="spotlight-card rounded-2xl overflow-hidden flex flex-col gsap-reveal group">
-          <div class="h-44 media-frame"><img src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="QPRT-4 Resilience and Legal Shield" loading="lazy" referrerpolicy="no-referrer" /></div>
-          <div class="p-6 flex-1 flex flex-col justify-between gap-3">
-            <div><div class="text-xs text-rose-400 font-mono-tabular mb-1">06 · Security</div><h3 class="font-display text-lg font-bold text-white group-hover:text-rose-300">QPRT-4 &amp; Legal Shield</h3><p class="text-sm text-slate-400 mt-1.5">Module 7 proctoring, MBTS, 11-Flag Blackhole, 4-Signal Alt Neutralization, and 14-Point Legal Shield.</p></div>
-            <span class="text-xs text-rose-300 font-medium">Audit QPRT-4 Phases &rarr;</span>
-          </div>
-        </a>
-
-        <a href="academies.html" class="spotlight-card rounded-2xl overflow-hidden flex flex-col gsap-reveal group">
-          <div class="h-44 media-frame"><img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Arithmo Academy Arena" loading="lazy" referrerpolicy="no-referrer" /></div>
-          <div class="p-6 flex-1 flex flex-col justify-between gap-3">
-            <div><div class="text-xs text-cyan-400 font-mono-tabular mb-1">07 · Academies</div><h3 class="font-display text-lg font-bold text-white group-hover:text-cyan-300">Arithmo Academy Arena</h3><p class="text-sm text-slate-400 mt-1.5">4 institutional tiers, Dual-Handle routing, KYB 5-Layer Anti-Reselling Shield, and Guild AI calculator.</p></div>
-            <span class="text-xs text-cyan-300 font-medium">Calculate Roster &amp; Tokens &rarr;</span>
-          </div>
-        </a>
-
-        <a href="pricing.html" class="spotlight-card rounded-2xl overflow-hidden flex flex-col gsap-reveal group">
-          <div class="h-44 media-frame"><img src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Subscriptions and Arithmo Wallet" loading="lazy" referrerpolicy="no-referrer" /></div>
-          <div class="p-6 flex-1 flex flex-col justify-between gap-3">
-            <div><div class="text-xs text-violet-400 font-mono-tabular mb-1">08 · Subscriptions</div><h3 class="font-display text-lg font-bold text-white group-hover:text-violet-300">Plans, Store &amp; Wallet</h3><p class="text-sm text-slate-400 mt-1.5">Free to Singularity ($12.99), 8 Pay-As-You-Go packs, +10% Arithmo Wallet, and Zero Pay-to-Win.</p></div>
-            <span class="text-xs text-violet-300 font-medium">Open Wallet Simulator &rarr;</span>
-          </div>
-        </a>
-
-        <a href="socials-forge.html" class="spotlight-card rounded-2xl overflow-hidden flex flex-col gsap-reveal group">
-          <div class="h-44 media-frame"><img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Socials, Forge and Guidebooks" loading="lazy" referrerpolicy="no-referrer" /></div>
-          <div class="p-6 flex-1 flex flex-col justify-between gap-3">
-            <div><div class="text-xs text-emerald-400 font-mono-tabular mb-1">09 · Community &amp; Forge</div><h3 class="font-display text-lg font-bold text-white group-hover:text-emerald-300">Socials, Forge &amp; Guidebooks</h3><p class="text-sm text-slate-400 mt-1.5">KaTeX blogs, Blog-to-Lab (+5 ELO), 2000+ Q&amp;A, 5-Pillar Forge, and 5&times;4 Golden Vault.</p></div>
-            <span class="text-xs text-emerald-300 font-medium">Inspect Golden Vault &rarr;</span>
-          </div>
-        </a>
-
-        <div class="spotlight-card rounded-2xl p-6 flex flex-col justify-between gap-4 gsap-reveal border-cyan-400/25">
-          <div class="space-y-2">
-            <div class="text-xs text-amber-400 font-mono-tabular">10, 11 &amp; 12 · Leadership &amp; Vision</div>
-            <h3 class="font-display text-xl font-bold text-white">Governance, Roadmap &amp; Pioneers</h3>
-            <p class="text-sm text-slate-300 leading-relaxed">Explore the 5-Tier Monotonic HQ Ladder, 20-Year Holding Spin-Offs, and Co-Founders Rayaan Tasnim &amp; Jalees Habib.</p>
-          </div>
-          <div class="flex flex-col gap-2 pt-2 border-t border-slate-800/80">
-            <a href="governance.html" class="btn-glass px-4 py-2 text-xs justify-between"><span>10. Headquarters &amp; Patrons</span><span>&rarr;</span></a>
-            <a href="roadmap.html" class="btn-glass px-4 py-2 text-xs justify-between"><span>11. Roadmap &amp; 8 Spin-Offs</span><span>&rarr;</span></a>
-            <a href="pioneers.html" class="btn-cyber px-4 py-2 text-xs justify-between"><span>12. Pioneer Contributors</span><span>&rarr;</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Exact Shared Footer -->
-  <footer class="border-t border-slate-800/80 bg-[#050811]/95 backdrop-blur-xl">
-    <div class="ae-container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <div class="grid md:grid-cols-12 gap-8 pb-10">
-        <div class="md:col-span-4 space-y-3">
-          <div class="font-display text-xl font-bold brand-gradient">Arithmo Edge</div>
-          <p class="text-sm text-slate-400 leading-relaxed">The World's First Real-Time ELO-Rated Competitive Mathematics &amp; Olympiad Mega-Ecosystem, Powered by Olympiad Edge.</p>
-          <div class="text-xs text-slate-400 space-y-1 pt-2">
-            <div>GitHub: <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">https://github.com/Arithmo-Edge</a></div>
-            <div>Official Email: <a href="mailto:rayaantasnim@gmail.com" class="text-cyan-400 hover:underline">rayaantasnim@gmail.com</a></div>
-          </div>
-        </div>
-        <div class="md:col-span-5">
-          <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-300 mb-3">12-Page Showcase Matrix</h3>
-          <div class="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-slate-400">
-            <a href="index.html" class="hover:text-cyan-300">01. Home Command Deck</a>
-            <a href="architecture.html" class="hover:text-cyan-300">02. 14-Site Ecosystem</a>
-            <a href="arenas-elo.html" class="hover:text-cyan-300">03. 5 Arenas &amp; 60 ELO</a>
-            <a href="contests.html" class="hover:text-cyan-300">04. Contests &amp; Flaw Audit</a>
-            <a href="ai-core.html" class="hover:text-cyan-300">05. 42-Engine AI Core</a>
-            <a href="security-qprt4.html" class="hover:text-cyan-300">06. QPRT-4 &amp; Legal Shield</a>
-            <a href="academies.html" class="hover:text-cyan-300">07. Academy Arena</a>
-            <a href="pricing.html" class="hover:text-cyan-300">08. Plans &amp; Wallet</a>
-            <a href="socials-forge.html" class="hover:text-cyan-300">09. Socials &amp; Forge</a>
-            <a href="governance.html" class="hover:text-cyan-300">10. Headquarters &amp; Patrons</a>
-            <a href="roadmap.html" class="hover:text-cyan-300">11. Roadmap &amp; Spin-Offs</a>
-            <a href="pioneers.html" class="hover:text-cyan-300">12. Pioneer Contributors</a>
-          </div>
-        </div>
-        <div class="md:col-span-3 space-y-3">
-          <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-300">Connect &amp; Community</h3>
-          <div class="flex flex-wrap gap-2.5">
-            <a href="https://github.com/Arithmo-Edge" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">GitHub</a>
-            <a href="mailto:rayaantasnim@gmail.com" class="btn-glass px-3 py-2 text-xs">Email</a>
-            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">X / Twitter</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">LinkedIn</a>
-            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">YouTube</a>
-            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="btn-glass px-3 py-2 text-xs">Discord</a>
-          </div>
-        </div>
-      </div>
-      <div class="text-xs text-slate-400 leading-relaxed space-y-1">
-        <hr>
-        <center>
-        Authorized by Rayaan Tasnim <br>
-        © All Rights Reserved <br>
-        © Arithmo-Edge <br>
-        Powered by Olympiad Edge
-        </center>
-      </div>
-    </div>
-  </footer>
-
-  <script type="module" src="assets/js/main.js"></script>
-</body>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization",
+            "name": "Arithmo-Edge",
+            "alternateName": "Olympiad Edge",
+            "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
+            "logo": "https://arithmo-edge.github.io/Introductory-Landing-Page/favicon.jpg",
+            "email": "rayaantasnim@gmail.com",
+            "areaServed": "Worldwide",
+            "founder": [
+              {
+                "@type": "Person",
+                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html#rayaan-tasnim",
+                "name": "Rayaan Tasnim",
+                "jobTitle": "Founder & Chief System Architect",
+                "email": "rayaantasnim@gmail.com",
+                "sameAs": [
+                  "https://github.com",
+                  "https://github.com/Arithmo-Edge"
+                ]
+              },
+              {
+                "@type": "Person",
+                "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html#jalees-habib",
+                "name": "Jalees Habib",
+                "jobTitle": "Co-Founder & Chief Mathematical Engineer",
+                "sameAs": [
+                  "https://www.youtube.com/@jaleeshabib",
+                  "https://www.chess.com/member/jaiees"
+                ]
+              }
+            ],
+            "sameAs": [
+              "https://github.com",
+              "https://github.com/Arithmo-Edge",
+              "https://www.youtube.com/@jaleeshabib",
+              "https://www.chess.com/member/jaiees",
+              "https://arithmo-edge.github.io/Introductory-Landing-Page/pioneers.html"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#website",
+            "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
+            "name": "Arithmo-Edge",
+            "alternateName": "Olympiad Edge",
+            "description": "The World's First Real-Time ELO-Rated Competitive Mathematics & Olympiad Mega-Ecosystem, Powered by Olympiad Edge.",
+            "inLanguage": "en-US",
+            "publisher": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://arithmo-edge.github.io/Introductory-Landing-Page/?q={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#webpage",
+            "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
+            "name": "Real-Time ELO Competitive Math Olympiad | Arithmo-Edge",
+            "description": "Compete on Arithmo-Edge: real-time ELO competitive math across 14 GitHub Pages portals, 5 Core Arenas, 60 progression titles, QPRT-4 guards, and 42 AI engines.",
+            "inLanguage": "en-US",
+            "isPartOf": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#website"
+            },
+            "about": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "publisher": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://images.pexels.com/photos/7130560/pexels-photo-7130560.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop",
+              "width": 1200,
+              "height": 630
+            },
+            "mainEntityOfPage": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#webpage"
+            },
+            "mainEntity": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#webapp"
+            },
+            "breadcrumb": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#breadcrumb"
+            }
+          },
+          {
+            "@type": "WebApplication",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#webapp",
+            "name": "Arithmo-Edge",
+            "alternateName": "Olympiad Edge",
+            "applicationCategory": "EducationalApplication",
+            "operatingSystem": "All",
+            "url": "https://arithmo-edge.github.io/Introductory-Landing-Page/",
+            "description": "Compete on Arithmo-Edge: real-time ELO competitive math across 14 GitHub Pages portals, 5 Core Arenas, 60 progression titles, QPRT-4 guards, and 42 AI engines.",
+            "mainEntityOfPage": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#webpage"
+            },
+            "publisher": {
+              "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#organization"
+            },
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://arithmo-edge.github.io/Introductory-Landing-Page/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://arithmo-edge.github.io/Introductory-Landing-Page/"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="selection:bg-cyan-400/30 selection:text-cyan-100">
+    <div id="root" data-page="index.html"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

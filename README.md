@@ -75,6 +75,7 @@ flowchart TB
     FORGE --> LAKE
     CONT --> LAKE
     ARENAS --> LAKE
+
 </div>
 
 ---
@@ -83,15 +84,15 @@ flowchart TB
 
 Arithmo Edge is engineered for extreme horizontal scalability, deterministic mathematical rigor, and minimal operational overhead.
 
-| Subsystem | Core Technologies | Architectural Role |
-| :--- | :--- | :--- |
-| **Frontend UI** | `React`, `Tailwind CSS`, `KaTeX` | High-contrast competitive interfaces with sub-millisecond LaTeX typesetting and 3-column contest workspaces. |
-| **Federated SDK** | `Vanilla JS (engine.js)` | Cross-portal state synchronization, `@handle` enforcement, SSO session persistence, and global event bus. |
-| **Biometric Anti-Cheat** | `MediaPipe`, `TensorFlow.js` | Browser-native ML execution for Module 7 (4.5s Gaze Guard, 3-Axis Audio Trap, keystroke entropy) with zero raw video upload. |
-| **Symbolic Verification** | `Python`, `SymPy` | Deterministic algebraic/number-theoretic proof validation and procedural problem generation in Arithmo Forge. |
-| **AI Routing & Socratic Mentor** | `Gemini Pro/Flash`, `Qwen-Math` | Step-by-step Socratic guidance governed by dynamic `TokenMeter` rate-limiting without spoiling solutions. |
-| **Edge Proxy & Security** | `Cloudflare Workers`, `AES-256` | Edge API routing, DDoS mitigation, rate-limiting, and encrypted forensic audit storage (Signal Vault). |
-| **Database & CI/CD** | `Firebase`, `GitHub Pages & Actions` | Real-time Firestore ELO ledgers, static edge hosting, and 24-hour Zero-PII JSONL data lake pipelines. |
+| Subsystem                        | Core Technologies                    | Architectural Role                                                                                                           |
+| :------------------------------- | :----------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- |
+| **Frontend UI**                  | `React`, `Tailwind CSS`, `KaTeX`     | High-contrast competitive interfaces with sub-millisecond LaTeX typesetting and 3-column contest workspaces.                 |
+| **Federated SDK**                | `Vanilla JS (engine.js)`             | Cross-portal state synchronization, `@handle` enforcement, SSO session persistence, and global event bus.                    |
+| **Biometric Anti-Cheat**         | `MediaPipe`, `TensorFlow.js`         | Browser-native ML execution for Module 7 (4.5s Gaze Guard, 3-Axis Audio Trap, keystroke entropy) with zero raw video upload. |
+| **Symbolic Verification**        | `Python`, `SymPy`                    | Deterministic algebraic/number-theoretic proof validation and procedural problem generation in Arithmo Forge.                |
+| **AI Routing & Socratic Mentor** | `Gemini Pro/Flash`, `Qwen-Math`      | Step-by-step Socratic guidance governed by dynamic `TokenMeter` rate-limiting without spoiling solutions.                    |
+| **Edge Proxy & Security**        | `Cloudflare Workers`, `AES-256`      | Edge API routing, DDoS mitigation, rate-limiting, and encrypted forensic audit storage (Signal Vault).                       |
+| **Database & CI/CD**             | `Firebase`, `GitHub Pages & Actions` | Real-time Firestore ELO ledgers, static edge hosting, and 24-hour Zero-PII JSONL data lake pipelines.                        |
 
 ---
 
@@ -103,19 +104,19 @@ Arithmo Edge is engineered for extreme horizontal scalability, deterministic mat
 
 Every portal in the Arithmo Edge network is deployed as a modular micro-frontend bound together by `Arithmo-Core-SDK`:
 
-* **0. Core Portal (`Arithmo-Edge.github.io`):** The central command hub, `@handle` identity onboarding, unified profile analytics, and ecosystem router.
-* **1. Number Theory Arena (`/number-theory`):** Cyan-themed specialized training grounds and domain-specific ELO matchmaking.
-* **2. Algebra Arena (`/algebra`):** Violet-themed arena dedicated to inequalities, polynomials, functional equations, and abstract structures.
-* **3. Geometry Arena (`/geometry`):** Amber-themed arena built for synthetic, projective, and computational Olympiad geometry.
-* **4. Combinatorics Arena (`/combinatorics`):** Emerald-themed arena covering graph theory, game theory, extremal principles, and enumerative combinatorics.
-* **5. Mixed Olympiad Arena (`/mixed-olympiad`):** Rose-themed full-spectrum IMO, Putnam, and national Olympiad simulation environment.
-* **6. Contest Portal (`/contests`):** Real-time rated rounds featuring T-30s pre-match integrity contracts, 3-column expert UI, live clarification queues, 1v1 Bullet Blitz duels, and a 6-hour post-contest Hacking Phase.
-* **7. Standings Portal (`/standings`):** Public, frictionless (no-login-required) access to 14 real-time global and domain-specific ELO leaderboards.
-* **8. Arithmo Personal AI (`/arithmo-ai`):** Socratic mathematics tutor powered by Gemini Pro/Flash and Qwen-Math with dynamic `TokenMeter` usage governance.
-* **9. Academy Arena (`/academy`):** B2B institutional operating system for schools, coaching centers, and math guilds featuring Dual-Handle routing, KYB verification, and automated homework pipelines.
-* **10. Arithmo Forge (`/arithmo-forge`):** Deterministic mathematical verification sandbox (Python/SymPy) and collaborative problem-authoring studio.
-* **11. Arithmo Socials (`/socials`):** Technical mathematical blogs, peer Q&A, and a transparent Forensic Appeal Portal for anti-cheat audit reviews.
-* **12. Headquarters Core (`/hq-core`):** Internal operations war-room, moderator escalation ladder, and ecosystem governance console.
+- **0. Core Portal (`Arithmo-Edge.github.io`):** The central command hub, `@handle` identity onboarding, unified profile analytics, and ecosystem router.
+- **1. Number Theory Arena (`/number-theory`):** Cyan-themed specialized training grounds and domain-specific ELO matchmaking.
+- **2. Algebra Arena (`/algebra`):** Violet-themed arena dedicated to inequalities, polynomials, functional equations, and abstract structures.
+- **3. Geometry Arena (`/geometry`):** Amber-themed arena built for synthetic, projective, and computational Olympiad geometry.
+- **4. Combinatorics Arena (`/combinatorics`):** Emerald-themed arena covering graph theory, game theory, extremal principles, and enumerative combinatorics.
+- **5. Mixed Olympiad Arena (`/mixed-olympiad`):** Rose-themed full-spectrum IMO, Putnam, and national Olympiad simulation environment.
+- **6. Contest Portal (`/contests`):** Real-time rated rounds featuring T-30s pre-match integrity contracts, 3-column expert UI, live clarification queues, 1v1 Bullet Blitz duels, and a 6-hour post-contest Hacking Phase.
+- **7. Standings Portal (`/standings`):** Public, frictionless (no-login-required) access to 14 real-time global and domain-specific ELO leaderboards.
+- **8. Arithmo Personal AI (`/arithmo-ai`):** Socratic mathematics tutor powered by Gemini Pro/Flash and Qwen-Math with dynamic `TokenMeter` usage governance.
+- **9. Academy Arena (`/academy`):** B2B institutional operating system for schools, coaching centers, and math guilds featuring Dual-Handle routing, KYB verification, and automated homework pipelines.
+- **10. Arithmo Forge (`/arithmo-forge`):** Deterministic mathematical verification sandbox (Python/SymPy) and collaborative problem-authoring studio.
+- **11. Arithmo Socials (`/socials`):** Technical mathematical blogs, peer Q&A, and a transparent Forensic Appeal Portal for anti-cheat audit reviews.
+- **12. Headquarters Core (`/hq-core`):** Internal operations war-room, moderator escalation ladder, and ecosystem governance console.
 
 </details>
 
@@ -125,16 +126,16 @@ Every portal in the Arithmo Edge network is deployed as a modular micro-frontend
 
 Remote mathematical competitions fail without airtight integrity and contamination-free problems. Arithmo Edge solves both at the architectural layer:
 
-* **Module 7 (Browser-Native Biometric Proctoring):**
-  * **Zero-Server Video Streaming:** Executes `MediaPipe` and `TensorFlow.js` inference entirely client-side inside the participant's browser, preserving student privacy while eliminating cloud GPU bottlenecks.
-  * **4.5-Second Gaze Guard:** Detects sustained off-screen visual deviation or secondary device reference in real time.
-  * **3-Axis Audio Trap & Telemetry:** Monitors acoustic anomalies, tab-switch focus loss, and keystroke/backspace entropy patterns to flag external AI assistance.
-  * **AES-256 Signal Vault:** Cryptographically signs and seals forensic telemetry logs for deterministic review during post-contest audits and appeals.
-* **Arithmo Forge & The 5-Pillar Legal Problem Engine:**
-  * **Golden Repository:** Pairs human-authored Olympiad seed templates with procedural `Python/SymPy` generators to synthesize millions of original, contamination-free problem variants.
-  * **Deterministic Verification:** Evaluates symbolic equivalence, boundary conditions, and multi-step derivations deterministically—eliminating grading ambiguity.
-* **Zero-PII Reasoning Data Lake:**
-  * Every 24 hours, automated GitHub Actions workflows scrub all Personally Identifiable Information (PII) and export verified human proof trajectories, solve latencies, and error-recovery steps into clean `JSONL` datasets.
+- **Module 7 (Browser-Native Biometric Proctoring):**
+  - **Zero-Server Video Streaming:** Executes `MediaPipe` and `TensorFlow.js` inference entirely client-side inside the participant's browser, preserving student privacy while eliminating cloud GPU bottlenecks.
+  - **4.5-Second Gaze Guard:** Detects sustained off-screen visual deviation or secondary device reference in real time.
+  - **3-Axis Audio Trap & Telemetry:** Monitors acoustic anomalies, tab-switch focus loss, and keystroke/backspace entropy patterns to flag external AI assistance.
+  - **AES-256 Signal Vault:** Cryptographically signs and seals forensic telemetry logs for deterministic review during post-contest audits and appeals.
+- **Arithmo Forge & The 5-Pillar Legal Problem Engine:**
+  - **Golden Repository:** Pairs human-authored Olympiad seed templates with procedural `Python/SymPy` generators to synthesize millions of original, contamination-free problem variants.
+  - **Deterministic Verification:** Evaluates symbolic equivalence, boundary conditions, and multi-step derivations deterministically—eliminating grading ambiguity.
+- **Zero-PII Reasoning Data Lake:**
+  - Every 24 hours, automated GitHub Actions workflows scrub all Personally Identifiable Information (PII) and export verified human proof trajectories, solve latencies, and error-recovery steps into clean `JSONL` datasets.
 
 </details>
 
@@ -161,10 +162,10 @@ Designed with strict API boundaries from Day 1, Arithmo Edge is structured as an
 
 Arithmo Edge welcomes collaboration across open-source engineering, Olympiad problem authoring, institutional onboarding, and AI reasoning research:
 
-* **Open-Source Engineers:** Explore our federated repositories to contribute to `Arithmo-Core-SDK`, `KaTeX` rendering pipelines, `SymPy` verification modules, and client-side `WebGL`/`MediaPipe` performance optimizations.
-* **Problem Authors & Olympiad Coaches:** Join Arithmo Forge to author seed problems, design procedural templates, and curate rated contest rounds.
-* **Schools, Guilds & Coaching Academies:** Onboard your cohorts via Academy Arena to unlock Dual-Handle student management, automated problem sets, and private institutional leaderboards.
-* **AI & Neuro-Symbolic Researchers:** Partner with our Zero-PII Reasoning Data Lake initiative to benchmark mathematical reasoning models against verified human solve distributions.
+- **Open-Source Engineers:** Explore our federated repositories to contribute to `Arithmo-Core-SDK`, `KaTeX` rendering pipelines, `SymPy` verification modules, and client-side `WebGL`/`MediaPipe` performance optimizations.
+- **Problem Authors & Olympiad Coaches:** Join Arithmo Forge to author seed problems, design procedural templates, and curate rated contest rounds.
+- **Schools, Guilds & Coaching Academies:** Onboard your cohorts via Academy Arena to unlock Dual-Handle student management, automated problem sets, and private institutional leaderboards.
+- **AI & Neuro-Symbolic Researchers:** Partner with our Zero-PII Reasoning Data Lake initiative to benchmark mathematical reasoning models against verified human solve distributions.
 
 </details>
 
